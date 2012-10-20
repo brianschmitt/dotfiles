@@ -1,25 +1,38 @@
-set nocompatible " Necesary  for lots of cool vim things
-set nobackup       "no backup files
-set nowritebackup  "only in case you don't want a backup file while editing
-set noswapfile     "no swap files
+set nocompatible	" Safest to just set it
+set nobackup       	" no backup files
+set nowritebackup  	" only in case you don't want a backup file while editing
+set noswapfile
 set relativenumber
-set noerrorbells
-set visualbell
-set t_vb=
+set noerrorbells	" turn off the beep
+set visualbell		" flash the screen since we switched off the beep
+set t_vb=			" required for no beep/flash
 set encoding=utf-8
 set clipboard+=unnamed
 
 set tags=tags;/
+filetype off 
 
-set autochdir " Automatically cd into the directory that the file is in
+set rtp+=~/vimfiles/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+Bundle 'brianschmitt/TFS'
+Bundle 'ctrlp.vim'
+Bundle 'Lokaltog/vim-powerline'
+
+filetype plugin indent on
+
+
+
+autocmd BufEnter * silent! lcd %:p:h 		" Automatically cd into the directory that the file is in
 "autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif  " Remove any trailing whitespace that is in the file
 
-set showcmd " This shows what you are typing as a command
+set showcmd 		" This shows what you are typing as a command
 
-set foldnestmax=3 "deepest fold is 3 levels
-set nofoldenable "dont fold by default
+set foldnestmax=3 	" deepest fold is 3 levels
+set nofoldenable 	" dont fold by default
 
-" Needed for Syntax Highlighting and stuff
+" Syntax Highlighting options
 filetype on
 filetype plugin indent on
 syntax enable
@@ -35,56 +48,45 @@ set smarttab
 set shiftwidth=4
 set softtabstop=4
 
-" Use english for spellchecking, but don't spellcheck by default
 if version >= 700
-   set spl=en spell
-   set nospell
+	" Use english for spellchecking, but don't spellcheck by default
+	set spl=en spell
+	set nospell
 endif
 
 set wildmenu
 set wildmode=list:longest
 
-" Enable mouse support in console
-set mouse=a
+set mouse=a			" Enable mouse support in console
 
 set backspace=indent,eol,start
 
-" set showmode    "show current mode down the bottom
-set ignorecase	
+set ignorecase
 set smartcase
 
-" This is totally awesome - remap jj to escape in insert mode.  You'll never type jj anyway, so it's great!
-inoremap jj <Esc>
+inoremap jj <Esc>	" remap jj to escape in insert mode
 
-nnoremap JJJJ <Nop>
+set incsearch		" Incremental searching
+set hlsearch		" Highlight things that we find with the search
+"set cul			" Highlight current line - Disabled to work in VS2010
 
-set incsearch	" Incremental searching
-set hlsearch	" Highlight things that we find with the search
-"set cul	" Highlight current line
+set nohidden		" When I close a tab, remove the buffer
 
-set nohidden	" When I close a tab, remove the buffer
-
-" Set off the other paren
-highlight MatchParen ctermbg=4
+highlight MatchParen ctermbg=4		" Set off the other paren
 
 if has("gui_running")
    colorscheme obsidian2
-   " Remove Toolbar
-   set guioptions-=T
+   
+   set guioptions-=T	" Remove Toolbar
    "set guifont=Consolas:h12
    set guifont=Droid\ Sans\ Mono\ for\ Powerline:h11
-
-   " maximize the window
-   "au GUIEnter * simalt ~x 
 else
    colorscheme obsidian2
 endif
 
 if has("gui_running")
   function! ScreenFilename()
-    if has('amiga')
-      return "s:.vimsize"
-    elseif has('win32')
+    if has('win32')
       return $HOME.'\_vimsize'
     else
       return $HOME.'/.vimsize'
@@ -138,11 +140,7 @@ if has("gui_running")
   autocmd VimLeavePre * if g:screen_size_restore_pos == 1 | call ScreenSave() | endif
 endif
 
-
-set cmdheight=1
-
-" Space will toggle folds!
-nnoremap <space> za
+nnoremap <space> za		" Space will toggle folds!
 
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
