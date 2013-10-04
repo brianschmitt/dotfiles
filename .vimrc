@@ -24,7 +24,6 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'bling/vim-airline'
 let g:airline_enable_syntastic=1
-let g:airline_powerline_fonts=1
 
 let g:netrw_winsize=20
 " dont fold by default
@@ -68,7 +67,6 @@ set incsearch
 " Highlight things that we find with the search
 set hlsearch
 
-set colorcolumn=120
 set cursorline
 
 " allow unsaved background buffers and remember marks/undo for them
@@ -84,6 +82,8 @@ if has("gui_running")
  set guioptions=egm
  set guifont=DejaVu_Sans_Mono_for_Powerline:h12,Consolas:h11
  colorscheme jellybeans
+else
+ colorscheme slate
 endif
 
 " remap jj to escape in insert mode
