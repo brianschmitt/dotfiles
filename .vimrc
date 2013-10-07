@@ -38,7 +38,7 @@ syntax on
 set so=7
 
 " Remove any trailing whitespace that is in the file
-autocmd BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
+autocmd BufWritePre * :%s/\s\+$//e
 
 "turn off some of the HTML rendering in the editor <a><b><i> etc...
 let html_no_rendering=1
