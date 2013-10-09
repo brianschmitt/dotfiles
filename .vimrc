@@ -29,6 +29,7 @@ colorscheme jellybeans
 " colorscheme slate
 
 let g:netrw_winsize=20
+
 " dont fold by default
 set nofoldenable
 
