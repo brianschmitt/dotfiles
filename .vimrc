@@ -24,6 +24,9 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'bling/vim-airline'
 let g:airline_enable_syntastic=1
+Bundle 'nanotech/jellybeans.vim'
+colorscheme jellybeans
+" colorscheme slate
 
 let g:netrw_winsize=20
 " dont fold by default
@@ -81,9 +84,6 @@ set nowrap
 if has("gui_running")
  set guioptions=egm
  set guifont=DejaVu_Sans_Mono_for_Powerline:h12,Consolas:h11
- colorscheme jellybeans
-else
- colorscheme slate
 endif
 
 " remap jj to escape in insert mode
