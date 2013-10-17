@@ -27,6 +27,12 @@ let g:airline_enable_syntastic=1
 Bundle 'nanotech/jellybeans.vim'
 colorscheme jellybeans
 " colorscheme slate
+Bundle 'xolox/vim-misc'
+Bundle 'xolox/vim-session'
+let g:session_autoload='no'
+let g:session_autosave='yes'
+let g:session_default_to_last=1
+set sessionoptions-=help
 
 let g:netrw_winsize=20
 
@@ -95,6 +101,11 @@ nnoremap <Leader>p :cd c:\.Projects\
 nnoremap <Leader>r :ProjectRootCD<cr>
 " Format doc and maintain position
 nnoremap <Leader>f mzgg=G`z<cr>
+" generate ctags
+nnoremap <leader>ct :!ctags&<cr><cr>
+" session stuff
+nnoremap <leader>s :SaveSession
+nnoremap <leader>o :OpenSession
 
 " navigate windows
 nnoremap <C-h> <C-w>h
@@ -108,6 +119,9 @@ vnoremap < <<CR>gv
 " Swap ; and : Convenient.
 nnoremap ; :
 nnoremap : ;
+
+" sudo write
+cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
 
 "Always show statusline
 set laststatus=2
