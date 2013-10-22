@@ -9,7 +9,7 @@ set relativenumber
 set visualbell
 
 set encoding=utf-8
-set clipboard+=unnamed
+set clipboard^=unnamed
 
 set path=**
 set tags=tags;/
@@ -62,7 +62,6 @@ set softtabstop=4
 
 " Use english for spellchecking, but don't spellcheck by default
 set spl=en spell
-set nospell
 
 set wildmenu
 set wildmode=full "list:longest
