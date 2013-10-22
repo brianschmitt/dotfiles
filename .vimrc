@@ -62,6 +62,7 @@ set softtabstop=4
 
 " Use english for spellchecking, but don't spellcheck by default
 set spl=en spell
+set nospell
 
 set wildmenu
 set wildmode=full "list:longest
