@@ -1,0 +1,22 @@
+[user]
+    name = Brian.Schmitt
+    email = brianschmitt@gmail.com
+[color]
+    ui = auto
+[core]
+    editor = vim
+    excludesfile = ~/.global_ignore
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff --color --color-words --abbrev
+    dc = diff --cached
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    ls = ls-files
+
+        # Show files ignored by git:
+    ign = ls-files -o -i --exclude-standard
+[push]
+    default = simple
