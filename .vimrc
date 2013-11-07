@@ -29,7 +29,7 @@ colorscheme jellybeans
 " colorscheme slate
 Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-session'
-let g:session_autoload='no'
+let g:session_autoload='yes'
 let g:session_autosave='yes'
 let g:session_default_to_last=1
 let g:session_directory='~\.vim\sessions'
@@ -60,10 +60,6 @@ set smarttab
 set shiftwidth=4
 set softtabstop=4
 
-" Use english for spellchecking, but don't spellcheck by default
-set spl=en spell
-set nospell
-
 set wildmenu
 set wildmode=full "list:longest
 set wildignore=*.csproj,*.designer.cs
@@ -91,7 +87,7 @@ set nowrap
 
 if has("gui_running")
  set guioptions=egm
- set guifont=DejaVu_Sans_Mono_for_Powerline:h12,Consolas:h11
+ set guifont=Droid_Sans_Mono_Slashed_for_Pow:h12,Consolas:h11
 endif
 
 " remap jj to escape in insert mode
