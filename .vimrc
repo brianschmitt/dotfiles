@@ -22,8 +22,6 @@ let g:rootmarkers = ['tags', '.git', '*.sln']
 Bundle 'scrooloose/syntastic'
 Bundle 'pangloss/vim-javascript'
 Bundle 'jelera/vim-javascript-syntax'
-Bundle 'bling/vim-airline'
-let g:airline_enable_syntastic=1
 Bundle 'nanotech/jellybeans.vim'
 colorscheme jellybeans
 " colorscheme slate
@@ -33,7 +31,7 @@ let g:session_autoload='yes'
 let g:session_autosave='yes'
 let g:session_default_to_last=1
 let g:session_directory='~\.vim\sessions'
-set sessionoptions-=help
+set sessionoptions-=help,blank,options
 
 let g:netrw_winsize=20
 
@@ -42,7 +40,6 @@ set nofoldenable
 
 " Syntax Highlighting options
 filetype plugin indent on
-syntax enable
 syntax on
 
 " Keep cursor line set number from edges
@@ -78,10 +75,6 @@ set cursorline
 
 " allow unsaved background buffers and remember marks/undo for them
 set hidden
-" hack for using hidden and --remote-server
-if bufname('%') == ''
-  set bufhidden=wipe
-endif
 
 set nowrap
 
@@ -100,9 +93,6 @@ nnoremap <Leader>r :ProjectRootCD<cr>
 nnoremap <Leader>f mzgg=G`z<cr>
 " generate ctags
 nnoremap <leader>ct :!ctags&<cr><cr>
-" session stuff
-nnoremap <leader>s :SaveSession
-nnoremap <leader>o :OpenSession
 
 " navigate windows
 nnoremap <C-h> <C-w>h
@@ -118,7 +108,42 @@ nnoremap ; :
 nnoremap : ;
 
 " sudo write
-cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
+command W w !sudo tee % > /dev/null
 
 "Always show statusline
 set laststatus=2
+set statusline =%#Constant#\[%n]\ %*      "buffer number
+set statusline +=%#Statement#
+set statusline +=\[%t]\ %*                 "full path
+set statusline +=%#Error#%h%w%m%r          "file flags [help, RO, modified]
+set statusline +=%{StatuslineTabWarning()}
+set statusline +=%{SyntasticStatuslineFlag()}%* " Syntastic Syntax Checking
+set statusline +=%=%*                      "right align remaining
+set statusline +=%#Type#\ [%{&ff}:         "begin section & file format
+set statusline +=%{&encoding}]             "file encoding
+set statusline +=%y%*                      "file type & end section
+set statusline +=%#Constant#\ %l:          "current line
+set statusline +=%v%*                      "virtual column number
+set statusline +=%#Statement#/%L\ %*       "total lines
+
+"recalculate the tab warning flag when idle and after writing
+autocmd cursorhold,bufwritepost * unlet! b:statusline_tab_warning
+
+"return '[&et]' if &et is set wrong
+"return '[mixed-indenting]' if spaces and tabs are used to indent
+"return an empty string if everything is fine
+function! StatuslineTabWarning()
+    if !exists("b:statusline_tab_warning")
+        let tabs = search('^\t', 'nw') != 0
+        let spaces = search('^ ', 'nw') != 0
+
+        if tabs && spaces
+            let b:statusline_tab_warning =  '[mixed-indenting]'
+        elseif (spaces && !&et) || (tabs && &et)
+            let b:statusline_tab_warning = '[&et]'
+        else
+            let b:statusline_tab_warning = ''
+        endif
+    endif
+    return b:statusline_tab_warning
+endfunction
