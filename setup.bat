@@ -6,4 +6,6 @@ mklink .vimrc dotfiles\.vimrc
 
 mklink .ctags dotfiles\.ctags
 
-mklink global_ignore dotfiles\global_ignore
+mklink .global_ignore dotfiles\.global_ignore
+
+mklink .gitconfig dotfiles\.gitconfig

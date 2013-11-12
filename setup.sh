@@ -7,3 +7,5 @@ ln -s dotfiles/.vimrc .vimrc
 ln -s dotfiles/.ctags .ctags
 
 ln -s dotfiles/.global_ignore .global_ignore
+
+ln -s dotfiles/.gitconfig .gitconfig
