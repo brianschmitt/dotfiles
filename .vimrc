@@ -30,7 +30,7 @@ Bundle 'xolox/vim-session'
 let g:session_autoload='yes'
 let g:session_autosave='yes'
 let g:session_default_to_last=1
-let g:session_directory='~\.vim\sessions'
+let g:session_directory='~/.vim/sessions'
 set sessionoptions-=help,blank,options
 
 let g:netrw_winsize=20
