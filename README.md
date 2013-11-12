@@ -16,3 +16,12 @@ cd dotfiles
 
 setup.bat
 ```
+
+On Linux:
+```shell
+git clone https://github.com/brianschmitt/dotfiles
+
+chmod +x dotfiles/setup.sh
+
+./dotfiles/setup.sh
+```
