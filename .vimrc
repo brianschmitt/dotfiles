@@ -43,7 +43,7 @@ filetype plugin indent on
 syntax on
 
 " Keep cursor line set number from edges
-set so=7
+set scrolloff=7
 
 " Remove any trailing whitespace that is in the file
 autocmd BufWritePre * :%s/\s\+$//e
@@ -86,7 +86,6 @@ endif
 " remap jj to escape in insert mode
 inoremap jj <Esc>
 
-" start remote edit
 nnoremap <Leader>p :cd c:\.Projects\
 nnoremap <Leader>r :ProjectRootCD<cr>
 " Format doc and maintain position

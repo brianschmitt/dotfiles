@@ -9,3 +9,5 @@ mklink .ctags dotfiles\.ctags
 mklink .global_ignore dotfiles\.global_ignore
 
 mklink .gitconfig dotfiles\.gitconfig
+
+mklink .jshintrc dotfiles\.jshintrc
