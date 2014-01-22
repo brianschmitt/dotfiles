@@ -32,6 +32,7 @@ let g:session_autosave='yes'
 let g:session_default_to_last=1
 let g:session_directory='~/.vim/sessions'
 set sessionoptions-=help,blank,options
+Bundle 'skammer/vim-css-color'
 
 let g:netrw_winsize=20
 
@@ -48,8 +49,10 @@ set scrolloff=7
 " Remove any trailing whitespace that is in the file
 autocmd BufWritePre * :%s/\s\+$//e
 
-"turn off some of the HTML rendering in the editor <a><b><i> etc...
+" turn off some of the HTML rendering in the editor <a><b><i> etc...
 let html_no_rendering=1
+" properly indent html
+let g:html_indent_inctags="head,html,body,p,head,table,tbody,div,script"
 
 set expandtab
 set smarttab
@@ -92,6 +95,8 @@ nnoremap <Leader>r :ProjectRootCD<cr>
 nnoremap <Leader>f mzgg=G`z<cr>
 " generate ctags
 nnoremap <leader>ct :!ctags&<cr><cr>
+" Insert date stamp
+nnoremap <leader>d "=strftime("%b %d, %Y")<cr>P
 
 " navigate windows
 nnoremap <C-h> <C-w>h
@@ -107,7 +112,7 @@ nnoremap ; :
 nnoremap : ;
 
 " sudo write
-command W w !sudo tee % > /dev/null
+command! W w !sudo tee % > /dev/null
 
 "Always show statusline
 set laststatus=2
