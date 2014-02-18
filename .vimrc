@@ -94,7 +94,7 @@ nnoremap <Leader>r :ProjectRootCD<cr>
 " Format doc and maintain position
 nnoremap <Leader>f mzgg=G`z<cr>
 " generate ctags
-nnoremap <leader>ct :!ctags&<cr><cr>
+nnoremap <leader>ct :!ctags<cr><cr>
 " Insert date stamp
 nnoremap <leader>d "=strftime("%b %d, %Y")<cr>P
 
