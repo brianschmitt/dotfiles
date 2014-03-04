@@ -23,7 +23,9 @@ Bundle 'scrooloose/syntastic'
 Bundle 'pangloss/vim-javascript'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'nanotech/jellybeans.vim'
-colorscheme jellybeans
+" colorscheme jellybeans
+Bundle 'w0ng/vim-hybrid'
+colorscheme hybrid
 " colorscheme slate
 Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-session'
@@ -44,7 +46,7 @@ filetype plugin indent on
 syntax on
 
 " Keep cursor line set number from edges
-set scrolloff=7
+set scrolloff=2
 
 " Remove any trailing whitespace that is in the file
 autocmd BufWritePre * :%s/\s\+$//e
