@@ -63,8 +63,10 @@ set shiftwidth=4
 set softtabstop=4
 
 set wildmenu
-set wildmode=full "list:longest
-set wildignore=*.csproj,*.designer.cs
+set wildmode=list:full
+set wildignore=*.csproj,*.designer.cs,*.sln,*.Master,*.dll,*.pdb,*.min.*
+set wildignore+=*/.git/**/*
+set wildignore+=tags
 
 set completeopt=longest,menuone,preview
 
