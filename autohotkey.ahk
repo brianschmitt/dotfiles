@@ -17,7 +17,7 @@ DetectHiddenWindows, on
 ; For more see - http://www.autohotkey.com/docs/Hotkeys.htm
 
 
-^#v::                            ; Text–only paste from ClipBoard
+#v::                            ; Text–only paste from ClipBoard
    Clip0 = %ClipBoardAll%
    ClipBoard = %ClipBoard%       ; Convert to text
    Send ^v                       ; For best compatibility: SendPlay
