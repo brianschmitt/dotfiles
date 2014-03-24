@@ -29,9 +29,9 @@ colorscheme hybrid
 " colorscheme slate
 Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-session'
-let g:session_autoload='yes'
-let g:session_autosave='yes'
-let g:session_default_to_last=1
+"let g:session_autoload='yes'
+let g:session_autosave='no'
+"let g:session_default_to_last=1
 let g:session_directory='~/.vim/sessions'
 set sessionoptions-=help,blank,options
 Bundle 'skammer/vim-css-color'
@@ -82,6 +82,10 @@ set cursorline
 
 " allow unsaved background buffers and remember marks/undo for them
 set hidden
+" hack for using hidden and --remote-server
+if bufname('%') == ''
+  set bufhidden=wipe
+endif
 
 set nowrap
 
@@ -89,9 +93,6 @@ if has("gui_running")
  set guioptions=egm
  set guifont=Droid_Sans_Mono_Slashed_for_Pow:h12,Consolas:h11
 endif
-
-" remap jj to escape in insert mode
-inoremap jj <Esc>
 
 nnoremap <Leader>p :cd c:\.Projects\
 nnoremap <Leader>r :ProjectRootCD<cr>
