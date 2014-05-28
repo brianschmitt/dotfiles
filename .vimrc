@@ -1,4 +1,4 @@
-set runtimepath+=~/.vim
+"set runtimepath+=~/.vim
 set runtimepath+=~/.vim/bundle/vundle
 
 set noswapfile
@@ -98,6 +98,7 @@ nnoremap <Leader>p :cd c:\.Projects\
 nnoremap <Leader>r :ProjectRootCD<cr>
 " Format doc and maintain position
 nnoremap <Leader>f mzgg=G`z<cr>
+nnoremap <Leader>fx :set filetype=xml<cr>:%s/></>\r</g<cr>gg=G<cr>
 " generate ctags
 nnoremap <leader>ct :!ctags<cr><cr>
 " Insert date stamp

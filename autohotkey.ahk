@@ -1,7 +1,7 @@
 Envget,vUSERPROFILE, USERPROFILE
 
 ;Use numberpad to move windows
-#Include %A_ScriptDir%\..\Utils\Autohotkey\WindowPad.ahk
+;#Include %A_ScriptDir%\..\Utils\Autohotkey\WindowPad.ahk
 
 ;Autocorrect spelling in all applications
 #Include %A_ScriptDir%\..\Utils\Autohotkey\AutoCorrect.ahk
@@ -17,7 +17,7 @@ DetectHiddenWindows, on
 ; For more see - http://www.autohotkey.com/docs/Hotkeys.htm
 
 
-#v::                            ; Text–only paste from ClipBoard
+^#v::                            ; Text–only paste from ClipBoard
    Clip0 = %ClipBoardAll%
    ClipBoard = %ClipBoard%       ; Convert to text
    Send ^v                       ; For best compatibility: SendPlay
@@ -29,11 +29,8 @@ Return
 
 ;General shortcuts
 #z::Run, Explorer /e', %UserProfile%
-#s::RunOrActivateOrMinimizeProgram("C:\Program Files\sqldeveloper64\sqldeveloper\sqldeveloper.exe")
 #u::Run, %A_ScriptDir%\..\Utils\
 #g::RunOrActivateOrMinimizeProgram("C:\Program Files (x86)\vim\vim74\gvim.exe", "C:\!Projects", "max")
-#q::ToggleWinHide("Jabber")
-#w::ToggleWinMinimize("Conversations")
 PrintScreen::Run, SnippingTool.exe
 
 
