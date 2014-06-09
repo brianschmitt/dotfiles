@@ -12,6 +12,7 @@ set encoding=utf-8
 set clipboard^=unnamed
 
 set path=**
+set suffixesadd+=.cs,.js,.htm
 set tags=tags;/
 
 call vundle#rc("~/.vim/bundle")
@@ -22,23 +23,12 @@ let g:rootmarkers = ['tags', '.git', '*.sln']
 Bundle 'scrooloose/syntastic'
 Bundle 'pangloss/vim-javascript'
 Bundle 'jelera/vim-javascript-syntax'
-Bundle 'nanotech/jellybeans.vim'
-" colorscheme jellybeans
 Bundle 'w0ng/vim-hybrid'
 colorscheme hybrid
-" colorscheme slate
-Bundle 'xolox/vim-misc'
-Bundle 'xolox/vim-session'
-"let g:session_autoload='yes'
-let g:session_autosave='no'
-"let g:session_default_to_last=1
-let g:session_directory='~/.vim/sessions'
-set sessionoptions-=help,blank,options
 Bundle 'skammer/vim-css-color'
 
 let g:netrw_winsize=20
 
-" dont fold by default
 set nofoldenable
 
 " Syntax Highlighting options
@@ -100,7 +90,7 @@ nnoremap <Leader>r :ProjectRootCD<cr>
 nnoremap <Leader>f mzgg=G`z<cr>
 nnoremap <Leader>fx :set filetype=xml<cr>:%s/></>\r</g<cr>gg=G<cr>
 " generate ctags
-nnoremap <leader>ct :!ctags<cr><cr>
+nnoremap <leader>ct :silent !ctags<cr>
 " Insert date stamp
 nnoremap <leader>d "=strftime("%b %d, %Y")<cr>P
 
@@ -119,6 +109,13 @@ nnoremap : ;
 
 " sudo write
 command! W w !sudo tee % > /dev/null
+
+fun! InternetSearch()
+    let keyword = expand("<cword>")
+    let url = "https://www.duckduckgo.com/?q=" . keyword
+    exec ':silent !cmd /c start ' . url
+endfun
+nnoremap <leader>is :call InternetSearch()<cr>
 
 "Always show statusline
 set laststatus=2
@@ -139,7 +136,7 @@ set statusline +=%#Statement#/%L\ %*       "total lines
 "recalculate the tab warning flag when idle and after writing
 autocmd cursorhold,bufwritepost * unlet! b:statusline_tab_warning
 
-"return '[&et]' if &et is set wrong
+"return '[&et]' if &expandtab is set wrong
 "return '[mixed-indenting]' if spaces and tabs are used to indent
 "return an empty string if everything is fine
 function! StatuslineTabWarning()
