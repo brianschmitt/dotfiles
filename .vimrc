@@ -15,8 +15,16 @@ set path=**
 set suffixesadd+=.cs,.js,.htm
 set tags=tags;/
 
+if !empty($CONEMUBUILD)
+    set term=xterm
+    set t_Co=256
+    let &t_AB="\e[48;5;%dm"
+    let &t_AF="\e[38;5;%dm"
+endif
+
 call vundle#rc("~/.vim/bundle")
 Bundle 'gmarik/vundle'
+Bundle 'OrangeT/vim-csharp'
 Bundle 'ervandew/supertab'
 Bundle 'dbakker/vim-projectroot'
 let g:rootmarkers = ['tags', '.git', '*.sln']
@@ -26,8 +34,12 @@ Bundle 'jelera/vim-javascript-syntax'
 Bundle 'w0ng/vim-hybrid'
 colorscheme hybrid
 Bundle 'skammer/vim-css-color'
+Bundle 'PProvost/vim-ps1'
 
 let g:netrw_winsize=20
+let g:netrw_banner=0
+let g:netrw_liststyle=3
+let g:netrw_browse_split=4
 
 set nofoldenable
 
@@ -93,6 +105,10 @@ nnoremap <Leader>fx :set filetype=xml<cr>:%s/></>\r</g<cr>gg=G<cr>
 nnoremap <leader>ct :silent !ctags<cr>
 " Insert date stamp
 nnoremap <leader>d "=strftime("%b %d, %Y")<cr>P
+" local replace
+nnoremap gr gd[{V%::s/<C-R>///gc<left><left><left>
+" global replace
+nnoremap gR gD:%s/<C-R>///gc<left><left><left>
 
 " navigate windows
 nnoremap <C-h> <C-w>h
