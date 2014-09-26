@@ -1,7 +1,7 @@
 Envget,vUSERPROFILE, USERPROFILE
 
 ;Use numberpad to move windows
-;#Include %A_ScriptDir%\..\Utils\Autohotkey\WindowPad.ahk
+#Include %A_ScriptDir%\..\Utils\Autohotkey\WindowPad.ahk
 
 ;Autocorrect spelling in all applications
 #Include %A_ScriptDir%\..\Utils\Autohotkey\AutoCorrect.ahk
