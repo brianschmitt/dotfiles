@@ -15,7 +15,7 @@ set path=**
 set suffixesadd+=.cs,.js,.htm
 set tags=tags;/
 
-if !empty($CONEMUBUILD)
+if !empty($CONEMUPID)
     set term=xterm
     set t_Co=256
     let &t_AB="\e[48;5;%dm"
