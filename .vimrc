@@ -35,6 +35,7 @@ Bundle 'w0ng/vim-hybrid'
 colorscheme hybrid
 Bundle 'skammer/vim-css-color'
 Bundle 'PProvost/vim-ps1'
+Bundle 'tpope/vim-vinegar'
 
 let g:netrw_winsize=20
 let g:netrw_banner=0
