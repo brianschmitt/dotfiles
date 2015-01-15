@@ -2,28 +2,49 @@
 
 This repo is mostly for me but you're welcome to make suggestions.
 
-## Install the necessary apps
-
-My basic setup is captured in...
-
 ## Installation
 
-On Windows:
-```shell
+### On Windows:
 - Restore any files from private backup
 - Run registry files from backup
-- Run Boxstarter Setup "START http://boxstarter.org/package/url?https://raw.github.com/brianschmitt/dotfiles/win/master/BoxStarterSetup.ps1"
+- Run Boxstarter Setup
+"START http://boxstarter.org/package/url?https://raw.github.com/brianschmitt/dotfiles/win/master/BoxStarterSetup.ps1"
 - Start Powershell as admin
-- cd ~
-- git clone https://github.com/brianschmitt/dotfiles
-    - Run . ~/dotfiles/win/CloneAndSetup.ps1
+```shell
+cd ~
+git clone https://github.com/brianschmitt/dotfiles
+. ~/dotfiles/win/CloneAndSetup.ps1
+```
 - Setup ProcExplorer to Override TaskManager
 - Optional - Run the following
-    - Vim :BundleInstall
-    - TweakUi - ~/computersetup/tweakuifixes.reg
-    - VIMHere - ~/computersetup/vimhere.reg
-- Optional if running IIS - grant "IIS AppPool\DefaultAppPool" full access to "C:\Windows\System32\inetsrv\config"
-    - icacls %systemroot%\system32\inetsrv\config /t /grant "IIS AppPool\DefaultAppPool":F
+    - . ~/dotfiles/win/dotnetsetup.ps1
+    - TweakUi - ~/computersetup/win/tweakuifixes.reg
+    - VIMHere - ~/computersetup/win/vimhere.reg
+    - If running IIS - grant "IIS AppPool\DefaultAppPool" full access to "C:\Windows\System32\inetsrv\config"
+        - icacls %systemroot%\system32\inetsrv\config /t /grant "IIS AppPool\DefaultAppPool":F
+
+### On Mac:
+- AppStore
+  - Install XCode
+  - Install Remote Desktop
+- Start terminal
+```shell
+cd ~
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install git
+git clone https://github.com/brianschmitt/dotfiles
+. ~/dotfiles/mac/bootstrap.sh
+```
+
+### On Linux:
+```shell
+git clone https://github.com/brianschmitt/dotfiles
+chmod +x dotfiles/setup.sh
+./dotfiles/setup.sh
+```
+
+### Common Settings:
+- Run Vim - :BundleInstall
 - Chrome Extensions
     - [Do not track me](https://chrome.google.com/webstore/detail/donottrackme-online-priva/epanfjkfahimkgomnigadpkobaefekcd)
     - [Ghostery](https://chrome.google.com/webstore/detail/ghostery/mlomiejdfkolichcflejclcbmpeaniij)
@@ -36,27 +57,3 @@ On Windows:
     - [Google Music Media Key Fix]
     - [HTTPS-Everywhere]
     - [LastPass]
-```
-
-On Mac:
-```shell
-- AppStore
-  - Install XCode
-  - Install Remote Desktop
-
-cd ~
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install git
-git clone https://github.com/brianschmitt/dotfiles
-. ~/dotfiles/mac/bootstrap.sh
-
-```
-
-On Linux:
-```shell
-git clone https://github.com/brianschmitt/dotfiles
-
-chmod +x dotfiles/setup.sh
-
-./dotfiles/setup.sh
-```
