@@ -26,9 +26,11 @@ call vundle#rc("~/.vim/bundle")
 Bundle 'gmarik/vundle'
 Bundle 'OrangeT/vim-csharp'
 Bundle 'ervandew/supertab'
+Bundle 'kien/ctrlp.vim'
 Bundle 'dbakker/vim-projectroot'
 let g:rootmarkers = ['tags', '.git', '*.sln']
 Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-dispatch'
 Bundle 'pangloss/vim-javascript'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'w0ng/vim-hybrid'
@@ -47,6 +49,7 @@ set nofoldenable
 " Syntax Highlighting options
 filetype plugin indent on
 syntax on
+set omnifunc=syntaxcomplete#Complete
 
 " Keep cursor line set number from edges
 set scrolloff=2
@@ -82,6 +85,8 @@ set incsearch
 set hlsearch
 
 set cursorline
+highlight ColorColumn guibg=firebrick ctermbg=darkred
+call matchadd('ColorColumn', '\%81v', 100)
 
 " allow unsaved background buffers and remember marks/undo for them
 set hidden

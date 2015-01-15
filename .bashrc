@@ -1,1 +1,1 @@
-alias ll='ls -l'
+[ -n "$PS1" ] && source ~/.bash_profile;
