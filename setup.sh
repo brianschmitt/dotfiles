@@ -10,4 +10,8 @@ ln -s dotfiles/.global_ignore .global_ignore
 
 ln -s dotfiles/.gitconfig .gitconfig
 
-ln -s dotfiles/.jshintrc .jshintrc
+ln -s dotfiles/.aliases .aliases
+
+ln -s dotfiles/.bash_prompt .bash_prompt
+
+ln -s dotfiles/.exports .exports
