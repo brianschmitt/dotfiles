@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
 brew update
 brew upgrade
 
@@ -12,8 +10,6 @@ brew install moreutils
 brew install bash
 
 brew install macvim --override-system-vim
-
-brew install git
 
 brew install node
 
