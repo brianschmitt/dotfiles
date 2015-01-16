@@ -32,7 +32,7 @@ cd ~
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install git
 git clone https://github.com/brianschmitt/dotfiles
-. ~/dotfiles/mac/bootstrap.sh
+. ~/dotfiles/osx/bootstrap.sh
 ```
 - Cask staged them, run installers for:
 	- 'Install Xamarin.app'
