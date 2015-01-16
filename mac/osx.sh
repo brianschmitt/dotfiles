@@ -16,7 +16,7 @@ defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool true
 
 # Finder: show hidden files by default
-defaults write com.apple.Finder AppleShowAllFiles -bool true
+#defaults write com.apple.Finder AppleShowAllFiles -bool true
 
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1

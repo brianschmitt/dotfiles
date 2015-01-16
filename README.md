@@ -34,6 +34,11 @@ brew install git
 git clone https://github.com/brianschmitt/dotfiles
 . ~/dotfiles/mac/bootstrap.sh
 ```
+- Add /usr/local/bin/bash to /etc/shells
+
+```shell
+chsh -s /usr/local/bin/bash
+```
 
 ### Linux:
 ```shell
