@@ -34,6 +34,9 @@ brew install git
 git clone https://github.com/brianschmitt/dotfiles
 . ~/dotfiles/mac/bootstrap.sh
 ```
+- Cask staged them, run installers for:
+	- 'Install Xamarin.app'
+	- 'LastPass Installer.app'
 - Add /usr/local/bin/bash to /etc/shells
 
 ```shell
