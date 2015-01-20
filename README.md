@@ -7,7 +7,7 @@ This repo is mostly for me but you're welcome to make suggestions.
 ### Windows:
 - Restore any files/registry from private backup
 - Run Boxstarter Setup
-"START http://boxstarter.org/package/url?https://raw.github.com/brianschmitt/dotfiles/win/master/BoxStarterSetup.ps1"
+"START http://boxstarter.org/package/url?https://raw.github.com/brianschmitt/dotfiles/master/win/BoxStarterSetup.ps1"
 - Start Powershell as admin
 
 ```shell
