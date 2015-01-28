@@ -1,7 +1,7 @@
-Update-ExecutionPolicy Unrestricted
+#Update-ExecutionPolicy Unrestricted
 #Install-WindowsUpdate -AcceptEula
 
-Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
+#Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
 
 # update powershell
 choco install PowerShell
@@ -43,4 +43,4 @@ choco install WindowsAzurePowershell
 choco install lastpass
 
 # set windows features
-choco install RemoteServerAdministrationTools-Roles-AD-Powershell -source windowsfeatures
+#choco install RemoteServerAdministrationTools-Roles-AD-Powershell -source windowsfeatures
