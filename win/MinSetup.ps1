@@ -1,6 +1,3 @@
-#Update-ExecutionPolicy Unrestricted
-#Install-WindowsUpdate -AcceptEula
-
 #Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
 
 # update powershell
@@ -15,16 +12,9 @@ choco install AnonymousPro
 choco install Vim
 
 # General Utils
-#choco install clipx
-#choco install KatMouse
-#choco install autohotkey_l
+choco install KatMouse
 #choco install agentransack
 #choco install winmerge
-#choco install 7zip
-#choco install RSAT.FeaturePack
-#choco install bleachbit
-#choco install ccleaner
-#choco install ccenhancer
 
 # Shell
 choco install ConEmu
@@ -42,5 +32,6 @@ choco install WindowsAzurePowershell
 #choco install firefox
 choco install lastpass
 
-# set windows features
-#choco install RemoteServerAdministrationTools-Roles-AD-Powershell -source windowsfeatures
+choco install VisualStudio2012Ultimate
+
+choco install tfs2012powertools
