@@ -38,6 +38,8 @@ colorscheme hybrid
 Bundle 'skammer/vim-css-color'
 Bundle 'PProvost/vim-ps1'
 Bundle 'tpope/vim-vinegar'
+Bundle 'jphustman/SQLUtilities'
+Bundle 'vim-scripts/Align'
 
 let g:netrw_winsize=20
 let g:netrw_banner=0
@@ -99,7 +101,7 @@ set nowrap
 
 if has("gui_running")
  set guioptions=egm
- set guifont=Droid_Sans_Mono_Slashed_for_Pow:h12,Consolas:h11
+ set guifont=Anonymous\ Pro:h14,Consolas:h11
 endif
 
 " Change cursor shape between insert and normal mode in iTerm2.app
