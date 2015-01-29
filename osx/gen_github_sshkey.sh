@@ -4,7 +4,7 @@ ssh-keygen -t rsa -C "brianschmitt@gmail.com" -f ~/.ssh/github_rsa
 
 eval "$(ssh-agent -s)"
 
-ssh-add ~/.ssh/github_rsa
+ssh-add -K ~/.ssh/github_rsa
 
 pbcopy < ~/.ssh/github_rsa.pub
 
