@@ -27,6 +27,10 @@ brew cask install iterm2
 
 brew cask install google-chrome
 
+brew cask install firefox
+
+brew cask install skype
+
 brew cask install lastpass
 
 brew cask install haroopad
