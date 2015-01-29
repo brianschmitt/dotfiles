@@ -35,3 +35,5 @@ choco install lastpass
 choco install VisualStudio2012Ultimate
 
 choco install tfs2012powertools
+
+choco install googledrive
