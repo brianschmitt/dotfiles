@@ -16,5 +16,6 @@ read -p "Update remote on ~/dotfiles? [y/n]" -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
+    cd ~/dotfiles
     git remote set-url origin git@github.com:brianschmitt/dotfiles
 fi
