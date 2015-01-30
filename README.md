@@ -20,6 +20,12 @@ git clone https://github.com/brianschmitt/dotfiles
     - DotnetSetup - ~/dotfiles/win/dotnetsetup.ps1
     - TweakUi - ~/dotfiles/win/tweakuifixes.reg
     - VIMHere - ~/dotfiles/win/vimhere.reg
+    - Github SSH Key setup - ~/dotfiles/win/gen_github_sshkey.bat
+    - Visual Studio Plugins
+    	- Hide Main Menu
+    	- VSVim
+    	- RelativeNumber
+    	- Web Essentials
 
 ### Mac:
 - AppStore
@@ -42,6 +48,8 @@ git clone https://github.com/brianschmitt/dotfiles
 ```shell
 chsh -s /usr/local/bin/bash
 ```
+- Optional
+    - Github SSH Key setup - ~/dotfiles/osx/gen_github_sshkey.sh
 
 ### Linux:
 ```shell

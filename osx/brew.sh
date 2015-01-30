@@ -39,4 +39,6 @@ brew cask install vmware-fusion
 
 brew cask install xtrafinder
 
+brew cask install google-drive
+
 brew cleanup

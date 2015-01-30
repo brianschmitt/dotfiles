@@ -14,7 +14,7 @@ choco install Vim
 # General Utils
 choco install KatMouse
 #choco install agentransack
-#choco install winmerge
+choco install winmerge
 
 # Shell
 choco install ConEmu
