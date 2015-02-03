@@ -1,4 +1,3 @@
-"set runtimepath+=~/.vim
 set runtimepath+=~/.vim/bundle/vundle
 
 set noswapfile
@@ -94,14 +93,14 @@ call matchadd('ColorColumn', '\%81v', 100)
 set hidden
 " hack for using hidden and --remote-server
 if bufname('%') == ''
-  set bufhidden=wipe
+    set bufhidden=wipe
 endif
 
 set nowrap
 
 if has("gui_running")
- set guioptions=egm
- set guifont=Anonymous\ Pro:h14,Consolas:h11
+    set guioptions=egm
+    set guifont=Anonymous\ Pro:h14,Consolas:h11
 endif
 
 " Change cursor shape between insert and normal mode in iTerm2.app
