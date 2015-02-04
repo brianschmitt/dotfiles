@@ -87,8 +87,6 @@ set incsearch
 set hlsearch
 
 set cursorline
-highlight ColorColumn guibg=firebrick ctermbg=darkred
-call matchadd('ColorColumn', '\%81v', 100)
 
 " allow unsaved background buffers and remember marks/undo for them
 set hidden
