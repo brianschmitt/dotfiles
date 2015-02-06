@@ -18,6 +18,11 @@
     fo = fetch origin
     up = !git pull --rebase --prune $@ && git submodule update --init --recursive
     wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+    changes=!git log --name-status HEAD..
+    up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+    cob = checkout -b
+    bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
+    bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
 
         # Show files ignored by git:
     ign = ls-files -o -i --exclude-standard
