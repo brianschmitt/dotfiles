@@ -13,7 +13,7 @@
     co = checkout
     df = diff --color --color-words --abbrev
     dc = diff --cached
-    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    lg = log --all --decorate --graph --oneline
     ls = ls-files
     fo = fetch origin
     up = !git pull --rebase --prune $@ && git submodule update --init --recursive
