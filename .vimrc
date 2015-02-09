@@ -25,18 +25,18 @@ call vundle#rc("~/.vim/bundle")
 Bundle 'gmarik/vundle'
 Bundle 'OrangeT/vim-csharp'
 Bundle 'ervandew/supertab'
-Bundle 'kien/ctrlp.vim'
+"Bundle 'kien/ctrlp.vim'
 Bundle 'dbakker/vim-projectroot'
 let g:rootmarkers = ['tags', '.git', '*.sln']
 Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-dispatch'
+"Bundle 'tpope/vim-dispatch'
 Bundle 'pangloss/vim-javascript'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'w0ng/vim-hybrid'
 colorscheme hybrid
 Bundle 'skammer/vim-css-color'
-Bundle 'PProvost/vim-ps1'
-Bundle 'tpope/vim-vinegar'
+"Bundle 'PProvost/vim-ps1'
+"Bundle 'tpope/vim-vinegar'
 Bundle 'jphustman/SQLUtilities'
 Bundle 'vim-scripts/Align'
 
