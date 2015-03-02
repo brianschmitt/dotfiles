@@ -11,6 +11,10 @@ This repo is mostly for me but you're welcome to make suggestions.
 cd ~
 iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
 choco install git
+#if WIN7
+choco install powershell
+#endif
+
 git clone https://github.com/brianschmitt/dotfiles
 . ~/dotfiles/win/bootstrap.ps1
 ```
