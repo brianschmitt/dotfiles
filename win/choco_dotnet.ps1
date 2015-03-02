@@ -1,8 +1,10 @@
+Import-Module C:\ProgramData\chocolatey\chocolateyinstall\helpers\chocolateyInstaller.psm1
+
 # Editors
 choco install linqpad4
 
 # VS 2012
-choco install VisualStudio2012Ultimate
+choco install visualstudio2012premium -InstallArguments "WebTools"
 choco install tfs2012powertools
 Install-ChocolateyVsixPackage WebEssentials https://visualstudiogallery.msdn.microsoft.com/07d54d12-7133-4e15-becb-6f451ea3bea6/file/79465/42/WebEssentials2012.vsix
 
