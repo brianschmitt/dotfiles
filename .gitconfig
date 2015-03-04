@@ -6,6 +6,8 @@
 [core]
     editor = vim
     excludesfile = ~/.global_ignore
+[format]
+    pretty = '%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 [alias]
     st = status
     ci = commit
@@ -13,7 +15,7 @@
     co = checkout
     df = diff --color --color-words --abbrev
     dc = diff --cached
-    lg = log --all --decorate --graph --oneline
+    lg = log --all --decorate --graph --abbrev-commit
     ls = ls-files
     fo = fetch origin
     up = !git pull --rebase --prune $@ && git submodule update --init --recursive
