@@ -12,6 +12,7 @@ brew install bash
 brew install bash-completion
 
 brew install macvim --override-system-vim
+brew linkapps macvim
 
 brew install node
 
@@ -27,7 +28,7 @@ brew cask install iterm2
 
 brew cask install google-chrome
 
-#brew cask install firefox
+brew cask install firefox
 
 brew cask install skype
 
@@ -40,5 +41,9 @@ brew cask install lastpass
 brew cask install xtrafinder
 
 brew cask install google-drive
+
+brew cask install microsoft-lync
+
+brew cask install microsoft-lync-plugin
 
 brew cleanup

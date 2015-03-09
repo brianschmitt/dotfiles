@@ -23,7 +23,7 @@ endif
 
 call vundle#rc("~/.vim/bundle")
 Bundle 'gmarik/vundle'
-Bundle 'OrangeT/vim-csharp'
+"Bundle 'OrangeT/vim-csharp'
 Bundle 'ervandew/supertab'
 "Bundle 'kien/ctrlp.vim'
 Bundle 'dbakker/vim-projectroot'
@@ -39,6 +39,7 @@ Bundle 'skammer/vim-css-color'
 "Bundle 'tpope/vim-vinegar'
 Bundle 'jphustman/SQLUtilities'
 Bundle 'vim-scripts/Align'
+Bundle 'OmniSharp/omnisharp-vim'
 
 let g:netrw_winsize=20
 let g:netrw_banner=0
