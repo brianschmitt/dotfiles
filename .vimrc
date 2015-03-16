@@ -29,7 +29,7 @@ Bundle 'ervandew/supertab'
 Bundle 'dbakker/vim-projectroot'
 let g:rootmarkers = ['tags', '.git', '*.sln']
 Bundle 'scrooloose/syntastic'
-"Bundle 'tpope/vim-dispatch'
+Bundle 'tpope/vim-dispatch'
 Bundle 'pangloss/vim-javascript'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'w0ng/vim-hybrid'

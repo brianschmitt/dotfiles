@@ -6,8 +6,6 @@
 [core]
     editor = vim
     excludesfile = ~/.global_ignore
-[format]
-    pretty = '%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 [alias]
     st = status
     ci = commit
@@ -15,18 +13,20 @@
     co = checkout
     df = diff --color --color-words --abbrev
     dc = diff --cached
-    lg = log --all --decorate --graph --abbrev-commit
-    ls = ls-files
+    la = log --pretty=format:"%C(yellow)%h\\ %Cred%d\\ %Creset%s\\ %Cgreen(%cr)\\ %C(bold\\ blue)<%cn>" --decorate --date=relative --graph --all
+    lg = log --pretty=format:"%C(yellow)%h\\ %Cred%d\\ %Creset%s\\ %Cgreen(%cr)\\ %C(bold\\ blue)<%cn>" --decorate --date=relative --graph
+    ll = log --pretty=format:"%C(yellow)%h\\ %Cred%d\\ %Creset%s\\ %Cgreen(%cr)\\ %C(bold\\ blue)<%cn>" --decorate --numstat
     fo = fetch origin
     up = !git pull --rebase --prune $@ && git submodule update --init --recursive
     wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
-    changes=!git log --name-status HEAD..
+    changes = diff ..origin/master
     up = !git pull --rebase --prune $@ && git submodule update --init --recursive
     cob = checkout -b
     bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
     bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
-
-        # Show files ignored by git:
+    # Show files ignored by git:
     ign = ls-files -o -i --exclude-standard
+    alias = "!alias()     { git config --global --get-regexp alias                  | awk -v nr=2 '{sub(/^alias\\./,\"\")};{printf \"\\033[31m%_10s\\033[1;37m\", $1};{sep=FS};{for (x=nr; x<=NF; x++) {printf \"%s%s\", sep, $x; }; print \"\\033[0;39m\"}'; }; alias"
+    finda = "!grepalias() { git config --global --get-regexp alias | grep -i \"$1\" | awk -v nr=2 '{sub(/^alias\\./,\"\")};{printf \"\\033[31m%_10s\\033[1;37m\", $1};{sep=FS};{for (x=nr; x<=NF; x++) {printf \"%s%s\", sep, $x; }; print \"\\033[0;39m\"}'; }; grepalias"
 [push]
     default = simple
