@@ -15,3 +15,13 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 alias bd='. ~/scripts/bd.sh -s'
 
 alias noderepl="node -e \"require('repl').start({ignoreUndefined: true})\""
+
+alias gp='grep -RInf /dev/stdin . <<<' # grep with some standard options
+
+alias gtp='cd ~/projects' # go to projects
+
+alias ff='find . -name '
+
+grepfind () { grep -RIni "$1" . --include **/"$2" ; }
+alias gf='grepfind'
+
