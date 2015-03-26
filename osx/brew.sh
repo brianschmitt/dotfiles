@@ -16,11 +16,13 @@ brew linkapps macvim
 
 brew install node
 
+brew install openssl
+
 brew install android-platform-tools
 
 brew install caskroom/cask/brew-cask
 
-#brew cask install sourcetree
+brew cask install sourcetree
 
 brew cask install xamarin
 
@@ -36,9 +38,9 @@ brew cask install lastpass
 
 #brew cask install haroopad
 
-#brew cask install vmware-fusion
-
 brew cask install xtrafinder
+
+brew cask install bettertouchtool
 
 brew cask install google-drive
 
