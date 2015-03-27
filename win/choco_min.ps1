@@ -19,10 +19,12 @@ choco install gow
 
 # Source Controls
 choco install git
+choco install tortoisesvn
 
 # Web Dev
 choco install fiddler
 choco install WindowsAzurePowershell
+choco install python2-x86_32
 
 choco install lastpass
 
