@@ -34,6 +34,8 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'w0ng/vim-hybrid'
 colorscheme hybrid
+Bundle 'morhetz/gruvbox'
+colorscheme gruvbox
 Bundle 'skammer/vim-css-color'
 "Bundle 'PProvost/vim-ps1'
 "Bundle 'tpope/vim-vinegar'
@@ -41,6 +43,7 @@ Bundle 'jphustman/SQLUtilities'
 Bundle 'vim-scripts/Align'
 Bundle 'OmniSharp/omnisharp-vim'
 
+set background=dark
 let g:netrw_winsize=20
 let g:netrw_banner=0
 let g:netrw_liststyle=3

@@ -165,3 +165,5 @@ cscope.in.out
 cscope.po.out
 doc/tags
 
+#SMP Ignore
+codegenConfiguration.xml
