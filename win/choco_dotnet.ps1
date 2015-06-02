@@ -4,12 +4,17 @@ Import-Module C:\ProgramData\chocolatey\chocolateyinstall\helpers\chocolateyInst
 choco install linqpad4
 
 # VS 2012
-choco install visualstudio2012premium
-choco install tfs2012powertools
-Install-ChocolateyVsixPackage WebEssentials https://visualstudiogallery.msdn.microsoft.com/07d54d12-7133-4e15-becb-6f451ea3bea6/file/79465/42/WebEssentials2012.vsix
+#choco install visualstudio2012premium
+#choco install tfs2012powertools
+#Install-ChocolateyVsixPackage WebEssentials https://visualstudiogallery.msdn.microsoft.com/07d54d12-7133-4e15-becb-6f451ea3bea6/file/79465/42/WebEssentials2012.vsix
 
-#VS 2013
+# VS 2013
 #choco install VisualStudio2013Ultimate -InstallArguments "WebTools"
+#choco install tfs2013powertools
+#Install-ChocolateyVsixPackage WebEssentials http://visualstudiogallery.msdn.microsoft.com/56633663-6799-41d7-9df7-0f2a504ca361/file/105627/32/WebEssentials2013.vsix
+
+# VS 2015
+#choco install VisualStudioEnterprise2015 -pre -InstallArguments "WebTools"
 #choco install tfs2013powertools
 #Install-ChocolateyVsixPackage WebEssentials http://visualstudiogallery.msdn.microsoft.com/56633663-6799-41d7-9df7-0f2a504ca361/file/105627/32/WebEssentials2013.vsix
 
