@@ -7,7 +7,7 @@ choco install DroidSansMono
 choco install AnonymousPro
 
 # Editors
-choco install Vim
+#choco install Vim
 
 # General Utils
 choco install winmerge
@@ -19,7 +19,7 @@ choco install gow
 
 # Source Controls
 choco install git
-choco install tortoisesvn
+#choco install tortoisesvn
 
 # Web Dev
 choco install fiddler
