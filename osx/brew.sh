@@ -13,7 +13,6 @@ brew install macvim --override-system-vim
 brew install mono
 brew install node
 brew install openssl
-brew install subversion
 
 brew linkapps macvim
 

@@ -6,7 +6,7 @@ ln -s dotfiles/.ctags .ctags
 
 ln -s dotfiles/.global_ignore .global_ignore
 
-ln -s dotfiles/.gitconfig .gitconfig-osx
+ln -s dotfiles/.gitconfig-osx .gitconfig
 
 ln -s dotfiles/.jshintrc .jshintrc
 
