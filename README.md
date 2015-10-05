@@ -10,11 +10,11 @@ This repo is mostly for me but you're welcome to make suggestions.
 ```shell
 cd ~
 iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
-choco install git
+choco install git -y
 
 #if WIN7
-choco install powershell
-reboot
+choco install powershell -y
+shutdown /r
 #endif
 
 git clone https://github.com/brianschmitt/dotfiles
