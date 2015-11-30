@@ -1,7 +1,7 @@
 Import-Module C:\ProgramData\chocolatey\chocolateyinstall\helpers\chocolateyInstaller.psm1
 
 # Editors
-choco install linqpad4
+choco install linqpad4 -y
 
 # VS 2012
 #choco install visualstudio2012premium
@@ -24,7 +24,7 @@ Install-ChocolateyVsixPackage RelativeNumber http://visualstudiogallery.msdn.mic
 Install-ChocolateyVsixPackage HideMenu https://visualstudiogallery.msdn.microsoft.com/bdbcffca-32a6-4034-8e89-c31b86ad4813/file/18183/2/HideMenu.vsix
 
 #.Net Utils
-choco install dotPeek
+choco install dotPeek -y
 
 #Shell
-choco install Nuget.Commandline
+choco install Nuget.Commandline -y

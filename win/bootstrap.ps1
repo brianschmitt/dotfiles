@@ -5,7 +5,7 @@
 ~/dotfiles/win/win.ps1
 
 git clone https://github.com/gmarik/vundle.git .vim/bundle/vundle
-vim +:BundleInstall
+& 'C:\Program Files (x86)\vim\vim74\vimexe' +:BundleInstall
 
 git clone --recursive https://github.com/brianschmitt/Powershell
 ~/Powershell/set_symlink.bat
