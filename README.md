@@ -17,7 +17,7 @@ choco install powershell -y
 shutdown /r
 #endif
 
-git clone https://github.com/brianschmitt/dotfiles
+git clone https://github.com/brianschmitt/dotfiles.git
 . ~/dotfiles/win/bootstrap.ps1
 ```
 - Set ProcExplorer to override TaskManager
@@ -36,7 +36,7 @@ git clone https://github.com/brianschmitt/dotfiles
 cd ~
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install git
-git clone https://github.com/brianschmitt/dotfiles
+git clone https://github.com/brianschmitt/dotfiles.git
 . ~/dotfiles/osx/bootstrap.sh
 
 chsh -s /usr/local/bin/bash
@@ -51,7 +51,7 @@ chsh -s /usr/local/bin/bash
 ### Linux:
 ```shell
 cd ~
-git clone https://github.com/brianschmitt/dotfiles
+git clone https://github.com/brianschmitt/dotfiles.git
 . ~/dotfiles/lnx/bootstrap.sh
 ```
 
