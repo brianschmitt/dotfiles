@@ -1,0 +1,4 @@
+[include]
+    path = ~/dotfiles/.gitconfig
+[credential]
+    helper = !'C:\\Users\\schmitbg\\AppData\\Roaming\\GitCredStore\\git-credential-winstore.exe'
