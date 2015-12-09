@@ -81,3 +81,6 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 
 # Don't display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+
+# Use Fn Keys as Fn Keys
+defaults write -g com.apple.keyboard.fnState -boolean true

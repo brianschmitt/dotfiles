@@ -8,3 +8,6 @@ cd ~
 
 git clone https://github.com/gmarik/vundle.git .vim/bundle/vundle
 vim +:BundleInstall
+
+# Run the android tool to choose install tools
+android
