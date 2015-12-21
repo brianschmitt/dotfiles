@@ -84,3 +84,12 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 # Use Fn Keys as Fn Keys
 defaults write -g com.apple.keyboard.fnState -boolean true
+
+sudo scutil --set ComputerName "MacBook"
+
+# Disable Notification Center and remove the menu bar icon
+launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
+
+# Require password immediately after sleep or screen saver begins
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
