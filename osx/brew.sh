@@ -23,7 +23,9 @@ brew cask install java
 brew cask install firefox
 brew cask install google-chrome
 brew cask install google-drive
-brew cask install iterm2
+#brew cask install iterm2
+brew tap caskroom/versions
+brew cask install iterm2-nightly
 brew cask install lastpass
 brew cask install radiant-player
 brew cask install skype

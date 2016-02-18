@@ -96,6 +96,8 @@ alias ff='find . -name '
 grepfind () { grep -RIni $1 . --include="**/$2" }
 alias gf='grepfind'
 
+alias home='cd ~/'
+
 DEFAULT_USER='schmitt'
 
 #
@@ -126,7 +128,7 @@ export LESS_TERMCAP_ue=$'\E[0m'           # end underline
  # Light Gray  0;37     White         1;37
  #########################################
 
-#source /Users/schmitt/.iterm2_shell_integration.zsh
+source /Users/schmitt/.iterm2_shell_integration.zsh
 
 iterm2_print_user_vars() {
   iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
