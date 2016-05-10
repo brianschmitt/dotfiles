@@ -1,22 +1,23 @@
 ﻿# General Utils
-choco install clipx
-choco install KatMouse
-choco install autohotkey_l
-choco install agentransack
-choco install 7zip
-choco install RSAT.FeaturePack
-choco install bleachbit
-choco install ccleaner
-choco install ccenhancer
-choco install RdcMan
+choco install clipx -y
+choco install KatMouse -y
+choco install autohotkey_l -y
+choco install agentransack -y
+choco install 7zip -y
+choco install RSAT.FeaturePack -y
+choco install bleachbit -y
+choco install ccleaner -y
+choco install ccenhancer -y
+choco install RdcMan -y
 
 # Browsers
-choco install googlechrome
-choco install firefox
+choco install googlechrome -y
+choco install firefox -y
 
 #Web Dev
-choco install nodejs.install
-choco install ctags
+choco install npm -y
+choco install nodejs -y
+choco install ctags -y
 
 # set windows features
 choco install RemoteServerAdministrationTools-Roles-AD-Powershell -source windowsfeatures

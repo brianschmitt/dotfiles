@@ -41,7 +41,7 @@ Bundle 'skammer/vim-css-color'
 "Bundle 'tpope/vim-vinegar'
 Bundle 'jphustman/SQLUtilities'
 Bundle 'vim-scripts/Align'
-Bundle 'OmniSharp/omnisharp-vim'
+"Bundle 'OmniSharp/omnisharp-vim'
 
 set background=dark
 let g:netrw_winsize=20

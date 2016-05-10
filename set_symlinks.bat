@@ -10,7 +10,7 @@ dir .global_ignore | find "<SYMLINK>"
 if %errorlevel% == 1 del .global_ignore -f && mklink .global_ignore dotfiles\.global_ignore
 
 dir .gitconfig | find "<SYMLINK>"
-if %errorlevel% == 1 del .gitconfig -f && mklink .gitconfig dotfiles\.gitconfig
+if %errorlevel% == 1 del .gitconfig -f && mklink .gitconfig dotfiles\.gitconfig-win
 
 dir .jshintrc | find "<SYMLINK>"
 if %errorlevel% == 1 del .jshintrc -f && mklink .jshintrc dotfiles\.jshintrc
