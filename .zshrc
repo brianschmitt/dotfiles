@@ -96,6 +96,8 @@ alias ff='find . -name '
 grepfind () { grep -RIni $1 . --include="**/$2" }
 alias gf='grepfind'
 
+alias home='cd ~/'
+
 DEFAULT_USER='schmitt'
 
 #
