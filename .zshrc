@@ -91,12 +91,16 @@ alias gp='grep -RInf /dev/stdin . <<<' # grep with some standard options
 
 alias gtp='cd ~/projects' # go to projects
 
+alias gts='cd ~/Google\ Drive/Backup/Osx/scripts'
+
 alias ff='find . -name '
 
 grepfind () { grep -RIni $1 . --include="**/$2" }
 alias gf='grepfind'
 
 alias home='cd ~/'
+
+alias weather='curl -4 http://wttr.in/allentown'
 
 DEFAULT_USER='schmitt'
 
@@ -134,7 +138,9 @@ iterm2_print_user_vars() {
   iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
 }
 
-code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
 xam () { open -n /Applications/Xamarin\ Studio.app }
 
 git_unsynced () {find . -name .git -type d 2>/dev/null|while read l;do (pushd "$l/../"&&git fetch&&git status -sb&&popd > /dev/null);echo;done}
+
+export HOMEBREW_NO_ANALYTICS=1

@@ -29,13 +29,23 @@ brew cask install iterm2-nightly
 brew cask install lastpass
 brew cask install radiant-player
 brew cask install skype
-brew cask install sourcetree
+#brew cask install sourcetree
+brew cask intall gitkraken
 brew cask install xamarin
 #brew cask install xtrafinder
-brew cask install virtualbox
+#brew cask install virtualbox
+brew cask install spotify
+brew cask install owasp-zap
+brew cask install android-file-transfer
+brew cask install postman
+
+brew cask install visual-studio-code-insiders
+brew cask install royal-tsx
+
+brew cask install microsoft-office
 
 #brew cask install haroopad
-#brew cask install microsoft-lync
+brew cask install microsoft-lync
 #brew cask install microsoft-lync-plugin
 
 brew cleanup
