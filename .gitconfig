@@ -36,3 +36,5 @@
     prune = git remote update --prune
 [push]
     default = simple
+[pull]
+    rebase = true
