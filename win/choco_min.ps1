@@ -5,21 +5,24 @@ choco install PowerShell -y
 choco install dejavufonts -y
 choco install DroidSansMono -y
 choco install AnonymousPro -y
+choco install firacode -y
 
 # Editors
 #choco install Vim -y
+choco install visualstudiocode -y
 
 # General Utils
 choco install winmerge -y
 
 # Shell
-choco install ConEmu -y
+#choco install ConEmu -y
 choco install sysinternals -y
-choco install gow -y
+#choco install gow -y
 
 # Source Controls
 choco install git -y
 choco install git-credential-manager-for-windows -y
+choco install sourcetree -y
 
 # Web Dev
 choco install fiddler4 -y

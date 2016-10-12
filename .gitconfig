@@ -7,7 +7,7 @@
     editor = vim
     excludesfile = ~/.global_ignore
     filemode = false
-    autocrlf = false
+    autocrlf = input
 [alias]
     st = status
     ci = commit
