@@ -2,3 +2,7 @@
     path = ~/dotfiles/.gitconfig
 [credential]
     helper = osxkeychain
+[core]
+	autocrlf = input
+[pull]
+	rebase = true
