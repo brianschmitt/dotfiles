@@ -26,9 +26,9 @@ choco install sourcetree -y
 
 # Web Dev
 choco install fiddler4 -y
-choco install WindowsAzurePowershell -y
+#choco install WindowsAzurePowershell -y
 #choco install python2-x86_32 -y
 
-choco install lastpass -y
+#choco install lastpass -y
 
 #choco install googledrive -y

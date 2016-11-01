@@ -9,6 +9,7 @@ This repo is mostly for me but you're welcome to make suggestions.
 
 ```shell
 cd ~
+Set-ExecutionPolicy Unrestricted
 iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
 choco install git -y
 
