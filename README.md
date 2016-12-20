@@ -19,7 +19,7 @@ shutdown /r
 #endif
 
 # restart powershell session to add git to path
-& 'C:\Program Files\git\bin\git.exe' clone https://github.com/brianschmitt/dotfiles.git
+git clone https://github.com/brianschmitt/dotfiles.git
 . ~/dotfiles/win/bootstrap.ps1
 ```
 - Set ProcExplorer to override TaskManager
