@@ -18,7 +18,8 @@ choco install powershell -y
 shutdown /r
 #endif
 
-git clone https://github.com/brianschmitt/dotfiles.git
+# use full path - or restart powershell session
+& 'C:\Program Files\git\bin\git.exe' clone https://github.com/brianschmitt/dotfiles.git
 . ~/dotfiles/win/bootstrap.ps1
 ```
 - Set ProcExplorer to override TaskManager
