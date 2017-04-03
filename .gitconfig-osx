@@ -4,5 +4,3 @@
     helper = osxkeychain
 [core]
 	autocrlf = input
-[pull]
-	rebase = true

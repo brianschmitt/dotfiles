@@ -2,5 +2,5 @@
     path = ~/dotfiles/.gitconfig
 [credential]
     helper = manager
-[remote "origin"]
-    prune = true
+[core]
+	autocrlf = true
