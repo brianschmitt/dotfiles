@@ -31,15 +31,20 @@
     alias = config --global --get-regexp alias
     finda = "!grepalias() { git config --global --get-regexp alias | grep -i \"$1\" | awk -v nr=2 '{sub(/^alias\\./,\"\")};{printf \"\\033[31m%_10s\\033[1;37m\", $1};{sep=FS};{for (x=nr; x<=NF; x++) {printf \"%s%s\", sep, $x; }; print \"\\033[0;39m\"}'; }; grepalias"
     unsynced = "!unsynced() { find . -name .git -type d 2>/dev/null|while read -r l;do (pushd \"$l/../\"&&git fetch&&git status -sb&&popd > /dev/null);echo;done }; unsynced"
-    spa = !git stash && git pull && git stash apply
+    spa = !git stash && git pull && git stash pop
     prune = git remote update --prune
     proxyon = !git config http.proxy http://myproxy:port && git config https.proxy http://myproxy:port
     proxyoff = !git config --unset http.proxy && git config --unset https.proxy
     undo = "!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f"
+    #undo reset --soft HEAD^
+    stash = stash --include-untracked
     rom = pull --rebase origin master
+    srom = !git stash && git pull --rebase origin master && git stash pop
 [push]
     default = current
 [pull]
     rebase = true
 [remote "origin"]
     prune = true
+[status]
+    showUntrackedFiles = all
