@@ -28,7 +28,7 @@
     conflicts = !git ls-files -u | cut -f 2 | sort -u
     # Show files ignored by git:
     ign = ls-files -o -i --exclude-standard
-    alias = config --global --get-regexp alias
+    alias = config --global --includes --get-regexp alias
     finda = "!grepalias() { git config --global --get-regexp alias | grep -i \"$1\" | awk -v nr=2 '{sub(/^alias\\./,\"\")};{printf \"\\033[31m%_10s\\033[1;37m\", $1};{sep=FS};{for (x=nr; x<=NF; x++) {printf \"%s%s\", sep, $x; }; print \"\\033[0;39m\"}'; }; grepalias"
     unsynced = "!unsynced() { find . -name .git -type d 2>/dev/null|while read -r l;do (pushd \"$l/../\"&&git fetch&&git status -sb&&popd > /dev/null);echo;done }; unsynced"
     spa = !git stash && git pull && git stash pop

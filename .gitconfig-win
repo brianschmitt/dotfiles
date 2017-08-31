@@ -4,3 +4,14 @@
     helper = manager
 [core]
 	autocrlf = true
+[user]
+	name = Brian Schmitt
+	useConfigOnly = true
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = "code --wait "
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = "code --wait --diff  "
