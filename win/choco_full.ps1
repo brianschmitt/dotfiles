@@ -2,6 +2,7 @@
 choco install ditto -y
 #choco install autohotkey_l -y
 choco install agentransack -y
+choco install ripgrep -y
 choco install 7zip -y
 choco install RSAT.FeaturePack -y
 #choco install bleachbit -y
@@ -16,7 +17,7 @@ choco install putty -y
 
 #Web Dev
 choco install npm -y
-choco install nodejs -y
+choco install nodejs-lts -y
 #choco install ctags -y
 
 # set windows features

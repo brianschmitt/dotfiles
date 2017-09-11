@@ -24,7 +24,7 @@ Import-Module C:\ProgramData\chocolatey\chocolateyinstall\helpers\chocolateyInst
 #Install-ChocolateyVsixPackage HideMenu https://visualstudiogallery.msdn.microsoft.com/bdbcffca-32a6-4034-8e89-c31b86ad4813/file/18183/2/HideMenu.vsix
 
 #.Net Utils
-#choco install dotpeek.portable -y
+choco install dotpeek.portable -y
 choco install ilspy -y
 
 #Shell
