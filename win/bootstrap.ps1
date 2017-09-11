@@ -10,7 +10,7 @@
 #& 'C:\Program Files (x86)\vim\vim74\vimexe' +:BundleInstall
 
 git clone --recursive https://github.com/brianschmitt/Powershell.git
-~/Powershell/set_symlink.bat
+#~/Powershell/set_symlink.bat
 #(new-object Net.WebClient).DownloadString("http://psget.net/GetPsGet.ps1") | iex
 Install-Module PSReadLine
 Install-Module Posh-Git

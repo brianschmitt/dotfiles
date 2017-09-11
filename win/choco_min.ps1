@@ -17,6 +17,7 @@ choco install ditto -y
 
 # Shell
 choco install ConEmu -y
+choco install hyper -y
 choco install sysinternals -y
 #choco install gow -y
 
@@ -27,7 +28,7 @@ choco install sourcetree -y
 
 # Web Dev
 choco install fiddler4 -y
-choco install WindowsAzurePowershell -y
+#choco install WindowsAzurePowershell -y
 #choco install python2-x86_32 -y
 
 choco install lastpass -y

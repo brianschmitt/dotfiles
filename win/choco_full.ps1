@@ -4,7 +4,7 @@ choco install ditto -y
 choco install agentransack -y
 choco install ripgrep -y
 choco install 7zip -y
-choco install RSAT.FeaturePack -y
+#choco install RSAT.FeaturePack -y
 #choco install bleachbit -y
 #choco install ccleaner -y
 #choco install ccenhancer -y
@@ -16,7 +16,6 @@ choco install putty -y
 #choco install firefox -y
 
 #Web Dev
-choco install npm -y
 choco install nodejs-lts -y
 #choco install ctags -y
 
