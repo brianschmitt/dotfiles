@@ -1,10 +1,10 @@
 Envget,vUSERPROFILE, USERPROFILE
 
 ;Use numberpad to move windows
-#Include %A_ScriptDir%\..\Utils\Autohotkey\WindowPad.ahk
+;#Include %A_ScriptDir%\..\Utils\Autohotkey\WindowPad.ahk
 
 ;Autocorrect spelling in all applications
-#Include %A_ScriptDir%\..\Utils\Autohotkey\AutoCorrect.ahk
+;#Include %A_ScriptDir%\..\Utils\Autohotkey\AutoCorrect.ahk
 
 ;Autohotkey setting
 SetTitleMatchMode, 2 	;Set to Match Partial Title
@@ -17,21 +17,12 @@ DetectHiddenWindows, on
 ; For more see - http://www.autohotkey.com/docs/Hotkeys.htm
 
 
-^#v::                            ; Text–only paste from ClipBoard
-   Clip0 = %ClipBoardAll%
-   ClipBoard = %ClipBoard%       ; Convert to text
-   Send ^v                       ; For best compatibility: SendPlay
-   Sleep 50                      ; Don't change clipboard while it is pasted! (Sleep > 0)
-   ClipBoard = %Clip0%           ; Restore original ClipBoard
-   VarSetCapacity(Clip0, 0)      ; Free memory
-Return
-
-
 ;General shortcuts
 #z::Run, Explorer /e', %UserProfile%
 #u::Run, %A_ScriptDir%\..\Utils\
-#g::RunOrActivateOrMinimizeProgram("C:\Program Files (x86)\vim\vim74\gvim.exe", "C:\!Projects", "max")
+;#g::RunOrActivateOrMinimizeProgram("C:\Program Files (x86)\vim\vim74\gvim.exe", "C:\!Projects", "max")
 PrintScreen::Run, SnippingTool.exe
+Launch_Mail::RunOrActivateOrMinimizeProgram("C:\Program Files (x86)\Microsoft Office\root\Office16\lync.exe")
 
 
 ToggleWinHide(TheWindowTitle)

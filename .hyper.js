@@ -107,10 +107,12 @@ module.exports = {
     // bellSoundURL: 'http://example.com/bell.mp3',
 
     // for advanced config flags please refer to https://hyper.is/#cfg
-    summon: {
-      hideDock: true,
-      hideOnBlur: false,
-      hotkey: 'Alt+Super+Z'
+
+    visor: {
+      hotkey: 'CommandOrControl+Shift+Z',
+      position: 'top', // or left, right, bottom 
+      width: 900, // Optional, defaults to half of viewable area for horizontal positions, 100% for vertical 
+      height: 900 // Optional, defaults to half of viewable area for vertical positions, 100% for horizontal 
     },
 
     StarWarsTheme: {
@@ -118,7 +120,7 @@ module.exports = {
         lightsaber: 'true', // Activate your theme's lightsaber mode! 
         unibody: 'false', // Define the color of the Hyper window header! 
         avatar: 'true'  // Activate your theme's background avatar! 
-    },
+    }
   },
 
   // a list of plugins to fetch and install from npm
@@ -127,8 +129,8 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  // 'hyper-cat'
-  plugins: ['hyperterm-summon','gitrocket','hyper-star-wars'],
+  // 'hyper-cat','gitrocket'
+  plugins: ['hyper-star-wars','hyperterm-visor'],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
