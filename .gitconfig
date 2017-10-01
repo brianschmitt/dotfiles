@@ -23,9 +23,10 @@
     changes = diff ..origin/master
     up = !git pull --rebase --prune $@ && git submodule update --init --recursive
     cob = checkout -b
-    bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
+    cleanup = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
     bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
     conflicts = !git ls-files -u | cut -f 2 | sort -u
+    migrate = "!f(){ CURRENT=$(git symbolic-ref --short HEAD); git checkout -b $1 && git branch --force $CURRENT ${3-'$CURRENT@{u}'} && git rebase --onto ${2-master} $CURRENT; }; f"
     # Show files ignored by git:
     ign = ls-files -o -i --exclude-standard
     alias = config --global --includes --get-regexp alias
@@ -49,3 +50,18 @@
     prune = true
 [status]
     showUntrackedFiles = all
+[help]
+	autocorrect = 1
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = "code --wait "
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = "code --wait --diff  "
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f

@@ -84,7 +84,7 @@ module.exports = {
     //
     // Powershell on Windows
     // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
-    shell: 'C:\\windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe',
+    shell: 'C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: ['-i'])
     // by default ['--login'] will be used
@@ -116,10 +116,10 @@ module.exports = {
     },
 
     StarWarsTheme: {
-        character: 'boba-fett', // Define your favorite star wars character! 
-        lightsaber: 'true', // Activate your theme's lightsaber mode! 
-        unibody: 'false', // Define the color of the Hyper window header! 
-        avatar: 'true'  // Activate your theme's background avatar! 
+      character: 'boba-fett', // Define your favorite star wars character! 
+      lightsaber: 'true', // Activate your theme's lightsaber mode! 
+      unibody: 'false', // Define the color of the Hyper window header! 
+      avatar: 'true' // Activate your theme's background avatar! 
     }
   },
 
@@ -130,7 +130,7 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   // 'hyper-cat','gitrocket'
-  plugins: ['hyper-star-wars','hyperterm-visor'],
+  plugins: ['hyper-star-wars', 'hyperterm-visor'],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
