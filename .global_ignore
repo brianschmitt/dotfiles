@@ -171,3 +171,6 @@ codegenConfiguration.xml
 
 
 .DS_Store
+
+#VSCode ignore
+.vscode/*

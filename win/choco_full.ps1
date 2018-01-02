@@ -17,7 +17,7 @@ choco install spotify -y
 
 # Browsers
 #choco install googlechrome -y
-#choco install firefox -y
+choco install firefox -y
 
 #Web Dev
 choco install nodejs-lts -y
