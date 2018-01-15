@@ -22,6 +22,3 @@ choco install firefox -y
 #Web Dev
 choco install nodejs-lts -y
 #choco install ctags -y
-
-# set windows features
-choco install RemoteServerAdministrationTools-Roles-AD-Powershell -source windowsfeatures

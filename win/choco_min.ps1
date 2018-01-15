@@ -3,7 +3,6 @@ choco install PowerShell -y
 
 # Fonts
 choco install dejavufonts -y
-choco install DroidSansMono -y
 choco install AnonymousPro -y
 choco install firacode -y
 
