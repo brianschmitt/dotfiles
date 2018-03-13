@@ -1,4 +1,4 @@
-﻿cd ~
+﻿Set-Location ~
 
 ~/dotfiles/set_symlinks.bat
 ~/dotfiles/win/choco_min.ps1
