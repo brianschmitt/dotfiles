@@ -7,6 +7,8 @@
     editor = vim
     excludesfile = ~/.global_ignore
     filemode = false
+[pretty]
+    lg = %x09%C(yellow)%h %C(reset)%s %C(green)(%cr) %C(bold blue)<%cn> %C(red)%d%C(reset)
 [alias]
     st = status
     ci = commit
@@ -14,9 +16,9 @@
     co = checkout
     df = diff --color --color-words --abbrev
     dc = diff --cached
-    la = log --pretty=format:"%C(yellow)%h\\ %Cred%d\\ %Creset%s\\ %Cgreen(%cr)\\ %C(bold\\ blue)<%cn>" --decorate --date=relative --graph --all
-    lg = log --pretty=format:"%C(yellow)%h\\ %Cred%d\\ %Creset%s\\ %Cgreen(%cr)\\ %C(bold\\ blue)<%cn>" --decorate --date=relative --graph
-    ll = log --pretty=format:"%C(yellow)%h\\ %Cred%d\\ %Creset%s\\ %Cgreen(%cr)\\ %C(bold\\ blue)<%cn>" --decorate --numstat
+    la = log --pretty=lg --date=relative --graph --all
+    lg = log --pretty=lg --date=relative --graph
+    ll = log --pretty=lg --numstat
     fo = fetch origin
     up = !git pull --rebase --prune $@ && git submodule update --init --recursive
     wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
