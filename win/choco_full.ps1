@@ -11,6 +11,7 @@ choco install 7zip -y
 choco install RdcMan -y
 choco install putty -y
 choco install adb -y
+choco install logexpert -y
 
 # Other
 choco install spotify -y
