@@ -12,13 +12,16 @@ choco install firacode -y
 choco install vim -y
 choco install vscode -y
 choco install vscode-settingssync -y
-choco install choco install sql-server-management-studio -y
+choco install sql-server-management-studio -y
+choco install onenote -y
+choco install microsoft-office-deployment -y
+choco install microsoft-teams -y
 
 # General Utils
 choco install 7zip -y
 choco install agentransack -y
 choco install ditto -y
-choco install googledrive -y
+choco install google-backup-and-sync -y
 choco install ripgrep -y
 choco install rsat -y
 choco install winmerge -y
@@ -52,5 +55,5 @@ choco install dnspy -y
 choco install nuget.commandline -y
 
 # Browsers
-#choco install googlechrome -y
-#choco install firefox -y
+choco install googlechrome -y
+choco install firefox -y
