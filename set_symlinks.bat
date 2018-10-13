@@ -20,6 +20,3 @@ if %errorlevel% == 1 del .hyper.js -f && mklink .hyper.js. dotfiles\.hyper.js
 
 dir %UserProfile%\Documents\autohotkey.ahk | find "<SYMLINK>"
 if %errorlevel% == 1 del %UserProfile%\Documents\autohotkey.ahk -f && mklink %UserProfile%\Documents\autohotkey.ahk %UserProfile%\dotfiles\autohotkey.ahk
-
-dir %userprofile%\Documents\WindowsPowerShell | find "<SYMLINK>"
-if %errorlevel% == 1 del %userprofile%\Documents\WindowsPowerShell -f && mklink /j %userprofile%\Documents\WindowsPowerShell %userprofile%\Powershell

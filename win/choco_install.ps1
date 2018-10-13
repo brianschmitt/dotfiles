@@ -1,7 +1,6 @@
 # update powershell
 choco install powershell-core -y
 choco install azurepowershell -y
-choco install poshgit -y
 
 # Fonts
 choco install anonymouspro -y
@@ -14,8 +13,8 @@ choco install vscode -y
 choco install vscode-settingssync -y
 choco install sql-server-management-studio -y
 choco install onenote -y
-choco install microsoft-office-deployment -y
-choco install microsoft-teams -y
+#choco install microsoft-office-deployment -y
+#choco install microsoft-teams -y
 
 # General Utils
 choco install 7zip -y
@@ -57,3 +56,10 @@ choco install nuget.commandline -y
 # Browsers
 choco install googlechrome -y
 choco install firefox -y
+
+# Skip future updates from chocolatey for self updating
+choco pin add -n=googlechrome
+choco pin add -n=firefox
+choco pin add -n=vscode
+choco pin add -n=vscode-settingssync
+choco pin add -n=microsoft-teams

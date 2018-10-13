@@ -1,6 +1,6 @@
 [include]
     path = ~/dotfiles/.gitconfig
 [credential]
-    helper = manager
+	helper = manager
 [core]
 	autocrlf = true
