@@ -16,3 +16,4 @@ Install-Module -Name PSReadLine -Force
 Install-Module -Name Trackyon.Utils -Force
 Install-Module -Name SHiPS -Force
 Install-Module -Name Posh-Git -Force
+Install-Module -Name PSScriptAnalyzer -Force
