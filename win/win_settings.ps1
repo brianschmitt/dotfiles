@@ -1,6 +1,5 @@
 ﻿Start-Process "powershell.exe" -verb runas -wait -argumentList "-noprofile -noninteractive -ExecutionPolicy unrestricted -WindowStyle hidden -Command `"Set-ExecutionPolicy Unrestricted`""
 
-
 # Privacy: Let apps use my advertising ID: Disable
 Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\AdvertisingInfo -Name Enabled -Type DWord -Value 0
 # Privacy: SmartScreen Filter for Store Apps: Disable
