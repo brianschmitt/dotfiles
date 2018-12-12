@@ -26,6 +26,7 @@
     up = !git pull --rebase --prune $@ && git submodule update --init --recursive
     cob = checkout -b
     cleanup = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
+    cleanupall = "!cleanall() { find . -name .git -type d 2>/dev/null|while read -r l;do (pushd \"$l/../\"&&git pull&&git cleanup&&popd > /dev/null);echo;done }; cleanall"
     bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
     conflicts = !git ls-files -u | cut -f 2 | sort -u
     migrate = "!f(){ CURRENT=$(git symbolic-ref --short HEAD); git checkout -b $1 && git branch --force $CURRENT ${3-'$CURRENT@{u}'} && git rebase --onto ${2-master} $CURRENT; }; f"
