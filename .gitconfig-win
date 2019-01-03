@@ -1,6 +1,23 @@
 [include]
-    path = ~/dotfiles/.gitconfig
+	path = ~/dotfiles/.gitconfig
 [credential]
 	helper = manager
 [core]
 	autocrlf = true
+	editor = \"C:/Program Files (x86)/GitExtensions/GitExtensions.exe\" fileeditor
+[merge]
+	tool = vscode
+[diff]
+	guitool = vscode
+[pull]
+	rebase = false
+[fetch]
+	prune = false
+[rebase]
+	autoStash = false
+[difftool "vscode"]
+	path = C:/Program Files/Microsoft VS Code/code.exe
+	cmd = \"C:/Program Files/Microsoft VS Code/code.exe\" --wait --diff \"$LOCAL\" \"$REMOTE\"
+[mergetool "vscode"]
+	path = C:/Program Files/Microsoft VS Code/code.exe
+	cmd = "\"C:/Program Files/Microsoft VS Code/code.exe\" --wait \"$MERGED\" "

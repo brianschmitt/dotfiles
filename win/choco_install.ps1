@@ -1,6 +1,5 @@
 # update powershell
 choco install powershell-core -y
-choco install azurepowershell -y
 
 # Fonts
 choco install anonymouspro -y

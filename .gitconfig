@@ -39,7 +39,7 @@
     spa = !git stash && git pull && git stash pop
     prune = git remote update --prune
     undo = "!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f"
-    #undo reset --soft HEAD^
+    uncommit = reset --soft HEAD^
     stash = stash --include-untracked
     rom = pull --rebase origin master
     srom = !git stash && git pull --rebase origin master && git stash pop
