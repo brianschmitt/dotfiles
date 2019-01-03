@@ -21,7 +21,6 @@ choco install agentransack -y
 choco install ditto -y
 choco install google-backup-and-sync -y
 choco install ripgrep -y
-choco install rsat -y
 choco install winmerge -y
 #choco install bleachbit -y
 #choco install ccleaner -y
@@ -38,7 +37,8 @@ choco install vmwareworkstation -y
 # Source Controls
 choco install git -y
 choco install git-credential-manager-for-windows -y
-choco install sourcetree -y
+#choco install sourcetree -y
+choco install gitextensions -y
 
 # Web Dev
 choco install fiddler -y
