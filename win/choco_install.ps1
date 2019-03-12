@@ -61,4 +61,4 @@ choco pin add -n=googlechrome
 choco pin add -n=firefox
 choco pin add -n=vscode
 choco pin add -n=vscode-settingssync
-choco pin add -n=microsoft-teams
+#choco pin add -n=microsoft-teams

@@ -4,7 +4,7 @@
 	helper = manager
 [core]
 	autocrlf = true
-	editor = \"C:/Program Files (x86)/GitExtensions/GitExtensions.exe\" fileeditor
+	editor = \"C:/Program Files (x86)/vim/vim80/gvim.exe\" --nofork
 [merge]
 	tool = vscode
 [diff]
