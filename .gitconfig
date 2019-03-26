@@ -45,6 +45,7 @@
     srom = !git stash && git pull --rebase origin master && git stash pop
     dh = "!f() { git diff HEAD~$1; }; f"
     lab = "!listallbranches() { find . -name .git -type d 2>/dev/null|while read -r l;do (pushd "$l/../"&&git branch --list&&git status -sb&&popd > /dev/null);echo;done }; listallbranches"
+    diff = diff -w
 [push]
     default = current
 [pull]
@@ -60,11 +61,11 @@
 [merge]
 	tool = vscode
 [mergetool "vscode"]
-	cmd = "code --wait "
+	cmd = "code --wait $MERGED"
 [diff]
 	tool = vscode
 [difftool "vscode"]
-	cmd = "code --wait --diff  "
+	cmd = "code --wait --diff $LOCAL $REMOTE"
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
