@@ -7,16 +7,16 @@ choco install dejavufonts -y
 choco install firacode -y
 
 # Editors
-choco install vim -y
+choco install vim-tux.install -y
 choco install vscode -y
 choco install vscode-settingssync -y
 choco install sql-server-management-studio -y
-choco install onenote -y
+#choco install onenote -y
 #choco install microsoft-office-deployment -y
 #choco install microsoft-teams -y
 
 # General Utils
-choco install 7zip -y
+choco install 7zip.install -y
 choco install agentransack -y
 choco install ditto -y
 choco install google-backup-and-sync -y
@@ -37,20 +37,24 @@ choco install vmwareworkstation -y
 # Source Controls
 choco install git -y
 choco install git-credential-manager-for-windows -y
-#choco install sourcetree -y
 choco install gitextensions -y
+#choco install sourcetree -y
 
 # Web Dev
 choco install fiddler -y
 choco install postman -y
 choco install nodejs-lts -y
 choco install lastpass -y
-choco install microsoftazurestorageexplorer -y
+choco install python3 -y
+choco install pip -y
+choco install zap -y
 
 #.Net Utils
 choco install ilspy -y
 choco install dnspy -y
 choco install nuget.commandline -y
+choco install microsoftazurestorageexplorer -y
+choco install nugetpackageexplorer -y
 
 # Browsers
 choco install googlechrome -y
