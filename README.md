@@ -13,12 +13,8 @@ Set-ExecutionPolicy Unrestricted
 iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
 choco install git -y
 
-#if WIN7
-choco install powershell -y
-shutdown /r
-#endif
-
 # restart powershell session to add git to path
+cd ~
 git clone https://github.com/brianschmitt/dotfiles.git
 . ~/dotfiles/win/bootstrap.ps1
 ```

@@ -55,6 +55,7 @@ choco install dnspy -y
 choco install nuget.commandline -y
 choco install microsoftazurestorageexplorer -y
 choco install nugetpackageexplorer -y
+choco install dotnetcore-sdk -y
 
 # Browsers
 choco install googlechrome -y

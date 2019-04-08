@@ -7,4 +7,4 @@
 ~/dotfiles/win/powershell_configure.ps1
 
 #git clone https://github.com/gmarik/vundle.git .vim/bundle/vundle
-#& 'C:\Program Files (x86)\vim\vim74\vimexe' +:BundleInstall
+#& 'vim' +:BundleInstall
