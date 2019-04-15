@@ -10,43 +10,41 @@
 [pretty]
     lg = %x09%C(yellow)%h %C(reset)%s %C(green)(%cr) %C(bold blue)<%cn> %C(red)%d%C(reset)
 [alias]
-    st = status -sb
-    ci = commit
+    alias = config --global --includes --get-regexp alias
+    bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
     br = branch
+    changes = diff ..origin/master
+    ci = commit
+    cleanup = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
+    cleanupall = "!f() { find . -name .git -type d 2>/dev/null|while read -r l;do (pushd \"$l/../\"&&git pull&&git cleanup&&popd > /dev/null);echo;done }; f"
     co = checkout
-    df = diff --color --color-words --abbrev
+    cob = checkout -b
+    conflicts = !git ls-files -u | cut -f 2 | sort -u
+    cv = commit -v
     dc = diff --cached
+    df = diff --color --color-words --abbrev
+    dh = "!f() { git diff HEAD~$1; }; f"
+    diff = diff -w
+    fo = fetch origin
+    ignored = ls-files -o -i --exclude-standard # Show files ignored by git
     la = log --pretty=lg --date=relative --graph --all
+    lab = "!f() { find . -name .git -type d 2>/dev/null|while read -r l;do (pushd "$l/../"&&git branch --list&&git status -sb&&popd > /dev/null);echo;done }; f"
     lg = log --pretty=lg --date=relative --graph
     ll = log --pretty=lg --numstat
-    fo = fetch origin
+    migrate = "!f(){ CURRENT=$(git symbolic-ref --short HEAD); git checkout -b $1 && git branch --force $CURRENT ${3-'$CURRENT@{u}'} && git rebase --onto ${2-master} $CURRENT; }; f"
+    open = "!f() { REPO_URL=$(git config remote.origin.url); start ${REPO_URL%%.git}; }; f"
+    prune = git remote update --prune
+    pullall = "!f() { find . -name .git -type d 2>/dev/null|while read -r l;do (pushd \"$l/../\"&&git pull&&git status -sb&&popd > /dev/null);echo;done }; f"
+    rom = pull --rebase origin master
+    spa = !git stash && git pull && git stash pop
+    srom = !git stash && git pull --rebase origin master && git stash pop
+    st = status -sb
+    stash = stash --include-untracked
+    uncommit = reset --soft HEAD^
+    undo = "!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f"
+    unsynced = "!f() { find . -name .git -type d 2>/dev/null|while read -r l;do (pushd \"$l/../\"&&git fetch&&git status -sb&&popd > /dev/null);echo;done }; f"
     up = !git pull --rebase --prune $@ && git submodule update --init --recursive
     wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
-    changes = diff ..origin/master
-    up = !git pull --rebase --prune $@ && git submodule update --init --recursive
-    cob = checkout -b
-    cleanup = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
-    cleanupall = "!cleanall() { find . -name .git -type d 2>/dev/null|while read -r l;do (pushd \"$l/../\"&&git pull&&git cleanup&&popd > /dev/null);echo;done }; cleanall"
-    bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
-    conflicts = !git ls-files -u | cut -f 2 | sort -u
-    migrate = "!f(){ CURRENT=$(git symbolic-ref --short HEAD); git checkout -b $1 && git branch --force $CURRENT ${3-'$CURRENT@{u}'} && git rebase --onto ${2-master} $CURRENT; }; f"
-    # Show files ignored by git:
-    ignored = ls-files -o -i --exclude-standard
-    alias = config --global --includes --get-regexp alias
-    finda = "!grepalias() { git config --global --get-regexp alias | grep -i \"$1\" | awk -v nr=2 '{sub(/^alias\\./,\"\")};{printf \"\\033[31m%_10s\\033[1;37m\", $1};{sep=FS};{for (x=nr; x<=NF; x++) {printf \"%s%s\", sep, $x; }; print \"\\033[0;39m\"}'; }; grepalias"
-    unsynced = "!unsynced() { find . -name .git -type d 2>/dev/null|while read -r l;do (pushd \"$l/../\"&&git fetch&&git status -sb&&popd > /dev/null);echo;done }; unsynced"
-    pullall = "!pullall() { find . -name .git -type d 2>/dev/null|while read -r l;do (pushd \"$l/../\"&&git pull&&git status -sb&&popd > /dev/null);echo;done }; pullall"
-    spa = !git stash && git pull && git stash pop
-    prune = git remote update --prune
-    undo = "!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f"
-    uncommit = reset --soft HEAD^
-    stash = stash --include-untracked
-    rom = pull --rebase origin master
-    srom = !git stash && git pull --rebase origin master && git stash pop
-    dh = "!f() { git diff HEAD~$1; }; f"
-    lab = "!listallbranches() { find . -name .git -type d 2>/dev/null|while read -r l;do (pushd "$l/../"&&git branch --list&&git status -sb&&popd > /dev/null);echo;done }; listallbranches"
-    diff = diff -w
-    cv = commit -v
 [push]
     default = current
 [pull]
@@ -58,17 +56,17 @@
 [status]
     showUntrackedFiles = all
 [help]
-	autocorrect = 1
+    autocorrect = 1
 [merge]
-	tool = vscode
+    tool = vscode
 [mergetool "vscode"]
-	cmd = "code --wait $MERGED"
+    cmd = "code --wait $MERGED"
 [diff]
-	tool = vscode
+    tool = vscode
 [difftool "vscode"]
-	cmd = "code --wait --diff $LOCAL $REMOTE"
+    cmd = "code --wait --diff $LOCAL $REMOTE"
 [filter "lfs"]
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+    clean = git-lfs clean -- %f
