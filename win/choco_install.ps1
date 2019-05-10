@@ -22,6 +22,7 @@ choco install ditto -y
 choco install google-backup-and-sync -y
 choco install ripgrep -y
 choco install winmerge -y
+choco install docker-cli -y
 #choco install bleachbit -y
 #choco install ccleaner -y
 #choco install ccenhancer -y

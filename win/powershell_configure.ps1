@@ -3,6 +3,7 @@ git clone --recursive https://github.com/brianschmitt/Powershell.git
 ~/Powershell/set_symlink.bat
 
 Install-PackageProvider Nuget -Force
+Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 
 Install-Module -Name PowerShellGet -AllowClobber -Force
 

@@ -14,13 +14,6 @@ set path=**
 set suffixesadd+=.cs,.js,.htm
 set tags=tags;/
 
-if !empty($CONEMUPID)
-    set term=xterm
-    set t_Co=256
-    let &t_AB="\e[48;5;%dm"
-    let &t_AF="\e[38;5;%dm"
-endif
-
 call vundle#rc("~/.vim/bundle")
 Bundle 'gmarik/vundle'
 "Bundle 'OrangeT/vim-csharp'
