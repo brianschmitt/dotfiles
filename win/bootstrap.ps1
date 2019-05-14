@@ -6,5 +6,5 @@
 ~/dotfiles/win/win_settings.ps1
 ~/dotfiles/win/powershell_configure.ps1
 
-#git clone https://github.com/gmarik/vundle.git .vim/bundle/vundle
+git clone https://github.com/gmarik/vundle.git .vim/bundle/vundle
 #& 'vim' +:BundleInstall
