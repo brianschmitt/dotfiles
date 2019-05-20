@@ -26,7 +26,7 @@ Bundle 'tpope/vim-dispatch'
 Bundle 'pangloss/vim-javascript'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'w0ng/vim-hybrid'
-colorscheme hybrid
+"colorscheme hybrid
 Bundle 'morhetz/gruvbox'
 colorscheme gruvbox
 Bundle 'skammer/vim-css-color'
