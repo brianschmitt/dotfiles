@@ -1,23 +1,27 @@
 cd ~
 
-ln -s dotfiles/.vimrc .vimrc
+ln -sf dotfiles/.vimrc .vimrc
 
-ln -s dotfiles/.ctags .ctags
+ln -sf dotfiles/.ctags .ctags
 
-ln -s dotfiles/.global_ignore .global_ignore
+ln -sf dotfiles/.global_ignore .global_ignore
 
-ln -s dotfiles/.gitconfig-osx .gitconfig
+if [ "$(uname)" = "Darwin" ]; then
+    ln -sf dotfiles/.gitconfig-osx .gitconfig
+elif [ "$(uname)" = "Linux" ]; then
+    ln -sf dotfiles/.gitconfig-lnx .gitconfig
+fi
 
-ln -s dotfiles/.jshintrc .jshintrc
+ln -sf dotfiles/.jshintrc .jshintrc
 
-ln -s dotfiles/.aliases .aliases
+ln -sf dotfiles/.aliases .aliases
 
-ln -s dotfiles/.bash_prompt .bash_prompt
+ln -sf dotfiles/.bash_prompt .bash_prompt
 
-ln -s dotfiles/.bash_profile .bash_profile
+ln -sf dotfiles/.bash_profile .bash_profile
 
-ln -s dotfiles/.bashrc .bashrc
+ln -sf dotfiles/.bashrc .bashrc
 
-ln -s dotfiles/.zshrc .zshrc
+ln -sf dotfiles/.zshrc .zshrc
 
-ln -s dotfiles/.exports .exports
+ln -sf dotfiles/.exports .exports

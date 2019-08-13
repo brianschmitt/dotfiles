@@ -18,10 +18,14 @@ alias noderepl="node -e \"require('repl').start({ignoreUndefined: true})\""
 
 alias gp='grep -RInf /dev/stdin . <<<' # grep with some standard options
 
-alias gtp='cd ~/projects' # go to projects
+alias gtp='cd ~/src' # go to projects
 
 alias ff='find . -name '
 
 grepfind () { grep -RIni "$1" . --include **/"$2" ; }
 alias gf='grepfind'
 
+alias weather='curl -4 http://wttr.in/allentown'
+
+gitunsynced () { find . -name .git -type d 2>/dev/null|while read l;do (pushd "$l/../"&&git fetch&&git status -sb&&popd > /dev/null);echo;done; }
+alias gu='gitunsynced'
