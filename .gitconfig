@@ -37,8 +37,6 @@
     prune = git remote update --prune
     pullall = "!f() { find . -name .git -type d 2>/dev/null|while read -r l;do (pushd \"$l/../\"&&git pull&&git status -sb&&popd > /dev/null);echo;done }; f"
     rom = pull --rebase origin master
-    spa = !git stash && git pull && git stash pop
-    srom = !git stash && git pull --rebase origin master && git stash pop
     st = status -sb
     stash = stash --include-untracked
     uncommit = reset --soft HEAD^
@@ -54,6 +52,7 @@
     prune = true
 [rebase]
     autosquash = true
+    autoStash = true
 [status]
     showUntrackedFiles = all
 [help]

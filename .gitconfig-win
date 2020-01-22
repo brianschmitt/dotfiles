@@ -5,6 +5,7 @@
 [core]
 	autocrlf = true
 	editor = \"C:/Program Files/Vim/vim81/vim.exe\" --nofork
+	whitespace = cr-at-eol
 [merge]
 	tool = vscode
 [diff]
