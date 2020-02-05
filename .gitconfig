@@ -12,16 +12,13 @@
 [alias]
     alias = config --global --includes --get-regexp alias
     bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
-    br = branch
+    branchauthors = "!f() { git for-each-ref --format='%(authorname) %09 %(refname)' | rg origin; }; f"
     changes = diff ..origin/master
     ca = commit --amend --no-edit
-    ci = commit
     cleanup = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
-    cleanupall = "!f() { find . -name .git -type d 2>/dev/null|while read -r l;do (pushd \"$l/../\"&&git pull&&git cleanup&&popd > /dev/null);echo;done }; f"
     co = checkout
     cob = checkout -b
     conflicts = !git ls-files -u | cut -f 2 | sort -u
-    cv = commit -v
     dc = diff --cached
     df = diff --color --color-words --abbrev
     dh = "!f() { git diff HEAD~$1; }; f"
@@ -33,7 +30,7 @@
     lg = log --pretty=lg --date=relative --graph
     ll = log --pretty=lg --numstat
     migrate = "!f(){ CURRENT=$(git symbolic-ref --short HEAD); git checkout -b $1 && git branch --force $CURRENT ${3-'$CURRENT@{u}'} && git rebase --onto ${2-master} $CURRENT; }; f"
-    open = "!f() { REPO_URL=$(git config remote.origin.url); start ${REPO_URL%%.git}; }; f"
+    open = "!f() { REPO_URL=$(git config remote.origin.url); HTTPSURL=${REPO_URL/git@ssh./https://}; start ${HTTPSURL/:v3/}; }; f"
     prune = git remote update --prune
     pullall = "!f() { find . -name .git -type d 2>/dev/null|while read -r l;do (pushd \"$l/../\"&&git pull&&git status -sb&&popd > /dev/null);echo;done }; f"
     rom = pull --rebase origin master

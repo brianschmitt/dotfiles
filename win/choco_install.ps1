@@ -14,6 +14,7 @@ choco install sql-server-management-studio -y
 #choco install onenote -y
 #choco install microsoft-office-deployment -y
 #choco install microsoft-teams -y
+#choco install audacity -y
 
 # General Utils
 choco install 7zip.install -y
@@ -23,9 +24,8 @@ choco install google-backup-and-sync -y
 choco install ripgrep -y
 choco install winmerge -y
 choco install docker-cli -y
+choco install joplin -y
 #choco install bleachbit -y
-#choco install ccleaner -y
-#choco install ccenhancer -y
 
 # Shell
 choco install adb -y
@@ -39,15 +39,16 @@ choco install vmwareworkstation -y
 choco install git -y
 choco install git-credential-manager-for-windows -y
 choco install gitextensions -y
-#choco install sourcetree -y
 
 # Web Dev
+choco install awscli -y
+choco install azure-cli -y
 choco install fiddler -y
 choco install postman -y
 choco install nodejs-lts -y
-choco install lastpass -y
 choco install python3 -y
 choco install pip -y
+choco install terraform -y
 choco install zap -y
 
 #.Net Utils
@@ -61,6 +62,7 @@ choco install dotnetcore-sdk -y
 # Browsers
 choco install googlechrome -y
 choco install firefox -y
+choco install choco install microsoft-edge -y
 
 # Skip future updates from chocolatey for self updating
 choco pin add -n=googlechrome
