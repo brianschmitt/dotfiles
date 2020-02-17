@@ -20,7 +20,7 @@ choco install sql-server-management-studio -y
 choco install 7zip.install -y
 choco install agentransack -y
 choco install ditto -y
-choco install google-backup-and-sync -y
+choco install google-backup-and-sync -y --ignore-checksums
 choco install ripgrep -y
 choco install winmerge -y
 choco install docker-cli -y
@@ -37,8 +37,8 @@ choco install vmwareworkstation -y
 
 # Source Controls
 choco install git -y
-choco install git-credential-manager-for-windows -y
 choco install gitextensions -y
+#choco install git-credential-manager-for-windows -y
 
 # Web Dev
 choco install awscli -y
@@ -47,7 +47,7 @@ choco install fiddler -y
 choco install postman -y
 choco install nodejs-lts -y
 choco install python3 -y
-choco install pip -y
+#choco install pip -y
 choco install terraform -y
 choco install zap -y
 
@@ -62,7 +62,7 @@ choco install dotnetcore-sdk -y
 # Browsers
 choco install googlechrome -y
 choco install firefox -y
-choco install choco install microsoft-edge -y
+choco install microsoft-edge -y
 
 # Skip future updates from chocolatey for self updating
 choco pin add -n=googlechrome
