@@ -21,9 +21,6 @@ git clone https://github.com/brianschmitt/dotfiles.git
 - Set ProcExplorer to override TaskManager
 - Optional
     - Restore any files/registry from cloud backup
-    - DotnetSetup - ~/dotfiles/win/choco_dotnet.ps1
-    - FullSetup - ~/dotfiles/win/choco_full.ps1
-    - Github SSH Key setup - ~/dotfiles/win/gen_github_sshkey.bat
 
 ### Mac:
 - AppStore
@@ -32,7 +29,8 @@ git clone https://github.com/brianschmitt/dotfiles.git
 
 ```shell
 cd ~
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+xcode-select --install
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install git
 git clone https://github.com/brianschmitt/dotfiles.git
 . ~/dotfiles/osx/bootstrap.sh
@@ -41,10 +39,8 @@ chsh -s /usr/local/bin/bash
 ```
 - Cask staged, run installers for:
 	- 'Install Xamarin.app'
-	- 'LastPass Installer.app'
 - Optional
     - Appstore: Remote Desktop
-    - Github SSH Key setup - ~/dotfiles/osx/gen_github_sshkey.sh
 
 ### Linux:
 ```shell
