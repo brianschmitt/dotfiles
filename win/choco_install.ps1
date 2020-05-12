@@ -11,9 +11,9 @@ choco install vim-tux.install -y
 choco install vscode -y
 choco install vscode-settingssync -y
 choco install sql-server-management-studio -y
-#choco install onenote -y
+choco install onenote -y
 #choco install microsoft-office-deployment -y
-#choco install microsoft-teams -y
+choco install microsoft-teams -y
 #choco install audacity -y
 
 # General Utils
@@ -29,10 +29,10 @@ choco install joplin -y
 
 # Shell
 choco install adb -y
-choco install conemu -y
-choco install rdcman -y
+#choco install rdcman -y
 choco install sysinternals -y
 choco install vmwareworkstation -y
+#choco install conemu -y
 #choco install hyper -y
 
 # Source Controls
