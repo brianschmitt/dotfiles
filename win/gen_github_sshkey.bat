@@ -1,12 +1,10 @@
-mv "C:\Program Files (x86)\Gow\bin\ssh.bat" "C:\Program Files (x86)\Gow\bin\ssh2.bat"
-
-cd %HOME%/.ssh
+cd ~/.ssh
 
 ssh-keygen -t rsa -C "brianschmitt@gmail.com" -f github_rsa
 
 ssh-add github_rsa
 
-clip < github_rsa.pub
+cat github_rsa.pub | clip
 
 echo "Add key (in clipboard) to github and"
 timeout -1
@@ -19,7 +17,7 @@ if /i {%UPDATE%}=={y} (goto :yes)
 goto :END
 
 :yes
-    cd %HOME%/dotfiles
+    cd ~/dotfiles
     git remote set-url origin git@github.com:brianschmitt/dotfiles
 
 :END
