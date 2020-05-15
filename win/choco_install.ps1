@@ -1,3 +1,8 @@
+# Browsers
+choco install googlechrome -y
+choco install firefox -y
+choco install microsoft-edge -y
+
 # update powershell
 choco install powershell-core -y
 
@@ -58,11 +63,6 @@ choco install nuget.commandline -y
 choco install microsoftazurestorageexplorer -y
 choco install nugetpackageexplorer -y
 choco install dotnetcore-sdk -y
-
-# Browsers
-choco install googlechrome -y
-choco install firefox -y
-choco install microsoft-edge -y
 
 # Skip future updates from chocolatey for self updating
 choco pin add -n=googlechrome

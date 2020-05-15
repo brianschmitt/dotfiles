@@ -6,9 +6,3 @@
 	autocrlf = true
 	editor = \"C:/Program Files/Vim/vim82/vim.exe\" --nofork
 	whitespace = cr-at-eol
-[difftool "vscode"]
-	path = C:/Program Files/Microsoft VS Code/code.exe
-	cmd = \"C:/Program Files/Microsoft VS Code/code.exe\" --wait --diff \"$LOCAL\" \"$REMOTE\"
-[mergetool "vscode"]
-	path = C:/Program Files/Microsoft VS Code/code.exe
-	cmd = "\"C:/Program Files/Microsoft VS Code/code.exe\" --wait \"$MERGED\" "

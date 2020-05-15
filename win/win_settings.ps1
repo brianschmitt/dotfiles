@@ -32,7 +32,7 @@ Get-AppxPackage Microsoft.MicrosoftSolitaireCollection | Remove-AppxPackage
 Get-AppxPackage Microsoft.People | Remove-AppxPackage
 Get-AppxPackage Microsoft.ZuneMusic | Remove-AppxPackage
 Get-AppxPackage Microsoft.ZuneVideo | Remove-AppxPackage
-Get-AppxPackage Microsoft.Office.OneNote | Remove-AppxPackage
+#Get-AppxPackage Microsoft.Office.OneNote | Remove-AppxPackage
 #Get-AppxPackage Microsoft.Windows.Photos | Remove-AppxPackage
 Get-AppxPackage Microsoft.WindowsSoundRecorder | Remove-AppxPackage
 Get-AppxPackage microsoft.windowscommunicationsapps | Remove-AppxPackage
