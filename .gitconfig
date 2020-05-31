@@ -11,8 +11,7 @@
     lg = %x09%C(yellow)%h %C(reset)%s %C(green)(%cr) %C(bold blue)<%cn> %C(red)%d%C(reset)
 [alias]
     alias = config --global --includes --get-regexp alias
-    bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
-    branchauthors = "!f() { git for-each-ref --format='%(authorname) %09 %(refname)' | rg origin; }; f"
+    branches = for-each-ref --sort=-committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\" refs/remotes
     changes = diff ..origin/master
     ca = commit --amend --no-edit
     cleanup = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
@@ -21,17 +20,17 @@
     conflicts = !git ls-files -u | cut -f 2 | sort -u
     dc = diff --cached
     df = diff --color --color-words --abbrev
-    dh = "!f() { git diff HEAD~$1; }; f"
+    dh = diff HEAD~1
     diff = diff -w
     fo = fetch origin
     ignored = ls-files -o -i --exclude-standard # Show files ignored by git
     la = log --pretty=lg --date=relative --graph --all
-    lab = "!f() { find . -name .git -type d 2>/dev/null|while read -r l;do (pushd "$l/../"&&git branch --list&&git status -sb&&popd > /dev/null);echo;done }; f"
+    lab = "!f() { find . -name .git -type d 2>/dev/null|while read -r l;do (pushd "$l/../"&&git branches &&git status -sb&&popd > /dev/null);echo;done }; f"
     lg = log --pretty=lg --date=relative --graph
     ll = log --pretty=lg --numstat
     migrate = "!f(){ CURRENT=$(git symbolic-ref --short HEAD); git checkout -b $1 && git branch --force $CURRENT ${3-'$CURRENT@{u}'} && git rebase --onto ${2-master} $CURRENT; }; f"
     open = "!f() { REPO_URL=$(git config remote.origin.url); HTTPSURL=${REPO_URL/git@ssh./https://}; start ${HTTPSURL/:v3/}; }; f"
-    prune = git remote update --prune
+    prune = remote update --prune
     pullall = "!f() { find . -name .git -type d 2>/dev/null|while read -r l;do (pushd \"$l/../\"&&git pull&&git status -sb&&popd > /dev/null);echo;done }; f"
     rom = pull --rebase origin master
     st = status -sb

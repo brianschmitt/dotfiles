@@ -30,10 +30,13 @@ choco install ripgrep -y
 choco install winmerge -y
 choco install docker-cli -y
 choco install joplin -y
+choco install powertoys -y
 #choco install bleachbit -y
 
 # Shell
+choco install scrcpy -y
 choco install adb -y
+choco install mremoteng -y
 #choco install rdcman -y
 choco install sysinternals -y
 choco install vmwareworkstation -y
