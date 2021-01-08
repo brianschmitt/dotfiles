@@ -29,18 +29,14 @@ git clone https://github.com/brianschmitt/dotfiles.git
 
 ```shell
 cd ~
-xcode-select --install
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install git
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 git clone https://github.com/brianschmitt/dotfiles.git
 . ~/dotfiles/osx/bootstrap.sh
 
-chsh -s /usr/local/bin/bash
 ```
-- Cask staged, run installers for:
-	- 'Install Xamarin.app'
 - Optional
     - Appstore: Remote Desktop
+    - [Nerdfonts](https://www.nerdfonts.com/font-downloads)
 
 ### Linux:
 ```shell

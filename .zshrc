@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/schmitt/.oh-my-zsh
+export ZSH="/Users/bschmitt/.oh-my-zsh"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -49,12 +49,13 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rsync git-flow)
+plugins=(git)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/schmitt/scripts/"
+export PATH="$HOME/scripts:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
+ZSH_DISABLE_COMPFIX=true
 
 source $ZSH/oh-my-zsh.sh
 
@@ -91,8 +92,6 @@ alias gp='grep -RInf /dev/stdin . <<<' # grep with some standard options
 
 alias gtp='cd ~/projects' # go to projects
 
-alias gts='cd ~/Google\ Drive/Backup/Osx/scripts'
-
 alias ff='find . -name '
 
 grepfind () { grep -RIni $1 . --include="**/$2" }
@@ -102,7 +101,7 @@ alias home='cd ~/'
 
 alias weather='curl -4 http://wttr.in/allentown'
 
-DEFAULT_USER='schmitt'
+DEFAULT_USER='bschmitt'
 
 #
  #   L E S S   C O L O R S   F O R   M A N   P A G E S
@@ -132,14 +131,11 @@ export LESS_TERMCAP_ue=$'\E[0m'           # end underline
  # Light Gray  0;37     White         1;37
  #########################################
 
-source /Users/schmitt/.iterm2_shell_integration.zsh
+#source /Users/bschmitt/.iterm2_shell_integration.zsh
 
-iterm2_print_user_vars() {
-  iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
-}
-
-
-xam () { open -n /Applications/Xamarin\ Studio.app }
+#iterm2_print_user_vars() {
+#  iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
+#}
 
 git_unsynced () {find . -name .git -type d 2>/dev/null|while read l;do (pushd "$l/../"&&git fetch&&git status -sb&&popd > /dev/null);echo;done}
 

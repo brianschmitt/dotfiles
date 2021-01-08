@@ -2,39 +2,33 @@
 
 brew update
 brew upgrade
-brew cask upgrade
+brew upgrade --cask
 
-brew install bash
-brew install bash-completion@2
-brew install coreutils
 brew install node
-brew install python
-#brew install awscli
-#brew install azure-cli
-#brew install terraform
+brew install awscli
+brew install azure-cli
+brew install terraform
 brew install ripgrep
+brew install git
+brew install scrcpy
 
-brew cask install joplin
-brew cask install macvim
-brew cask install android-platform-tools
-brew cask install android-sdk
-brew cask install microsoft-edge
-brew cask install firefox
-brew cask install iterm2
-#brew cask install powershell
-#brew cask install bitwarden
-#brew cask install radiant-player
-brew cask install sourcetree
-brew cask install owasp-zap
-#brew cask install android-file-transfer
-brew cask install postman
-brew cask install azure-data-studio
+brew tap mongodb/brew
+brew install mongodb-community@4.4
 
-brew cask install visual-studio-code
-brew cask install visual-studio
-#brew cask install google-backup-and-sync
+brew tap twilio/brew
+brew install twilio
 
-brew cask install microsoft-office
-brew cask install microsoft-teams
+brew install --cask joplin
+brew install --cask macvim
+brew install --cask firefox
+brew install --cask iterm2
+brew install --cask bitwarden
+brew install --cask android-file-transfer
+brew install --cask postman
+brew install --cask android-platform-tools
+brew install --cask spotify
+brew install --cask clipy
+brew install --cask ngrok
+brew install --cask visual-studio-code
 
 brew cleanup
