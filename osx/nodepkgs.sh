@@ -5,3 +5,5 @@ npm install -g dotenv-safe
 npm install -g express 
 npm install -g body-parser 
 npm install -g cookie-parser
+
+npm install -g create-flex-plugin

@@ -10,7 +10,7 @@ export LC_ALL="en_US.UTF-8";
 # Always enable colored `grep` output.
 export GREP_OPTIONS='--color=auto';
 
- #
+#
  #   L E S S   C O L O R S   F O R   M A N   P A G E S
  #
  # CHANGE FIRST NUMBER PAIR FOR COMMAND AND FLAG COLOR
@@ -37,3 +37,7 @@ export LESS_TERMCAP_ue=$'\E[0m'           # end underline
  # Cyan        0;36     Light Cyan    1;36
  # Light Gray  0;37     White         1;37
  #########################################
+
+ export HOMEBREW_NO_ANALYTICS=1
+
+ 

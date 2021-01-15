@@ -4,10 +4,11 @@ brew update
 brew upgrade
 brew upgrade --cask
 
-brew install node
-brew install awscli
-brew install azure-cli
-brew install terraform
+brew install node@14
+brew link --force --overwrite node@14
+#brew install awscli
+#brew install azure-cli
+#brew install terraform
 brew install ripgrep
 brew install git
 brew install scrcpy
@@ -30,5 +31,7 @@ brew install --cask spotify
 brew install --cask clipy
 brew install --cask ngrok
 brew install --cask visual-studio-code
+brew install --cask dotnet-sdk
+brew install --cask webex-meetings
 
 brew cleanup

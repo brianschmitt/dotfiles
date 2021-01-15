@@ -49,9 +49,14 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git npm)
 
 # User configuration
+
+for file in ~/.{path,exports,aliases,functions,extra,secrets}; do
+    [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
 
 export PATH="$HOME/scripts:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -84,59 +89,4 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias l1='ls -1'
-
-alias noderepl="node -e \"require('repl').start({ignoreUndefined: true})\""
-
-alias gp='grep -RInf /dev/stdin . <<<' # grep with some standard options
-
-alias gtp='cd ~/projects' # go to projects
-
-alias ff='find . -name '
-
-grepfind () { grep -RIni $1 . --include="**/$2" }
-alias gf='grepfind'
-
-alias home='cd ~/'
-
-alias weather='curl -4 http://wttr.in/allentown'
-
 DEFAULT_USER='bschmitt'
-
-#
- #   L E S S   C O L O R S   F O R   M A N   P A G E S
- #
- # CHANGE FIRST NUMBER PAIR FOR COMMAND AND FLAG COLOR
-export LESS_TERMCAP_md=$'\E[0;33;5;74m'  # begin bold
-
- # CHANGE FIRST NUMBER PAIR FOR PARAMETER COLOR
-export LESS_TERMCAP_us=$'\E[0;36;5;146m' # begin underline
-
- # don't change anything here
-export LESS_TERMCAP_mb=$'\E[1;31m'       # begin blinking
-export LESS_TERMCAP_me=$'\E[0m'           # end mode
-export LESS_TERMCAP_se=$'\E[0m'           # end standout-mode
-export LESS_TERMCAP_so=$'\E[38;5;246m'    # begin standout-mode - info box
-export LESS_TERMCAP_ue=$'\E[0m'           # end underline
-
- #########################################
- # Colorcodes:
- # Black       0;30     Dark Gray     1;30
- # Red         0;31     Light Red     1;31
- # Green       0;32     Light Green   1;32
- # Brown       0;33     Yellow        1;33
- # Blue        0;34     Light Blue    1;34
- # Purple      0;35     Light Purple  1;35
- # Cyan        0;36     Light Cyan    1;36
- # Light Gray  0;37     White         1;37
- #########################################
-
-#source /Users/bschmitt/.iterm2_shell_integration.zsh
-
-#iterm2_print_user_vars() {
-#  iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
-#}
-
-git_unsynced () {find . -name .git -type d 2>/dev/null|while read l;do (pushd "$l/../"&&git fetch&&git status -sb&&popd > /dev/null);echo;done}
-
-export HOMEBREW_NO_ANALYTICS=1
