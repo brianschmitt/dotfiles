@@ -7,7 +7,7 @@ cd ~
 . ~/dotfiles/osx/osx.sh
 . ~/dotfiles/osx/nodepkgs.sh
 
-git clone https://github.com/gmarik/vundle.git .vim/bundle/vundle
-vim +:BundleInstall
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim +:PlugInstall
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

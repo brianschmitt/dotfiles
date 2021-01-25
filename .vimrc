@@ -14,27 +14,22 @@ set path=**
 set suffixesadd+=.cs,.js,.htm
 set tags=tags;/
 
-call vundle#rc("~/.vim/bundle")
-Bundle 'gmarik/vundle'
-"Bundle 'OrangeT/vim-csharp'
-Bundle 'ervandew/supertab'
-"Bundle 'kien/ctrlp.vim'
-Bundle 'dbakker/vim-projectroot'
+call plug#begin('~/.vim/plugged')
+Plug 'ervandew/supertab'
+Plug 'dbakker/vim-projectroot'
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-dispatch'
+Plug 'pangloss/vim-javascript'
+Plug 'jelera/vim-javascript-syntax'
+Plug 'w0ng/vim-hybrid'
+Plug 'morhetz/gruvbox'
+Plug 'skammer/vim-css-color'
+Plug 'vim-scripts/Align'
+call plug#end()
+
 let g:rootmarkers = ['tags', '.git', '*.sln']
-Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-dispatch'
-Bundle 'pangloss/vim-javascript'
-Bundle 'jelera/vim-javascript-syntax'
-Bundle 'w0ng/vim-hybrid'
-"colorscheme hybrid
-Bundle 'morhetz/gruvbox'
 colorscheme gruvbox
-Bundle 'skammer/vim-css-color'
-"Bundle 'PProvost/vim-ps1'
-"Bundle 'tpope/vim-vinegar'
-Bundle 'jphustman/SQLUtilities'
-Bundle 'vim-scripts/Align'
-"Bundle 'OmniSharp/omnisharp-vim'
+
 
 set background=dark
 let g:netrw_winsize=20

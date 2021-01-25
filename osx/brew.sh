@@ -16,9 +16,6 @@ brew install scrcpy
 brew tap mongodb/brew
 brew install mongodb-community@4.4
 
-brew tap twilio/brew
-brew install twilio
-
 brew install --cask joplin
 brew install --cask macvim
 brew install --cask firefox
@@ -32,6 +29,10 @@ brew install --cask clipy
 brew install --cask ngrok
 brew install --cask visual-studio-code
 brew install --cask dotnet-sdk
-brew install --cask webex-meetings
+#brew install --cask webex-meetings
+
+brew install mas
+mas install 937984704 # Amphetamine
+mas install 497799835 # Xcode
 
 brew cleanup
