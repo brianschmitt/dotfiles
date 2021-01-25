@@ -6,6 +6,7 @@ brew upgrade --cask
 
 brew install node@14
 brew link --force --overwrite node@14
+brew pin node
 #brew install awscli
 #brew install azure-cli
 #brew install terraform

@@ -23,8 +23,6 @@ git clone https://github.com/brianschmitt/dotfiles.git
     - Restore any files/registry from cloud backup
 
 ### Mac:
-- AppStore
-  - Install XCode
 - Start terminal
 
 ```shell
