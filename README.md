@@ -32,9 +32,8 @@ git clone https://github.com/brianschmitt/dotfiles.git
 . ~/dotfiles/osx/bootstrap.sh
 
 ```
-- Optional
-    - Appstore: Remote Desktop
-    - [Nerdfonts](https://www.nerdfonts.com/font-downloads)
+- Sign into appstore while shell executes
+- Restore iterm profile
 
 ### Linux:
 ```shell

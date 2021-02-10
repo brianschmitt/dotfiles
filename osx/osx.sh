@@ -31,3 +31,5 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 #sudo scutil --set Hostname "MacBook"
 
 sudo systemsetup -settimezone America/New_York
+
+defaults write com.apple.dock show-recents -bool FALSE

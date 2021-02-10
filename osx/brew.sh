@@ -6,7 +6,7 @@ brew upgrade --cask
 
 brew install node@14
 brew link --force --overwrite node@14
-brew pin node
+brew pin node@14
 #brew install awscli
 #brew install azure-cli
 #brew install terraform
@@ -31,6 +31,12 @@ brew install --cask ngrok
 brew install --cask visual-studio-code
 brew install --cask dotnet-sdk
 #brew install --cask webex-meetings
+
+brew tap homebrew/cask-fonts
+brew install --cask font-fira-code-nerd-font
+
+brew tap homebrew/cask-drivers
+brew install logitech-options
 
 brew install mas
 mas install 937984704 # Amphetamine
