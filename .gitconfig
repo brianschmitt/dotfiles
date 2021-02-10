@@ -29,7 +29,6 @@
     lab = "!f() { find . -name .git -type d 2>/dev/null|while read -r l;do (pushd "$l/../"&&git branches &&git status -sb&&popd > /dev/null);echo;done }; f"
     lg = log --pretty=lg --date=relative --graph
     ll = log --pretty=lg --numstat
-    open = "!f() { REPO_URL=$(git config remote.origin.url); HTTPSURL=${REPO_URL/git@ssh./https://}; open ${HTTPSURL/:v3/}; }; f"
     prune = remote update --prune
     pullall = "!f() { find . -name .git -type d 2>/dev/null|while read -r l;do (pushd \"$l/../\"&&git pull&&git status -sb&&popd > /dev/null);echo;done }; f"
     rom = "!f() { git pull --rebase origin $(git default-branch); }; f"

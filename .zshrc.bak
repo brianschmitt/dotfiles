@@ -31,7 +31,7 @@ ZSH_THEME="agnoster"
 plugins=(git npm)
 
 # User configurations
-for file in ~/.{path,exports,aliases,functions,extra,co_settings}; do
+for file in ~/.{path,exports,aliases,functions,extra}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;

@@ -35,3 +35,4 @@ alias l1='ls -1'
 alias clip=pbcopy
 
 alias cfp=create-flex-plugin
+alias cls=clear

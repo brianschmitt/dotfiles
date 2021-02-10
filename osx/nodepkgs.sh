@@ -5,6 +5,7 @@ npm install -g dotenv-safe
 npm install -g express 
 npm install -g body-parser 
 npm install -g cookie-parser
+npm install --global git-open
 
 npm install -g twilio-cli
 twilio plugins:install @twilio-labs/plugin-serverless
