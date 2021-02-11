@@ -21,7 +21,7 @@ brew install --cask joplin
 brew install --cask macvim
 brew install --cask firefox
 brew install --cask iterm2
-brew install --cask bitwarden
+#brew install --cask bitwarden
 brew install --cask android-file-transfer
 brew install --cask postman
 brew install --cask android-platform-tools

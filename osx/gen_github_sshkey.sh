@@ -1,12 +1,12 @@
 #!/bin/bash
 
-ssh-keygen -t rsa -C "brianschmitt@gmail.com" -f ~/.ssh/id_rsa
+ssh-keygen -t ed25519 -C "brianschmitt@gmail.com" -f ~/.ssh/github_rsa
 
 eval "$(ssh-agent -s)"
 
-ssh-add -K ~/.ssh/id_rsa
+ssh-add -K ~/.ssh/github_rsa
 
-pbcopy < ~/.ssh/id_rsa.pub
+pbcopy < ~/.ssh/github_rsa.pub
 
 read -p "Add key (in clipboard) to github and press enter to continue"
 
