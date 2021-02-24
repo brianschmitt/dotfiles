@@ -30,6 +30,8 @@ brew install --cask clipy
 brew install --cask ngrok
 brew install --cask visual-studio-code
 brew install --cask dotnet-sdk
+brew install --cask rectangle
+brew install --cask runjs
 #brew install --cask webex-meetings
 
 brew tap homebrew/cask-fonts
