@@ -4,34 +4,41 @@ brew update
 brew upgrade
 brew upgrade --cask
 
+# web dev
 brew install node@14
 brew link --force --overwrite node@14
 brew pin node@14
+brew install --cask visual-studio-code
+brew install --cask postman
+brew install --cask ngrok
+
+# commandline utils
+brew install ripgrep
+brew install git
 #brew install awscli
 #brew install azure-cli
 #brew install terraform
-brew install ripgrep
-brew install git
-brew install scrcpy
 
 brew tap mongodb/brew
 brew install mongodb-community@4.4
 
+# phone utils
+brew install scrcpy
+brew install --cask android-file-transfer
+brew install --cask android-platform-tools
+
+# general apps
 brew install --cask joplin
 brew install --cask macvim
 brew install --cask firefox
 brew install --cask iterm2
-#brew install --cask bitwarden
-brew install --cask android-file-transfer
-brew install --cask postman
-brew install --cask android-platform-tools
 brew install --cask spotify
 brew install --cask clipy
-brew install --cask ngrok
-brew install --cask visual-studio-code
-brew install --cask dotnet-sdk
 brew install --cask rectangle
-brew install --cask runjs
+
+# optional
+#brew install --cask bitwarden
+#brew install --cask dotnet-sdk
 #brew install --cask webex-meetings
 
 brew tap homebrew/cask-fonts

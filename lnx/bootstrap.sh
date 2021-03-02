@@ -4,5 +4,5 @@ cd ~
 
 . ~/dotfiles/set_symlinks.sh
 
-git clone https://github.com/gmarik/vundle.git .vim/bundle/vundle
-vim +:BundleInstall
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim +:PlugInstall
