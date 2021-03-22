@@ -1,5 +1,3 @@
-set runtimepath+=~/.vim/bundle/vundle
-
 set noswapfile
 
 set number
@@ -29,7 +27,6 @@ call plug#end()
 
 let g:rootmarkers = ['tags', '.git', '*.sln']
 colorscheme gruvbox
-
 
 set background=dark
 let g:netrw_winsize=20
@@ -99,8 +96,6 @@ if $TERM_PROGRAM =~ "iTerm"
     let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
 endif
 
-nnoremap <Leader>p :cd c:\.Projects\
-nnoremap <Leader>r :ProjectRootCD<cr>
 " Format doc and maintain position
 nnoremap <Leader>f mzgg=G`z<cr>
 nnoremap <Leader>fx :set filetype=xml<cr>:%s/></>\r</g<cr>gg=G<cr>
