@@ -23,9 +23,9 @@ brew tap mongodb/brew
 brew install mongodb-community@4.4
 
 # phone utils
-brew install scrcpy
-brew install --cask android-file-transfer
-brew install --cask android-platform-tools
+#brew install scrcpy
+#brew install --cask android-file-transfer
+#brew install --cask android-platform-tools
 
 # general apps
 brew install --cask joplin
