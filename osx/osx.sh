@@ -17,7 +17,9 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false # Don't display th
 
 sudo systemsetup -settimezone America/New_York # Set locale
 
-defaults write com.apple.dock show-recents -bool FALSE # Hide recents in dock
+defaults write com.apple.dock show-recents -bool false # Hide recents in dock
+defaults write com.apple.dock persistent-apps -array # Remove all default apps
+defaults write com.apple.dock autohide -bool true
 
 #sudo scutil --set ComputerName "MacBook"
 #sudo scutil --set Hostname "MacBook"
