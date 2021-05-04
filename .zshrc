@@ -26,6 +26,8 @@ unset file;
 export PATH="$HOME/scripts:$PATH"
 ZSH_DISABLE_COMPFIX=true
 
+CDPATH=.:~:~/src
+
 source $ZSH/oh-my-zsh.sh
 
 DEFAULT_USER='bschmitt'
