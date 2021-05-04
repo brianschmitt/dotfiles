@@ -19,8 +19,8 @@ brew install git
 #brew install azure-cli
 #brew install terraform
 
-brew tap mongodb/brew
-brew install mongodb-community@4.4
+#brew tap mongodb/brew
+#brew install mongodb-community@4.4
 
 # phone utils
 #brew install scrcpy

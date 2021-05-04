@@ -22,3 +22,6 @@ alias clip=pbcopy
 
 alias cfp=create-flex-plugin
 alias cls=clear
+
+alias nrt="npm run test"
+alias ns="npm start"
