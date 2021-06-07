@@ -1,4 +1,6 @@
-cd ~
+#!/bin/bash
+
+cd ~ || exit
 
 ln -sf dotfiles/.aliases .aliases
 

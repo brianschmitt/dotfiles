@@ -23,7 +23,7 @@ for file in ~/.{path,exports,aliases,extra}; do
 done;
 unset file;
 
-export PATH="$HOME/scripts:$PATH"
+export PATH="$HOME/scripts:/Users/bschmitt/Library/Python/3.9/bin:$PATH"
 ZSH_DISABLE_COMPFIX=true
 
 CDPATH=.:~:~/src

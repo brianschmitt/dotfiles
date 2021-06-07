@@ -25,3 +25,5 @@ alias cls=clear
 
 alias nrt="npm run test"
 alias ns="npm start"
+
+alias python=/usr/local/bin/python3

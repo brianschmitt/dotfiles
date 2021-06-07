@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~
+cd ~ || exit
 
 . ~/dotfiles/set_symlinks.sh
 . ~/dotfiles/osx/brew.sh

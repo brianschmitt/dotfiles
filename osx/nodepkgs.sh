@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #npm install -g babel-cli
 #npm install -g live-server
 #npm install -g nodemon 
