@@ -1,8 +1,7 @@
 alias ll='ls -laF'
 alias la='ls -laF'
 alias lsd='ls -lF'
-
-alias noderepl="node -e \"require('repl').start({ignoreUndefined: true})\""
+alias l1='ls -1'
 
 alias gtp='cd ~/src' # go to projects
 
@@ -15,8 +14,6 @@ alias weather='curl -4 http://wttr.in/allentown'
 
 gitunsynced () { find . -name .git -type d 2>/dev/null|while read l;do (pushd "$l/../"&&git fetch&&git status -sb&&popd > /dev/null);echo;done; }
 alias gu='gitunsynced'
-
-alias l1='ls -1'
 
 alias clip=pbcopy
 
