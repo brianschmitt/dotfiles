@@ -23,7 +23,6 @@
     default-branch = "!git symbolic-ref refs/remotes/origin/HEAD | cut -f4 -d/"
     df = diff --color --color-words --abbrev
     dh = diff HEAD~1
-    diff = diff -w
     fo = fetch origin
     ignored = ls-files -o -i --exclude-standard # Show files ignored by git
     la = log --pretty=lg --date=relative --graph --all

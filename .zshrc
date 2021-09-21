@@ -35,3 +35,4 @@ DEFAULT_USER='bschmitt'
 # twilio autocomplete setup
 TWILIO_AC_ZSH_SETUP_PATH=/Users/bschmitt/.twilio-cli/autocomplete/zsh_setup && test -f $TWILIO_AC_ZSH_SETUP_PATH && source $TWILIO_AC_ZSH_SETUP_PATH;
 PATH=$PATH:/Users/bschmitt/.lyftkube-bin
+PATH=$PATH:/Users/bschmitt/.dotnet/tools
