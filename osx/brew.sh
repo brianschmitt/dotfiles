@@ -1,5 +1,5 @@
 #!/bin/bash
-
+brew analytics off
 brew update
 brew upgrade
 brew upgrade --cask
