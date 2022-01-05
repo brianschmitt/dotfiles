@@ -15,7 +15,7 @@ ZSH_THEME="agnoster"
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
 
-plugins=(git npm)
+plugins=(npm)
 
 # User configurations
 for file in ~/.{path,exports,aliases,extra}; do
