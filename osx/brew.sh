@@ -9,8 +9,9 @@ brew install node@14
 brew link --force --overwrite node@14
 brew pin node@14
 brew install --cask visual-studio-code
-brew install --cask postman
-brew install --cask ngrok
+#brew install --cask postman
+#brew install --cask ngrok
+#brew install --cask http-toolkit
 
 # commandline utils
 brew install ripgrep
@@ -35,11 +36,12 @@ brew install --cask iterm2
 brew install --cask spotify
 brew install --cask clipy
 brew install --cask rectangle
+#brew install --cask taskexplorer
 
 # optional
 #brew install --cask bitwarden
 #brew install --cask dotnet-sdk
-#brew install --cask webex-meetings
+#brew install --cask lulu
 
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code-nerd-font

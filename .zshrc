@@ -36,3 +36,6 @@ DEFAULT_USER='bschmitt'
 TWILIO_AC_ZSH_SETUP_PATH=/Users/bschmitt/.twilio-cli/autocomplete/zsh_setup && test -f $TWILIO_AC_ZSH_SETUP_PATH && source $TWILIO_AC_ZSH_SETUP_PATH;
 PATH=$PATH:/Users/bschmitt/.lyftkube-bin
 PATH=$PATH:/Users/bschmitt/.dotnet/tools
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+chruby ruby-2.7.4
