@@ -10,7 +10,6 @@ for file in ~/.{path,exports,aliases,extra}; do
 done;
 unset file;
 
-export PATH="$HOME/scripts:/Users/bschmitt/Library/Python/3.9/bin:$PATH"
 ZSH_DISABLE_COMPFIX=true
 
 CDPATH=.:~:~/src
@@ -18,11 +17,3 @@ CDPATH=.:~:~/src
 source $ZSH/oh-my-zsh.sh
 
 DEFAULT_USER='bschmitt'
-
-# twilio autocomplete setup
-TWILIO_AC_ZSH_SETUP_PATH=/Users/bschmitt/.twilio-cli/autocomplete/zsh_setup && test -f $TWILIO_AC_ZSH_SETUP_PATH && source $TWILIO_AC_ZSH_SETUP_PATH;
-PATH=$PATH:/Users/bschmitt/.lyftkube-bin
-PATH=$PATH:/Users/bschmitt/.dotnet/tools
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-chruby ruby-2.7.4

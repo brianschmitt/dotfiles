@@ -13,20 +13,22 @@ set suffixesadd+=.cs,.js,.htm
 set tags=tags;/
 
 call plug#begin('~/.vim/plugged')
-Plug 'ervandew/supertab'
-Plug 'dbakker/vim-projectroot'
+" Plug 'ervandew/supertab'
+" Plug 'dbakker/vim-projectroot'
 Plug 'scrooloose/syntastic'
-Plug 'tpope/vim-dispatch'
-Plug 'pangloss/vim-javascript'
-Plug 'jelera/vim-javascript-syntax'
-Plug 'w0ng/vim-hybrid'
-Plug 'morhetz/gruvbox'
-Plug 'skammer/vim-css-color'
-Plug 'vim-scripts/Align'
+" Plug 'tpope/vim-dispatch'
+" Plug 'pangloss/vim-javascript'
+" Plug 'jelera/vim-javascript-syntax'
+" Plug 'w0ng/vim-hybrid'
+" Plug 'morhetz/gruvbox'
+" Plug 'skammer/vim-css-color'
+Plug 'arcticicestudio/nord-vim'
+" Plug 'vim-scripts/Align'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 let g:rootmarkers = ['tags', '.git', '*.sln']
-colorscheme gruvbox
+colorscheme nord
 
 set background=dark
 let g:netrw_winsize=20
@@ -87,7 +89,7 @@ set nowrap
 
 if has("gui_running")
     set guioptions=egm
-    set guifont=Anonymous\ Pro:h14,Consolas:h11
+    set guifont=FiraCode\ Nerd\ Font:h16,Consolas:h16
 endif
 
 " Change cursor shape between insert and normal mode in iTerm2.app
