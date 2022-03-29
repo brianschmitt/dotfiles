@@ -5,20 +5,19 @@ This repo is mostly for me but you're welcome to make suggestions.
 ## Installation
 
 ### Mac:
-- Start terminal
+
+-   Start terminal
 
 ```shell
-cd ~
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-git clone https://github.com/brianschmitt/dotfiles.git
-. ~/dotfiles/osx/bootstrap.sh
-
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/brianschmitt/dotfiles/main/install)"
 ```
-- Sign into appstore while shell executes
-- Restore iterm profile
+
+-   Sign into appstore while shell executes
+-   Restore iterm profile
 
 ### Windows:
-- Start Powershell as admin
+
+-   Start Powershell as admin
 
 ```shell
 cd ~
@@ -31,11 +30,11 @@ cd ~
 git clone https://github.com/brianschmitt/dotfiles.git
 . ~/dotfiles/win/bootstrap.ps1
 ```
-- Restore any files/registry from cloud backup
+
+-   Restore any files/registry from cloud backup
 
 ### Linux:
+
 ```shell
-cd ~
-git clone https://github.com/brianschmitt/dotfiles.git
-. ~/dotfiles/lnx/bootstrap.sh
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/brianschmitt/dotfiles/main/install)"
 ```

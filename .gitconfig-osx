@@ -2,5 +2,3 @@
     path = ~/dotfiles/.gitconfig
 [core]
 	autocrlf = input
-[init]
-	defaultBranch = main

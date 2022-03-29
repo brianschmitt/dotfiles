@@ -1,7 +1,7 @@
-alias ll='ls -laF'
-alias la='ls -laF'
-alias lsd='ls -lF'
-alias l1='ls -1'
+alias ll='ls -laF --color'
+alias la='ls -laF --color'
+alias lsd='ls -lF --color'
+alias l1='ls -1 --color'
 
 alias gtp='cd ~/src' # go to projects
 
@@ -10,17 +10,8 @@ alias ff='find . -name '
 grepfind () { grep -RIni "$1" . --include **/"$2" ; }
 alias gf='grepfind'
 
-alias weather='curl -4 http://wttr.in/allentown'
-
-gitunsynced () { find . -name .git -type d 2>/dev/null|while read l;do (pushd "$l/../"&&git fetch&&git status -sb&&popd > /dev/null);echo;done; }
-alias gu='gitunsynced'
-
 alias clip=pbcopy
 
-alias cfp=create-flex-plugin
 alias cls=clear
 
-alias nrt="npm run test"
-alias ns="npm start"
-
-alias python=/usr/local/bin/python3
+alias nts="code ~/src/personal/notes"

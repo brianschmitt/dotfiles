@@ -1,3 +1,9 @@
+" Download vim-plug if it's not already present
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
+
 set noswapfile
 
 set number
@@ -12,7 +18,7 @@ set path=**
 set suffixesadd+=.cs,.js,.htm
 set tags=tags;/
 
-call plug#begin('~/.vim/plugged')
+call plug#begin()
 " Plug 'ervandew/supertab'
 " Plug 'dbakker/vim-projectroot'
 Plug 'scrooloose/syntastic'
@@ -119,19 +125,12 @@ nnoremap <C-l> <C-w>l
 vnoremap > ><CR>gv
 vnoremap < <<CR>gv
 
-" Swap ; and : Convenient.
+" Swap ; and :
 nnoremap ; :
 nnoremap : ;
 
 " sudo write
 command! W w !sudo tee % > /dev/null
-
-fun! InternetSearch()
-    let keyword = expand("<cword>")
-    let url = "https://www.duckduckgo.com/?q=" . keyword
-    exec ':silent !cmd /c start ' . url
-endfun
-nnoremap <leader>is :call InternetSearch()<cr>
 
 "Always show statusline
 set laststatus=2

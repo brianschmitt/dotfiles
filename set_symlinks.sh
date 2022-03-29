@@ -6,8 +6,6 @@ ln -sf dotfiles/.aliases .aliases
 
 ln -sf dotfiles/.ctags .ctags
 
-ln -sf dotfiles/.exports .exports
-
 ln -sf dotfiles/.global_ignore .global_ignore
 
 ln -sf dotfiles/.vimrc .vimrc

@@ -1,4 +1,7 @@
 #!/bin/bash
+
+source <(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+
 brew analytics off
 brew update
 brew upgrade
@@ -29,7 +32,7 @@ brew install git
 #brew install --cask android-platform-tools
 
 # general apps
-brew install --cask joplin
+# brew install --cask joplin
 brew install --cask macvim
 brew install --cask firefox
 brew install --cask iterm2

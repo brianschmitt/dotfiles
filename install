@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+cd "$HOME" || exit
+
+DOTFILES=$HOME/dotfiles
+
+git clone git@github.com:brianschmitt/dotfiles.git "$DOTFILES"
+
+if [ "$(uname)" = "Darwin" ]; then
+    . "$DOTFILES"/osx/bootstrap.sh
+elif [ "$(uname)" = "Linux" ]; then
+    . "$DOTFILES"/lnx/bootstrap.sh
+fi
+
+cd "$HOME" || exit
+rm -f "${HOME}/.zcompdump*"
+
+echo
+echo "Done!"

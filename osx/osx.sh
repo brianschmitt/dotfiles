@@ -21,5 +21,8 @@ defaults write com.apple.dock show-recents -bool false # Hide recents in dock
 defaults write com.apple.dock persistent-apps -array # Remove all default apps
 defaults write com.apple.dock autohide -bool true
 
+killall Finder
+killall Dock
+
 #sudo scutil --set ComputerName "MacBook"
 #sudo scutil --set Hostname "MacBook"
