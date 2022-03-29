@@ -3,8 +3,8 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 
 # History settings
 HISTFILE=$HOME/.zsh_history
-HISTSIZE=1000000
-SAVEHIST=1000000
+HISTSIZE=1000
+SAVEHIST=1000
 
 setopt HIST_IGNORE_ALL_DUPS  # do not put duplicated command into history list
 setopt HIST_SAVE_NO_DUPS  # do not save duplicated command
