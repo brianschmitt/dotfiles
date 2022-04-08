@@ -1,11 +1,11 @@
 #!/bin/bash
 
-cd ~ || exit
+cd "$HOME" || exit
 
-. ~/dotfiles/set_symlinks.sh
-. ~/dotfiles/osx/brew.sh
-. ~/dotfiles/osx/osx.sh
-. ~/dotfiles/osx/nodepkgs.sh
+. "$HOME"/dotfiles/set_symlinks.sh
+. "$HOME"/dotfiles/osx/brew.sh
+. "$HOME"/dotfiles/osx/osx.sh
+. "$HOME"/dotfiles/osx/nodepkgs.sh
 
 vim +:PlugInstall
 

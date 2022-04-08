@@ -13,14 +13,14 @@ setopt INC_APPEND_HISTORY_TIME  # append command to history file immediately aft
 setopt EXTENDED_HISTORY  # record command start time
 
 # Path settings
-TWILIO_AC_ZSH_SETUP_PATH=$HOME/.twilio-cli/autocomplete/zsh_setup && test -f $TWILIO_AC_ZSH_SETUP_PATH && source $TWILIO_AC_ZSH_SETUP_PATH;
 PATH=$PATH:$HOME/.lyftkube-bin
 export PATH="$HOME/scripts:$HOME/Library/Python/3.9/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.1.0/bin:$PATH"
 export PATH="/usr/local/opt/node@14/bin:$PATH"
 
-CDPATH=.:~:~/src
+CDPATH=.:$HOME:$HOME/src
 
+TWILIO_AC_ZSH_SETUP_PATH=$HOME/.twilio-cli/autocomplete/zsh_setup && test -f $TWILIO_AC_ZSH_SETUP_PATH && source $TWILIO_AC_ZSH_SETUP_PATH;
 source $HOME/.aliases
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-source ~/.p10k.zsh
+source $HOME/powerlevel10k/powerlevel10k.zsh-theme
+source $HOME/.p10k.zsh

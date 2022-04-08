@@ -2,7 +2,7 @@
 
 source "$HOME"/.aliases
 
-PATH=$PATH:~/scripts/
+PATH=$PATH:$HOME/scripts/
 
 shopt -s nocaseglob; # Case-insensitive globbing (used in pathname expansion)
 shopt -s histappend; # Append to the Bash history file, rather than overwriting it

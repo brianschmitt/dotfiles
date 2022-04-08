@@ -3,7 +3,7 @@ alias la='ls -laF --color'
 alias lsd='ls -lF --color'
 alias l1='ls -1 --color'
 
-alias gtp='cd ~/src' # go to projects
+alias gtp='cd $HOME/src' # go to projects
 
 alias ff='find . -name '
 
@@ -14,4 +14,4 @@ alias clip=pbcopy
 
 alias cls=clear
 
-alias nts="code ~/src/personal/notes"
+alias nts="code $HOME/src/personal/notes"

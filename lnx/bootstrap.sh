@@ -1,7 +1,7 @@
 #!/bin/bash
 
-cd ~ || exit
+cd "$HOME" || exit
 
-. ~/dotfiles/set_symlinks.sh
+. "$HOME"/dotfiles/set_symlinks.sh
 
 vim +:PlugInstall

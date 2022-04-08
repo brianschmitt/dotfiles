@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~ || exit
+cd "$HOME" || exit
 
 ln -sf dotfiles/.aliases .aliases
 
