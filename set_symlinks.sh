@@ -13,6 +13,7 @@ ln -sf dotfiles/.vimrc .vimrc
 if [ "$(uname)" = "Darwin" ]; then
     ln -sf dotfiles/.gitconfig-osx .gitconfig
     ln -sf dotfiles/.zshrc .zshrc
+    ln -sf dotfiles/.p10k.zsh .p10k.zsh
 
 elif [ "$(uname)" = "Linux" ]; then
     ln -sf dotfiles/.gitconfig-lnx .gitconfig
