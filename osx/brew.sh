@@ -19,6 +19,9 @@ brew install --cask visual-studio-code
 # commandline utils
 brew install ripgrep
 brew install git
+brew install tldr
+brew install fd
+brew install broot
 #brew install awscli
 #brew install azure-cli
 #brew install terraform

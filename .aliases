@@ -5,13 +5,9 @@ alias l1='ls -1 --color'
 
 alias gtp='cd $HOME/src' # go to projects
 
-alias ff='find . -name '
-
-grepfind () { grep -RIni "$1" . --include **/"$2" ; }
-alias gf='grepfind'
-
 alias clip=pbcopy
 
 alias cls=clear
 
 alias nts="code $HOME/src/personal/notes"
+alias jb="~/src/scripts/jobboard/jobboard.sh"
