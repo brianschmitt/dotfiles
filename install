@@ -4,7 +4,7 @@ cd "$HOME" || exit
 
 DOTFILES=$HOME/dotfiles
 
-git clone git@github.com:brianschmitt/dotfiles.git "$DOTFILES"
+git clone https://github.com/brianschmitt/dotfiles.git "$DOTFILES"
 
 if [ "$(uname)" = "Darwin" ]; then
     . "$DOTFILES"/osx/bootstrap.sh

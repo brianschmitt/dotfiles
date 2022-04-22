@@ -6,12 +6,14 @@ This repo is mostly for me but you're welcome to make suggestions.
 
 ### Mac:
 
+-   Hide any icons in dock/laucher
 -   Start terminal
 
 ```shell
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/brianschmitt/dotfiles/main/install)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/brianschmitt/dotfiles/master/install)"
 ```
 
+-   Install developer tools if prompted
 -   Sign into appstore while shell executes
 -   Restore iterm profile
 
