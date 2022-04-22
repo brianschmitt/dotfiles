@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source <(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 brew analytics off
 brew update
@@ -57,6 +57,6 @@ brew install logitech-options
 
 brew install mas
 mas install 937984704 # Amphetamine
-mas install 497799835 # Xcode
+#mas install 497799835 # Xcode
 
 brew cleanup
