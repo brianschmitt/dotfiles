@@ -6,7 +6,7 @@ This repo is mostly for me but you're welcome to make suggestions.
 
 ### Mac:
 
--   Hide any icons in dock/laucher
+-   Arrange icons in launchpad
 -   Start terminal
 
 ```shell

@@ -25,4 +25,4 @@ killall Finder
 killall Dock
 
 #sudo scutil --set ComputerName "MacBook"
-#sudo scutil --set Hostname "MacBook"
+#sudo scutil --set HostName "MacBook"
