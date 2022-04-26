@@ -9,5 +9,4 @@ alias clip=pbcopy
 
 alias cls=clear
 
-alias nts="code $HOME/src/personal/notes"
 alias jb="~/src/scripts/jobboard/jobboard.sh"

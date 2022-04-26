@@ -36,7 +36,7 @@ brew install broot
 #brew install --cask android-platform-tools
 
 # general apps
-# brew install --cask joplin
+brew install --cask joplin
 brew install --cask macvim
 brew install --cask firefox
 brew install --cask iterm2
