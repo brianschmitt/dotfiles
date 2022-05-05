@@ -1,5 +1,5 @@
 cd ~
-git clone --recursive git@github.com:brianschmitt/Powershell.git
+git clone --recursive https://github.com/brianschmitt/Powershell.git
 
 ~/Powershell/set_symlink.bat
 
