@@ -1,7 +1,7 @@
 # Browsers
 choco install googlechrome -y
 choco install firefox -y
-choco install microsoft-edge -y
+#choco install microsoft-edge -y
 
 # update powershell
 choco install powershell-core -y
@@ -14,26 +14,24 @@ choco install firacode -y
 # Editors
 choco install vim -y
 choco install vscode -y
-#choco install vscode-settingssync -y
 #choco install sql-server-management-studio -y
 #choco install onenote -y
 #choco install microsoft-office-deployment -y
 #choco install microsoft-teams -y
-#choco install audacity -y
 
 # General Utils
 choco install 7zip.install -y
 choco install agentransack -y
 choco install ditto -y
-#choco install google-backup-and-sync -y --ignore-checksums
 choco install ripgrep -y
 choco install winmerge -y
-#choco install docker-cli -y
 choco install joplin -y
 choco install powertoys -y
+#choco install docker-cli -y
 #choco install bleachbit -y
 
 # Shell
+choco install microsoft-windows-terminal -y
 #choco install scrcpy -y
 #choco install adb -y
 choco install mremoteng -y
@@ -71,5 +69,4 @@ choco install dotnetcore-sdk -y
 choco pin add -n=googlechrome
 choco pin add -n=firefox
 choco pin add -n=vscode
-choco pin add -n=vscode-settingssync
 #choco pin add -n=microsoft-teams

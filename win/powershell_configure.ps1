@@ -15,7 +15,7 @@ Install-Module -Name PSScriptAnalyzer -Force
 Install-Module -Name VSTeam -Force
 Install-Module -Name PSSudo -Force
 
-Install-Module -Name posh-git -AllowPrerelease -Force
+Install-Module -Name posh-git -Force
 
 Install-Module -Name Az -AllowClobber -Force
 Enable-AzureRmAlias -Scope LocalMachine
