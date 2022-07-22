@@ -1,0 +1,21 @@
+#!/usr/bin/env sh
+
+# env management >>>
+ENVFILE_ROOT=~/.secrets
+
+# set environment function
+# use: "senv environmentFile"
+senv() {
+ source $ENVFILE_ROOT/"$1"
+}
+
+# tab completion for filenames
+_envfile_complete() {
+    local file
+    for file in $ENVFILE_ROOT/"$2"*; do
+        compadd $(basename "$file") # zsh
+    done
+}
+
+compdef _envfile_complete senv
+# <<< env management

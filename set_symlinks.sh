@@ -4,6 +4,8 @@ cd "$HOME" || exit
 
 ln -sf dotfiles/.aliases .aliases
 
+ln -sf dotfiles/.functions .functions
+
 ln -sf dotfiles/.ctags .ctags
 
 ln -sf dotfiles/.global_ignore .global_ignore

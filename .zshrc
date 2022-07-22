@@ -34,6 +34,7 @@ CDPATH=.:$HOME:$HOME/src
 
 TWILIO_AC_ZSH_SETUP_PATH=$HOME/.twilio-cli/autocomplete/zsh_setup && test -f $TWILIO_AC_ZSH_SETUP_PATH && source $TWILIO_AC_ZSH_SETUP_PATH;
 source $HOME/.aliases
+source $HOME/.functions
 source $HOME/powerlevel10k/powerlevel10k.zsh-theme
 source $HOME/.p10k.zsh
 source /Users/bschmitt/.config/broot/launcher/bash/br
