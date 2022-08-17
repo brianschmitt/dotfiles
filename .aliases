@@ -7,4 +7,8 @@ alias clip=pbcopy
 
 alias cls=clear
 
-alias jb="~/src/scripts/jobboard/jobboard.sh"
+alias nup='npm update -g'
+alias bup='brew update && brew upgrade && brew cleanup -s && brew autoremove'
+alias tup='twilio plugins:update && twilio autocomplete'
+alias pup='pip3 freeze | cut -d'=' -f1 | xargs -n1 pip3 install -U'
+alias updateall='nup && bup && tup && pup'

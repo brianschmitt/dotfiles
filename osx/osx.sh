@@ -24,5 +24,10 @@ defaults write com.apple.dock autohide -bool true
 killall Finder
 killall Dock
 
-#sudo scutil --set ComputerName "MacBook"
-#sudo scutil --set HostName "MacBook"
+echo "New hostname:"
+echo
+read -r COMPUTER_NAME
+sudo scutil --set ComputerName "$COMPUTER_NAME"
+sudo scutil --set HostName "$COMPUTER_NAME"
+sudo scutil --set LocalHostName "$COMPUTER_NAME"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$COMPUTER_NAME"

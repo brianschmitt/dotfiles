@@ -9,6 +9,10 @@ senv() {
  source $ENVFILE_ROOT/"$1"
 }
 
+topen() {
+    open https://www.twilio.com/console/projects/summary#:~:text="$TWILIO_ACCOUNT_SID"
+}
+
 # tab completion for filenames
 _envfile_complete() {
     local file
