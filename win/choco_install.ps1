@@ -1,6 +1,6 @@
 # Browsers
-choco install googlechrome -y
-choco install firefox -y
+#choco install googlechrome -y
+#choco install firefox -y
 #choco install microsoft-edge -y
 
 # update powershell
@@ -13,14 +13,14 @@ choco install firacode -y
 
 # Editors
 choco install vim -y
-choco install vscode -y
+#choco install vscode -y
 #choco install sql-server-management-studio -y
 #choco install onenote -y
 #choco install microsoft-office-deployment -y
 #choco install microsoft-teams -y
 
 # General Utils
-choco install 7zip.install -y
+#choco install 7zip.install -y
 choco install agentransack -y
 choco install ditto -y
 choco install ripgrep -y
@@ -34,7 +34,7 @@ choco install powertoys -y
 choco install microsoft-windows-terminal -y
 #choco install scrcpy -y
 #choco install adb -y
-choco install mremoteng -y
+#choco install mremoteng -y
 #choco install rdcman -y
 choco install sysinternals -y
 #choco install vmwareworkstation -y
@@ -48,11 +48,11 @@ choco install gitextensions -y
 
 # Web Dev
 #choco install awscli -y
-choco install azure-cli -y
+#choco install azure-cli -y
 #choco install fiddler -y
 #choco install postman -y
-choco install nodejs-lts -y
-choco install python3 -y
+#choco install nodejs-lts -y
+#choco install python3 -y
 #choco install pip -y
 #choco install terraform -y
 #choco install zap -y
@@ -66,7 +66,7 @@ choco install nugetpackageexplorer -y
 choco install dotnetcore-sdk -y
 
 # Skip future updates from chocolatey for self updating
-choco pin add -n=googlechrome
-choco pin add -n=firefox
-choco pin add -n=vscode
+#choco pin add -n=googlechrome
+#choco pin add -n=firefox
+#choco pin add -n=vscode
 #choco pin add -n=microsoft-teams

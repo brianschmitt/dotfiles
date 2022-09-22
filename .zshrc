@@ -25,9 +25,7 @@ bindkey '[C' forward-word # Opt-RightArrow
 bindkey '[D' backward-word # Opt-LeftArrow
 
 # Path settings
-PATH=$PATH:$HOME/.lyftkube-bin
 export PATH="$HOME/scripts:$HOME/Library/Python/3.9/bin:$PATH"
-export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.1.0/bin:$PATH"
 export PATH="/usr/local/opt/node@14/bin:$PATH"
 
 CDPATH=.:$HOME:$HOME/src

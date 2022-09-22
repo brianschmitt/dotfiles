@@ -1,8 +1,5 @@
 [include]
 	path = ~/dotfiles/.gitconfig
-[credential]
-	helper = manager
 [core]
-	autocrlf = true
-	editor = \"C:/Program Files/Vim/vim82/vim.exe\" --nofork
+	editor = \"C:/tools/vim/vim90/vim.exe\" --nofork
 	whitespace = cr-at-eol

@@ -65,6 +65,7 @@
 [pull]
     rebase = true
 [push]
+    autoSetupRemote = true
     default = current
 [rebase]
     autosquash = true
