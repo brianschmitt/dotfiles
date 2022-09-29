@@ -1,5 +1,5 @@
 cd ~
-git clone --recursive https://github.com/brianschmitt/Powershell.git
+#git clone --recursive https://github.com/brianschmitt/Powershell.git
 
 ~/Powershell/set_symlink.bat
 
@@ -13,9 +13,9 @@ Install-Module -Name Trackyon.Utils -Force
 Install-Module -Name SHiPS -Force
 Install-Module -Name PSScriptAnalyzer -Force
 Install-Module -Name VSTeam -Force
-Install-Module -Name PSSudo -Force
+#Install-Module -Name PSSudo -Force
 
 Install-Module -Name posh-git -Force
 
-Install-Module -Name Az -AllowClobber -Force
-Enable-AzureRmAlias -Scope LocalMachine
+#Install-Module -Name Az -AllowClobber -Force
+#Enable-AzureRmAlias -Scope LocalMachine
