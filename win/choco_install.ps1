@@ -56,7 +56,7 @@ choco install gitextensions -y
 choco install fiddler -y
 #choco install postman -y
 choco install nodejs -y
-#choco install python3 -y
+choco install python3 -y
 #choco install pip -y
 #choco install terraform -y
 #choco install zap -y
