@@ -54,7 +54,7 @@ choco install gitextensions -y
 #choco install awscli -y
 #choco install azure-cli -y
 choco install fiddler -y
-#choco install postman -y
+choco install postman -y
 choco install nodejs -y
 choco install python3 -y
 #choco install pip -y
