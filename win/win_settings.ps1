@@ -20,6 +20,9 @@ Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\
 Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced -Name ShowSuperHidden -Type DWord -Value 1
 Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced -Name HideFileExt -Type DWord -Value 0
 
+# set print screen to lauch snip tool
+Set-ItemProperty -Path "HKCU:\Control Panel\Keyboard" -Name PrintScreenKeyForSnippingEnabled -Type DWord -Value 1
+
 # Win 10 apps
 Get-AppxPackage king.com.CandyCrushSaga | Remove-AppxPackage
 Get-AppxPackage Microsoft.BingWeather | Remove-AppxPackage

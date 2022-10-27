@@ -48,6 +48,7 @@ choco install sysinternals -y
 # Source Controls
 choco install git -y
 choco install gitextensions -y
+choco install delta -y
 #choco install git-credential-manager-for-windows -y
 
 # Web Dev
@@ -71,6 +72,6 @@ choco install dotnetcore-sdk -y
 
 # Skip future updates from chocolatey for self updating
 #choco pin add -n=googlechrome
-#choco pin add -n=firefox
+choco pin add -n=firefox
 #choco pin add -n=vscode
 #choco pin add -n=microsoft-teams

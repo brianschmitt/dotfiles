@@ -7,7 +7,8 @@
     branches = for-each-ref --sort=-committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\" refs/remotes
     changes = "!f() { git diff $(git default-branch); }; f"
     ca = commit --amend --no-edit
-    cleanup = "!f() { git branch --merged $(git default-branch) | rg -v " $(git default-branch)" | xargs git branch -d; }; f"
+    cleanup = "!f() { git branch --merged $(git default-branch) | rg -v " $(git default-branch)" | xargs git branch -d; }; f" # remove merged branches
+    cleanup2 = "!f() { git fetch -p && for branch in $(git branch -vv | grep ': gone]' | awk '{print $1}'); do git branch -D $branch; done }; f" # remove 'gone' branches
     co = checkout
     cob = checkout -b
     com = "!f() { git checkout $(git default-branch); }; f" # checkout main|master
@@ -41,6 +42,7 @@
     editor = vim
     excludesfile = ~/.global_ignore
     filemode = false
+    pager = delta
 [diff]
     tool = vscode
 [difftool "vscode"]
@@ -72,3 +74,23 @@
     autoStash = true
 [status]
     showUntrackedFiles = all
+
+
+[interactive]
+    diffFilter = delta --color-only --features=interactive
+
+[delta]
+    features = decorations
+    side-by-side = true
+
+[delta "interactive"]
+    keep-plus-minus-markers = false
+
+[delta "decorations"]
+    commit-decoration-style = blue ol
+    commit-style = raw
+    file-style = omit
+    hunk-header-decoration-style = blue box
+    hunk-header-file-style = red
+    hunk-header-line-number-style = "#067a00"
+    hunk-header-style = file line-number syntax
