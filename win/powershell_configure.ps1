@@ -9,10 +9,10 @@ Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 Install-Module -Name PowerShellGet -AllowClobber -Force
 
 Install-Module -Name PSReadLine -Force -SkipPublisherCheck
-Install-Module -Name Trackyon.Utils -Force
-Install-Module -Name SHiPS -Force
+#Install-Module -Name Trackyon.Utils -Force
+#Install-Module -Name SHiPS -Force
 Install-Module -Name PSScriptAnalyzer -Force
-Install-Module -Name VSTeam -Force
+#Install-Module -Name VSTeam -Force
 #Install-Module -Name PSSudo -Force
 
 Install-Module -Name posh-git -Force
