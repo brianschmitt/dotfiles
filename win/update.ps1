@@ -1,4 +1,4 @@
-choco upgrade -y
+choco upgrade all -y
 
 npm update -g # npm outdated -g
 
