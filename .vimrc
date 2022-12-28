@@ -26,6 +26,7 @@ call plug#end()
 
 let g:rootmarkers = ['tags', '.git', '*.sln']
 colorscheme nord
+set termguicolors
 
 set background=dark
 let g:netrw_winsize=20
