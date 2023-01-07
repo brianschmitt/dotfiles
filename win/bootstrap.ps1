@@ -5,7 +5,7 @@ function sudo($file) {
 }
 
 . $env:userprofile\dotfiles\win\symlinks.ps1
-sudo $env:userprofile\dotfiles\win\choco_install.ps1
+sudo $env:userprofile\dotfiles\win\winget_install.ps1
 . $env:userprofile\dotfiles\win\nodepip.ps1 # requires npm/pip installed in prior step
 sudo $env:userprofile\dotfiles\win\win_features.ps1
 . $env:userprofile\dotfiles\win\win_settings.ps1
