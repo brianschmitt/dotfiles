@@ -1,5 +1,5 @@
 [include]
 	path = ~/dotfiles/.gitconfig
 [core]
-	editor = \"C:/tools/vim/vim90/vim.exe\" --nofork
+	editor = \"vim.exe\" --nofork
 	whitespace = cr-at-eol

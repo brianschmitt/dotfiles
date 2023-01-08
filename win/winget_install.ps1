@@ -29,11 +29,11 @@ winget install -h -e --id Microsoft.PowerToys
 winget install -h -e --id Logitech.Options
 
 # Shell
-winget install -h -e --id Microsoft.WindowsTerminal
+#winget install -h -e --id Microsoft.WindowsTerminal
 #choco install sysinternals -y
 
 # Source Controls
-winget install -h -e --id Git.Git
+#winget install -h -e --id Git.Git
 winget install -h -e --id GitExtensionsTeam.GitExtensions
 #choco install delta -y
 
@@ -50,3 +50,4 @@ winget install -h -e --id Microsoft.DotNet.SDK.7
 winget install -h "NuGet Package Explorer"
 #choco install nuget.commandline -y
 #winget install -e --id Microsoft.AzureStorageExplorer
+winget install -h -e --id Microsoft.VisualStudio.2022.Professional
