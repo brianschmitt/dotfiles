@@ -19,16 +19,13 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/brianschmitt/dotfiles/ma
 
 ### Windows:
 
--   Start Powershell as admin
+-   Start Powershell
 
 ```shell
-cd ~
-Set-ExecutionPolicy Unrestricted
-iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
-choco install git -y
+Set-ExecutionPolicy Unrestricted -Scope CurrentUser
+winget install git.git
 
 # restart powershell session to add git to path
-cd ~
 git clone https://github.com/brianschmitt/dotfiles.git
 . ~/dotfiles/win/bootstrap.ps1
 ```
