@@ -28,8 +28,8 @@ Get-AppxPackage Microsoft.MicrosoftSolitaireCollection | Remove-AppxPackage
 Get-AppxPackage Microsoft.People | Remove-AppxPackage
 Get-AppxPackage Microsoft.ZuneMusic | Remove-AppxPackage
 Get-AppxPackage Microsoft.ZuneVideo | Remove-AppxPackage
-#Get-AppxPackage Microsoft.Office.OneNote | Remove-AppxPackage
-#Get-AppxPackage Microsoft.Windows.Photos | Remove-AppxPackage
 Get-AppxPackage Microsoft.WindowsSoundRecorder | Remove-AppxPackage
 Get-AppxPackage microsoft.windowscommunicationsapps | Remove-AppxPackage
 Get-AppxPackage Microsoft.SkypeApp | Remove-AppxPackage
+Get-AppxPackage Disney.37853FC22B2CE | Remove-AppxPackage
+Get-AppxPackage MicrosoftTeams | Remove-AppxPackage

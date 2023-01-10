@@ -7,7 +7,7 @@ function sudo($file) {
 . $env:userprofile\dotfiles\win\symlinks.ps1
 sudo $env:userprofile\dotfiles\win\winget_install.ps1
 
-$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User") 
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 . $env:userprofile\dotfiles\win\nodepip.ps1 # requires npm/pip installed in prior step
 sudo $env:userprofile\dotfiles\win\win_features.ps1
 . $env:userprofile\dotfiles\win\win_settings.ps1
@@ -22,5 +22,6 @@ Invoke-WebRequest -useb https://raw.githubusercontent.com/junegunn/vim-plug/mast
 
 Set-TimeZone -Name "Eastern Standard Time"
 
-#$vimPath = "C:\Program Files\Vim\vim90"
-#[Environment]::SetEnvironmentVariable("PATH", $Env:PATH + ";$vimPath", [EnvironmentVariableTarget]::User)
+$oldPath = [System.Environment]::GetEnvironmentVariable("Path","User")
+$vimPath = "C:\Program Files\Vim\vim90"
+[Environment]::SetEnvironmentVariable("PATH", $oldPath + ";$vimPath", [EnvironmentVariableTarget]::User)
