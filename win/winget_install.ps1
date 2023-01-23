@@ -20,7 +20,7 @@ winget install -h -e --id SlackTechnologies.Slack
 
 # General Utils
 #winget install -e --id 7zip.7zip
-winget install -h -e --id Mythicsoft.AgentRansack
+#winget install -h -e --id Mythicsoft.AgentRansack
 winget install -h -e --id Ditto.Ditto
 #choco install ripgrep -y
 winget install -h -e --id WinMerge.WinMerge
@@ -34,7 +34,7 @@ winget install -h -e --id Logitech.Options
 
 # Source Controls
 #winget install -h -e --id Git.Git
-winget install -h -e --id GitExtensionsTeam.GitExtensions
+#winget install -h -e --id GitExtensionsTeam.GitExtensions
 #choco install delta -y
 
 # Web Dev
