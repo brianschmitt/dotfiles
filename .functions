@@ -21,5 +21,7 @@ _envfile_complete() {
     done
 }
 
+autoload -Uz compinit
+compinit
 compdef _envfile_complete senv
 # <<< env management

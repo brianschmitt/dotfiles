@@ -27,7 +27,7 @@ bindkey '[D' backward-word # Opt-LeftArrow
 
 # Path settings
 export PATH="$HOME/scripts:$HOME/Library/Python/3.9/bin:$PATH"
-export PATH="/usr/local/opt/node@14/bin:$PATH"
+export PATH="/usr/local/opt/node@16/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 CDPATH=.:$HOME:$HOME/src
