@@ -1,6 +1,4 @@
 [include]
 	path = ~/dotfiles/.gitconfig
 [core]
-	editor = \"C:/Program Files/Vim/vim90/vim.exe\" --nofork
-	whitespace = cr-at-eol
 	sshCommand = C:/Windows/System32/OpenSSH/ssh.exe

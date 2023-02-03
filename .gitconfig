@@ -39,7 +39,8 @@
 [color]
     ui = auto
 [core]
-    editor = vim
+    autocrlf = true
+    editor = "gvim --nofork '%*'"
     excludesfile = ~/.global_ignore
     filemode = false
 [diff]

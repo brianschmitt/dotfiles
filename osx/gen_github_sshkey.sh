@@ -1,12 +1,12 @@
 #!/bin/bash
 
-ssh-keygen -t ed25519 -C "brianschmitt@gmail.com" -f "$HOME"/.ssh/github_rsa
+ssh-keygen -t ed25519 -C "brianschmitt@gmail.com" -f id_personal
 
 eval "$(ssh-agent -s)"
 
-ssh-add -K "$HOME"/.ssh/github_rsa
+ssh-add -K "$HOME"/.ssh/id_personal
 
-pbcopy < "$HOME"/.ssh/github_rsa.pub
+pbcopy < "$HOME"/.ssh/id_personal.pub
 
 read -r -p "Add key (in clipboard) to github and press enter to continue"
 
@@ -17,5 +17,5 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
     cd "$HOME"/dotfiles || exit
-    git remote set-url origin git@github.com:brianschmitt/dotfiles
+    git remote set-url origin git@github.com-personal:brianschmitt/dotfiles
 fi

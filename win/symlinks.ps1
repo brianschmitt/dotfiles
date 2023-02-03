@@ -1,4 +1,13 @@
-New-Item -ItemType HardLink -Path $env:userprofile\.vimrc -Target $env:userprofile\dotfiles\.vimrc
-New-Item -ItemType HardLink -Path $env:userprofile\.ctags -Target $env:userprofile\dotfiles\.ctags
-New-Item -ItemType HardLink -Path $env:userprofile\.global_ignore -Target $env:userprofile\dotfiles\.global_ignore
+$files = '.vimrc','.ctags','.global_ignore'
+
+foreach ($file in $files) {
+    $hardlink = (Get-ChildItem $env:userprofile\$file -ErrorAction SilentlyContinue).LinkType -eq "HardLink"
+    if (!$hardlink) {
+        Remove-Item $env:userprofile\$file -ErrorAction SilentlyContinue
+        New-Item -ItemType HardLink -Path $env:userprofile\$file -Target $env:userprofile\dotfiles\$file
+    }
+
+}
+
+# map this to my win gitconfig file
 New-Item -ItemType HardLink -Path $env:userprofile\.gitconfig -Target $env:userprofile\dotfiles\.gitconfig-win

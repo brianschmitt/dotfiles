@@ -1,10 +1,10 @@
 cd ~/.ssh
 
-ssh-keygen -t rsa -C "brianschmitt@gmail.com" -f github_rsa
+ssh-keygen -t ed25519 -C "brianschmitt@gmail.com" -f id_personal
 
-ssh-add github_rsa
+ssh-add id_personal
 
-cat github_rsa.pub | clip
+cat id_personal.pub | clip
 
 echo "Add key (in clipboard) to github and"
 timeout -1
@@ -18,7 +18,7 @@ goto :END
 
 :yes
     cd ~/dotfiles
-    git remote set-url origin git@github.com:brianschmitt/dotfiles
+    git remote set-url origin git@github.com-personal:brianschmitt/dotfiles
 
 :END
 exit
