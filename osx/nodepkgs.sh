@@ -8,7 +8,6 @@ twilio plugins:install @twilio-labs/plugin-token
 twilio plugins:install @twilio-labs/plugin-watch
 twilio plugins:install @twilio-labs/plugin-flex
 twilio plugins:install @twilio-labs/plugin-webhook # https://github.com/twilio-labs/plugin-webhook
-twilio plusins:install @twilio-labs/plugin-token # https://github.com/twilio-labs/plugin-token
 
 twilio autocomplete
 # https://www.twilio.com/docs/twilio-cli/plugins

@@ -40,7 +40,6 @@
     ui = auto
 [core]
     autocrlf = true
-    editor = "gvim --nofork '%*'"
     excludesfile = ~/.global_ignore
     filemode = false
 [diff]
