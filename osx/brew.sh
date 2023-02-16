@@ -59,6 +59,7 @@ brew install logitech-options
 
 brew install mas
 mas install 937984704 # Amphetamine
+mas install 1295203466 # MS Remote Desktop
 #mas install 497799835 # Xcode
 
 brew cleanup
