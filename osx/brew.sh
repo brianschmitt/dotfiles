@@ -1,7 +1,8 @@
 #!/bin/sh
 
 command -v brew >/dev/null 2>&1 || { echo >&2 "Installing Homebrew Now"; \
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"; }
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"; \
+eval "$(/opt/homebrew/bin/brew shellenv)"; }
 
 brew analytics off
 brew update
