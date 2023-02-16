@@ -10,9 +10,9 @@ brew upgrade
 brew upgrade --cask
 
 # web dev
-brew install node@14
-brew link --force --overwrite node@14
-brew pin node@14
+brew install node@16
+brew link --force --overwrite node@16
+brew pin node@16
 brew install --cask visual-studio-code
 #brew install --cask postman
 #brew install --cask ngrok
