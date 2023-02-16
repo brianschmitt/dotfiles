@@ -37,4 +37,5 @@ source $HOME/.aliases
 source $HOME/.functions
 source $HOME/powerlevel10k/powerlevel10k.zsh-theme
 source $HOME/.p10k.zsh
-source /Users/bschmitt/.config/broot/launcher/bash/br
+
+eval "$(/opt/homebrew/bin/brew shellenv)"

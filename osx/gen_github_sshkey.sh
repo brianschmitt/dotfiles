@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ssh-keygen -t ed25519 -C "brianschmitt@gmail.com" -f id_personal
+ssh-keygen -t ed25519 -C "brianschmitt@gmail.com" -f "$HOME"/.ssh/id_personal
 
 eval "$(ssh-agent -s)"
 
@@ -8,11 +8,11 @@ ssh-add -K "$HOME"/.ssh/id_personal
 
 pbcopy < "$HOME"/.ssh/id_personal.pub
 
-read -r -p "Add key (in clipboard) to github and press enter to continue"
+read "?Add key (in clipboard) to github and press enter to continue"
 
 ssh -T git@github.com
 
-read -p "Update remote on $HOME/dotfiles? [y/n]" -n 1 -r
+read "?Update remote on $HOME/dotfiles? [y/n]"
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then

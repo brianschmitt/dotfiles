@@ -13,3 +13,5 @@ twilio autocomplete
 # https://www.twilio.com/docs/twilio-cli/plugins
 # https://github.com/twilio-infra-as-code/plugin-twilio-infra
 # https://github.com/twilio-labs/plugin-token
+
+pip3 install -U gita
