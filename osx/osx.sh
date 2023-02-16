@@ -21,6 +21,8 @@ defaults write com.apple.dock show-recents -bool false # Hide recents in dock
 defaults write com.apple.dock persistent-apps -array # Remove all default apps
 defaults write com.apple.dock autohide -bool true
 
+cp ~/dotfiles/osx/DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict # Copy personal default keybindings
+
 killall Finder
 killall Dock
 
