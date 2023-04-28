@@ -54,8 +54,8 @@ brew install --cask rectangle
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code-nerd-font
 
-brew tap homebrew/cask-drivers
-brew install logi-options-plus
+#brew tap homebrew/cask-drivers
+#brew install logi-options-plus
 
 brew install mas
 mas install 937984704 # Amphetamine
