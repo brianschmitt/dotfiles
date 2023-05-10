@@ -29,7 +29,7 @@ winget install -h -e --id Microsoft.PowerToys
 winget install -h -e --id Logitech.Options
 
 # Shell
-#winget install -h -e --id Microsoft.WindowsTerminal
+winget install -h -e --id Microsoft.WindowsTerminal
 #choco install sysinternals -y
 
 # Source Controls
