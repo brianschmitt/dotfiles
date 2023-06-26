@@ -24,7 +24,7 @@ winget install -h -e --id SlackTechnologies.Slack
 winget install -h -e --id Ditto.Ditto
 #choco install ripgrep -y
 winget install -h -e --id WinMerge.WinMerge
-winget install -h -e --id Joplin.Joplin
+winget install -h -e --id Obsidian.Obsidian
 winget install -h -e --id Microsoft.PowerToys
 winget install -h -e --id Logitech.Options
 
@@ -36,6 +36,7 @@ winget install -h -e --id Microsoft.WindowsTerminal
 #winget install -h -e --id Git.Git
 #winget install -h -e --id GitExtensionsTeam.GitExtensions
 #choco install delta -y
+#winget install -h -e --id GitHub.cli
 
 # Web Dev
 winget install -h -e --id Telerik.Fiddler.Classic

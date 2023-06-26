@@ -24,6 +24,7 @@ brew install git
 brew install tldr
 brew install fd
 brew install broot
+brew install jq
 #brew install awscli
 #brew install azure-cli
 #brew install terraform
@@ -37,7 +38,7 @@ brew install broot
 #brew install --cask android-platform-tools
 
 # general apps
-brew install --cask joplin
+brew install --cask obsidian
 brew install --cask macvim
 brew install --cask firefox
 brew install --cask iterm2
