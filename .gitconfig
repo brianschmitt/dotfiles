@@ -23,6 +23,7 @@
     lg = log --pretty=lg --date=relative --graph
     ll = log --pretty=lg --numstat
     prune = remote update --prune
+    runt = clean -dxf # remove untracked files
     rom = "!f() { git pull --rebase origin $(git default-branch); }; f"
     st = status -sb
     stash = stash --include-untracked
