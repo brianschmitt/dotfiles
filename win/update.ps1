@@ -1,4 +1,4 @@
-winget upgrade all
+winget upgrade --all
 
 npm update -g # npm outdated -g
 
