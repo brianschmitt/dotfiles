@@ -5,23 +5,34 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `.osx` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-defaults write com.apple.finder AppleShowAllFiles -bool true # Finder: show hidden files by default
-defaults write com.apple.finder ShowStatusBar -bool true # Finder: show status bar
-defaults write com.apple.finder ShowPathbar -bool true # Finder: show path bar
-defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv" # Use list view in all Finder windows by default
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true # Finder: show all filename extensions
+# Finder: show hidden files by default
+defaults write com.apple.finder AppleShowAllFiles -bool true
+# Finder: show status bar
+defaults write com.apple.finder ShowStatusBar -bool true
+# Finder: show path bar
+defaults write com.apple.finder ShowPathbar -bool true
+# Use list view in all Finder windows by default
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+# Finder: show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
-defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true # Avoid creating .DS_Store files on network volumes
+# Avoid creating .DS_Store files on network volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
-defaults write com.googlecode.iterm2 PromptOnQuit -bool false # Don't display the annoying prompt when quitting iTerm
+# Don't display the annoying prompt when quitting iTerm
+defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
-sudo systemsetup -settimezone America/New_York # Set locale
+# Set locale
+sudo systemsetup -settimezone America/New_York
 
-defaults write com.apple.dock show-recents -bool false # Hide recents in dock
-defaults write com.apple.dock persistent-apps -array # Remove all default apps
+# Hide recents in dock
+defaults write com.apple.dock show-recents -bool false
+# Remove all default apps
+defaults write com.apple.dock persistent-apps -array
 defaults write com.apple.dock autohide -bool true
 
-cp ~/dotfiles/osx/DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict # Copy personal default keybindings
+# Copy personal default keybindings
+cp ~/dotfiles/osx/DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
 
 killall Finder
 killall Dock
