@@ -27,6 +27,7 @@ winget install -h -e --id WinMerge.WinMerge
 winget install -h -e --id Obsidian.Obsidian
 winget install -h -e --id Microsoft.PowerToys
 winget install -h -e --id Logitech.Options
+winget install -h -e --id BurntSushi.ripgrep.GNU
 
 # Shell
 winget install -h -e --id Microsoft.WindowsTerminal
@@ -46,6 +47,7 @@ winget install -h -e --id Python.Python.3.10
 #choco install pip -y
 
 #.Net Utils
+winget install -h -e --id Microsoft.NuGet
 winget install -h -e --id icsharpcode.ILSpy
 winget install -h -e --id Microsoft.DotNet.SDK.7
 winget install -h "NuGet Package Explorer"

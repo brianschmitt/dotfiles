@@ -15,6 +15,8 @@ sudo $env:userprofile\dotfiles\win\win_features.ps1
 git clone --recursive https://brianschmitt@github.com/brianschmitt/Powershell.git $env:userprofile\Powershell
 . $env:userprofile\Powershell\configure_environment.ps1
 
+rg --generate complete-powershell > $env:userprofile\Powershell\_rg.ps1
+
 Invoke-WebRequest -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
     New-Item $env:userprofile/vimfiles/autoload/plug.vim -Force
 
