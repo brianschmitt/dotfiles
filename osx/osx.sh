@@ -32,6 +32,7 @@ defaults write com.apple.dock persistent-apps -array
 defaults write com.apple.dock autohide -bool true
 
 # Copy personal default keybindings
+mkdir ~/Library/KeyBindings
 cp ~/dotfiles/osx/DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
 
 killall Finder
