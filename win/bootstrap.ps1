@@ -25,5 +25,5 @@ Invoke-WebRequest -useb https://raw.githubusercontent.com/junegunn/vim-plug/mast
 Set-TimeZone -Name "Eastern Standard Time"
 
 $oldPath = [System.Environment]::GetEnvironmentVariable("Path","User")
-$vimPath = "C:\Program Files\Vim\vim90"
+$vimPath = "C:\Program Files\Vim\vim91"
 [Environment]::SetEnvironmentVariable("PATH", $oldPath + ";$vimPath", [EnvironmentVariableTarget]::User)
