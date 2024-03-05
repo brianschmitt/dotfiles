@@ -53,7 +53,7 @@ winget install -h -e --id Python.Python.3.10
 winget install -h -e --id Microsoft.NuGet
 winget install -h -e --id icsharpcode.ILSpy
 winget install -h -e --id Microsoft.DotNet.SDK.6
-winget install -h -e --id Microsoft.DotNet.SDK.7
+#winget install -h -e --id Microsoft.DotNet.SDK.7
 winget install -h -e --id Microsoft.DotNet.SDK.8
 winget install -h "NuGet Package Explorer"
 #choco install nuget.commandline -y

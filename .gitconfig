@@ -36,14 +36,16 @@
     lab = "!f() { find . -name .git -type d 2>/dev/null|while read -r l;do (pushd "$l/../"&&git branches &&git status -sb&&popd > /dev/null);echo;done }; f"
     pullall = "!f() { find . -name .git -type d 2>/dev/null|while read -r l;do (pushd \"$l/../\"&&git pull&&git status -sb&&popd > /dev/null);echo;done }; f"
     unsynced = "!f() { find . -name .git -type d 2>/dev/null|while read -r l;do (pushd \"$l/../\"&&git fetch&&git status -sb&&popd > /dev/null);echo;done }; f"
-
 [color]
     ui = auto
+[column]
+	ui = auto
 [core]
     autocrlf = true
     excludesfile = ~/.global_ignore
     filemode = false
 [diff]
+    algorithm = histogram
     tool = vscode
 [difftool "vscode"]
     cmd = "code --wait --diff $LOCAL $REMOTE"
@@ -54,6 +56,8 @@
     process = git-lfs filter-process
     required = true
     clean = git-lfs clean -- %f
+[gpg]
+	format = ssh
 [help]
     autocorrect = 1
 [init]
