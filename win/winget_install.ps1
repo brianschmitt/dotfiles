@@ -15,6 +15,7 @@ winget install -h -e --id Microsoft.PowerShell
 winget install -h -e --id vim.vim
 winget install -h -e --id Microsoft.VisualStudioCode
 winget install -h -e --id Microsoft.SQLServerManagementStudio
+winget install -h -e --id dbeaver.dbeaver
 winget install -h -e --id 3T.Robo3T
 winget install -h -e --id SlackTechnologies.Slack
 winget install -h -e --id Microsoft.Teams
