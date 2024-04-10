@@ -1,4 +1,4 @@
-winget upgrade --all
+winget upgrade --all --accept-package-agreements --accept-source-agreements
 
 npm update -g npm
 npm update -g # npm outdated -g
