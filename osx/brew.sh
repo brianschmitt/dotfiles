@@ -11,7 +11,7 @@ brew upgrade --cask
 
 # web dev
 brew install node@18
-brew link --force --overwrite node@16
+# brew link --force --overwrite node@16
 brew pin node@18
 brew install --cask visual-studio-code
 brew install --cask postman
@@ -21,12 +21,12 @@ brew install --cask postman
 # commandline utils
 brew install ripgrep
 brew install git
-brew install tldr
-brew install fd
-brew install broot
+#brew install tldr
+#brew install fd
+#brew install broot
 brew install jq
 #brew install awscli
-brew install azure-cli
+#brew install azure-cli
 brew install terraform
 
 #brew tap mongodb/brew
@@ -40,14 +40,14 @@ brew install terraform
 # general apps
 brew install --cask obsidian
 brew install --cask macvim
-brew install --cask firefox
+#brew install --cask firefox
 brew install --cask iterm2
-brew install --cask spotify
+#brew install --cask spotify
 brew install --cask clipy
 brew install --cask rectangle
 #brew install --cask taskexplorer
-brew install --cask microsoft-outlook
-brew install --cask microsoft-teams
+#brew install --cask microsoft-outlook
+#brew install --cask microsoft-teams
 
 # optional
 #brew install --cask bitwarden
@@ -58,11 +58,11 @@ brew tap homebrew/cask-fonts
 brew install --cask font-fira-code-nerd-font
 
 #brew tap homebrew/cask-drivers
-#brew install logi-options-plus
+brew install logi-options-plus
 
 brew install mas
-mas install "Amphetamine", id: 937984704
-mas install "Microsoft Remote Desktop", id: 1295203466
+mas install 937984704 # Amphetamine
+mas install 1295203466 # Microsoft Remote Desktop
 #mas install 497799835 # Xcode
 
 brew cleanup

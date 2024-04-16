@@ -3,7 +3,7 @@
 npm install -g git-open
 npm install -g twilio-cli
 npm install -g typescript
-npm install -g ts-node
+# npm install -g ts-node
 
 twilio plugins:install @twilio-labs/plugin-serverless
 twilio plugins:install @twilio-labs/plugin-token
