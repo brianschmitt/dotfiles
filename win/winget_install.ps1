@@ -41,7 +41,7 @@ winget install -h -e --id Microsoft.WindowsTerminal
 #winget install -h -e --id Git.Git
 #winget install -h -e --id GitExtensionsTeam.GitExtensions
 #choco install delta -y
-winget install -h -e --id GitHub.cli
+#winget install -h -e --id GitHub.cli
 
 # Web Dev
 winget install -h -e --id Telerik.Fiddler.Classic
@@ -54,7 +54,6 @@ winget install -h -e --id Python.Python.3.10
 winget install -h -e --id Microsoft.NuGet
 winget install -h -e --id icsharpcode.ILSpy
 winget install -h -e --id Microsoft.DotNet.SDK.6
-#winget install -h -e --id Microsoft.DotNet.SDK.7
 winget install -h -e --id Microsoft.DotNet.SDK.8
 winget install -h "NuGet Package Explorer"
 #choco install nuget.commandline -y

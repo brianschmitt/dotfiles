@@ -32,4 +32,3 @@ Get-AppxPackage Microsoft.WindowsSoundRecorder | Remove-AppxPackage
 Get-AppxPackage microsoft.windowscommunicationsapps | Remove-AppxPackage
 Get-AppxPackage Microsoft.SkypeApp | Remove-AppxPackage
 Get-AppxPackage Disney.37853FC22B2CE | Remove-AppxPackage
-Get-AppxPackage MicrosoftTeams | Remove-AppxPackage
