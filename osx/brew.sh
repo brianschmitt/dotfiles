@@ -10,9 +10,9 @@ brew upgrade
 brew upgrade --cask
 
 # web dev
-brew install nvm
-#brew install node@18
-#brew pin node@18
+# brew install nvm
+brew install node@18
+brew pin node@18
 brew install --cask visual-studio-code
 brew install --cask postman
 #brew install --cask ngrok

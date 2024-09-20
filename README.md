@@ -16,6 +16,10 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/brianschmitt/dotfiles/ma
 -   Install developer tools if prompted
 -   Sign into appstore while shell executes
 -   Restore iterm profile
+-   Run the following for hidpi on external display
+```shell
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)"
+```
 
 ### Windows:
 

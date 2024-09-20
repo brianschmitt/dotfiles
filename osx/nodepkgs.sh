@@ -1,7 +1,7 @@
 #!/bin/bash
 
-mkdir ~/.nvm
-nvm install --lts
+# mkdir ~/.nvm
+# nvm install --lts
 
 npm install -g git-open
 npm install -g twilio-cli

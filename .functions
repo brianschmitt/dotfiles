@@ -13,9 +13,9 @@ topen() {
     open https://www.twilio.com/console/projects/summary#:~:text="$TWILIO_ACCOUNT_SID"
 }
 
-chpwd() {
-    ls
-}
+# chpwd() {
+#     ll
+# }
 
 # tab completion for filenames
 _envfile_complete() {
