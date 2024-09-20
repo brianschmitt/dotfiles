@@ -19,7 +19,4 @@ twilio autocomplete
 # https://github.com/twilio-infra-as-code/plugin-twilio-infra
 # https://github.com/twilio-labs/plugin-token
 
-echo '*** To Fix Homebrew python/pip errors ***'
-echo 'rm /opt/homebrew/Cellar/python\@3*/**/EXTERNALLY-MANAGED'
-
 pip3 install -U gita

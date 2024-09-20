@@ -14,7 +14,7 @@ brew upgrade --cask
 brew install node@18
 brew pin node@18
 brew install --cask visual-studio-code
-brew install --cask postman
+#brew install --cask postman
 #brew install --cask ngrok
 #brew install --cask http-toolkit
 
@@ -24,10 +24,10 @@ brew install git
 #brew install tldr
 #brew install fd
 #brew install broot
-brew install jq
+#brew install jq
 #brew install awscli
 #brew install azure-cli
-brew install terraform
+#brew install terraform
 
 #brew tap mongodb/brew
 #brew install mongodb-community@4.4
@@ -35,19 +35,24 @@ brew install terraform
 # phone utils
 #brew install scrcpy
 #brew install --cask android-file-transfer
-#brew install --cask android-platform-tools
+brew install --cask android-studio
+brew install --cask android-platform-tools
 
 # general apps
 brew install --cask obsidian
 brew install --cask macvim
-#brew install --cask firefox
+brew install --cask firefox
 brew install --cask iterm2
 #brew install --cask spotify
 brew install --cask clipy
 brew install --cask rectangle
+brew install --cask calibre
+brew install --cask docker
+brew install --cask syncthing
 #brew install --cask taskexplorer
 #brew install --cask microsoft-outlook
 #brew install --cask microsoft-teams
+brew install --cask logi-options-plus
 
 # optional
 #brew install --cask bitwarden
@@ -57,8 +62,7 @@ brew install --cask rectangle
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code-nerd-font
 
-#brew tap homebrew/cask-drivers
-brew install logi-options-plus
+brew install supabase/tap/supabase
 
 brew install mas
 mas install 937984704 # Amphetamine
