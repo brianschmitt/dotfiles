@@ -23,14 +23,13 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 # Set locale
-sudo systemsetup -settimezone America/New_York
+#sudo systemsetup -settimezone America/New_York
 
-defaults delete com.apple.dock
 # Hide recents in dock
-defaults write com.apple.dock show-recents -bool false
+defaults write "com.apple.dock" "show-recents" -bool false
 # Remove all default apps
-defaults write com.apple.dock persistent-apps -array
-defaults write com.apple.dock autohide -bool true
+defaults write "com.apple.dock" "persistent-apps" -array
+defaults write "com.apple.dock" "autohide" -bool true
 
 # Copy personal default keybindings
 mkdir ~/Library/KeyBindings

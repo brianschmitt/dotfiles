@@ -26,7 +26,7 @@ bindkey '[C' forward-word # Opt-RightArrow
 bindkey '[D' backward-word # Opt-LeftArrow
 
 # Path settings
-export PATH="$HOME/scripts:$HOME/Library/Python/3.10/bin:$PATH"
+export PATH="$HOME/scripts:$HOME/Library/Python/3.9/bin:$PATH"
 export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 

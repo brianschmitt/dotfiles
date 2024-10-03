@@ -67,6 +67,7 @@ brew install supabase/tap/supabase
 brew install mas
 mas install 937984704 # Amphetamine
 mas install 1295203466 # Microsoft Remote Desktop
+mas install 1452453066 # Hidden Bar
 #mas install 497799835 # Xcode
 
 brew cleanup
