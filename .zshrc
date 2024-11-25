@@ -6,7 +6,7 @@ HISTFILE=$HOME/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 
-setopt SHARE_HISTORY # allow multiple term sessions to write to hist
+#setopt SHARE_HISTORY # allow multiple term sessions to write to hist
 setopt HIST_IGNORE_ALL_DUPS  # do not put duplicated command into history list
 setopt HIST_IGNORE_DUPS  # do not save duplicated command
 setopt HIST_REDUCE_BLANKS  # remove unnecessary blanks
@@ -22,19 +22,27 @@ bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
 bindkey '^[[H' beginning-of-line # Home
 bindkey '^[[F' end-of-line # End
-bindkey '[C' forward-word # Opt-RightArrow
-bindkey '[D' backward-word # Opt-LeftArrow
 
 # Path settings
-export PATH="$HOME/scripts:$HOME/Library/Python/3.9/bin:$PATH"
+export PATH="$HOME/scripts:$PATH"
+export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/emulator
+
+# Autocompletion settings
+export FPATH="$HOME/dotfiles/osx:$FPATH"
+
+# default commands
+export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git"'
+
 
 CDPATH=.:$HOME:$HOME/src
 

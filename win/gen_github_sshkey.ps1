@@ -19,7 +19,7 @@ ssh -T git@github.com
 
 # :yes
 #     cd ~/dotfiles
-#     git remote set-url origin git@github.com-personal:brianschmitt/dotfiles
+#     git remote set-url origin git@github.com:brianschmitt/dotfiles
 
 # :END
 # exit

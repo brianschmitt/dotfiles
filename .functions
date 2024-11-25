@@ -1,5 +1,9 @@
 #!/usr/bin/env sh
 
+# chpwd() {
+#     ll
+# }
+
 # env management >>>
 ENVFILE_ROOT=~/.secrets
 
@@ -10,12 +14,8 @@ senv() {
 }
 
 topen() {
-    open https://www.twilio.com/console/projects/summary#:~:text="$TWILIO_ACCOUNT_SID"
+    open "https://console.twilio.com/user/accounts?q=$TWILIO_ACCOUNT_SID"
 }
-
-# chpwd() {
-#     ll
-# }
 
 # tab completion for filenames
 _envfile_complete() {

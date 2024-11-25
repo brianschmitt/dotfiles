@@ -1,11 +1,10 @@
 alias ll='ls -laF --color'
-alias la='ls -laF --color'
-alias lsd='ls -lF --color'
-alias l1='ls -1 --color'
 
 alias clip=pbcopy
 
 alias cls=clear
+
+alias f='open "$(fzf --preview='\''less {}'\'')"'
 
 alias nup='echo "updating npm" && npm update -g'
 alias bup='echo "updating brew" && brew update && brew upgrade && brew cleanup -s && brew autoremove'

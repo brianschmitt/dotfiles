@@ -21,7 +21,9 @@ brew install --cask visual-studio-code
 # commandline utils
 brew install ripgrep
 brew install git
-#brew install tldr
+brew install fzf
+brew install tldr
+brew install git-delta
 #brew install fd
 #brew install broot
 #brew install jq
@@ -52,7 +54,7 @@ brew install --cask syncthing
 #brew install --cask taskexplorer
 #brew install --cask microsoft-outlook
 #brew install --cask microsoft-teams
-brew install --cask logi-options-plus
+brew install --cask logi-options+
 
 # optional
 #brew install --cask bitwarden
