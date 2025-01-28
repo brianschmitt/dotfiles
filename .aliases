@@ -5,9 +5,3 @@ alias clip=pbcopy
 alias cls=clear
 
 alias f='open "$(fzf --preview='\''less {}'\'')"'
-
-alias nup='echo "updating npm" && npm update -g'
-alias bup='echo "updating brew" && brew update && brew upgrade && brew cleanup -s && brew autoremove'
-alias tup='echo "updating twilio cli" && twilio plugins:update && twilio autocomplete'
-alias pup='echo "updating pip" && pip3 freeze | cut -d'=' -f1 | xargs -n1 pip3 install -U'
-alias updateall='nup && bup && tup && pup'
