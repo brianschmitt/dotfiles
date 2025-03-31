@@ -23,7 +23,7 @@ brew install --cask visual-studio-code
 brew install ripgrep
 brew install git
 brew install fzf
-brew install tldr
+#brew install tldr
 brew install git-delta
 #brew install fd
 #brew install broot
@@ -38,8 +38,8 @@ brew install git-delta
 # phone utils
 #brew install scrcpy
 #brew install --cask android-file-transfer
-brew install --cask android-studio
-brew install --cask android-platform-tools
+#brew install --cask android-studio
+#brew install --cask android-platform-tools
 
 # general apps
 brew install --cask obsidian
@@ -48,9 +48,9 @@ brew install --cask firefox
 brew install --cask iterm2
 #brew install --cask spotify
 brew install --cask clipy
-brew install --cask rectangle
-brew install --cask calibre
-brew install --cask docker
+#brew install --cask rectangle
+#brew install --cask calibre
+#brew install --cask docker
 brew install --cask syncthing
 #brew install --cask taskexplorer
 #brew install --cask microsoft-outlook
@@ -69,7 +69,7 @@ brew install supabase/tap/supabase
 
 brew install mas
 mas install 937984704 # Amphetamine
-mas install 1295203466 # Microsoft Remote Desktop
+#mas install 1295203466 # Microsoft Remote Desktop
 mas install 1452453066 # Hidden Bar
 #mas install 497799835 # Xcode
 

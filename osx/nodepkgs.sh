@@ -6,7 +6,7 @@
 npm install -g git-open
 npm install -g twilio-cli
 npm install -g typescript
-npm install -g expo
+# npm install -g expo
 # npm install -g ts-node
 
 twilio plugins:install @twilio-labs/plugin-serverless
