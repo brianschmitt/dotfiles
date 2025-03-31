@@ -44,7 +44,7 @@ brew install git-delta
 # general apps
 brew install --cask obsidian
 brew install --cask macvim
-brew install --cask firefox
+#brew install --cask firefox
 brew install --cask iterm2
 #brew install --cask spotify
 brew install --cask clipy
