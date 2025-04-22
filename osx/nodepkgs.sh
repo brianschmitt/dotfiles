@@ -20,4 +20,4 @@ twilio autocomplete
 # https://github.com/twilio-infra-as-code/plugin-twilio-infra
 # https://github.com/twilio-labs/plugin-token
 
-pipx install -U gita
+pipx install gita -i https://pypi.python.org/simple/

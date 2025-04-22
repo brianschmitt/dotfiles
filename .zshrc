@@ -28,14 +28,7 @@ export PATH="$HOME/scripts:$PATH"
 export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
-
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
-
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH="$HOME/.local/bin:$PATH"
 
 # Autocompletion settings
 export FPATH="$HOME/dotfiles/osx:$FPATH"
