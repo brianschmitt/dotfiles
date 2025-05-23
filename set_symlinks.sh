@@ -10,6 +10,8 @@ ln -sf dotfiles/.ctags .ctags
 
 ln -sf dotfiles/.global_ignore .global_ignore
 
+ln -sf dotfiles/.gitattributes .gitattributes
+
 ln -sf dotfiles/.vimrc .vimrc
 
 if [ "$(uname)" = "Darwin" ]; then

@@ -1,4 +1,4 @@
-$files = '.vimrc','.ctags','.global_ignore'
+$files = '.vimrc','.ctags','.global_ignore','.gitattributes'
 
 foreach ($file in $files) {
     $hardlink = (Get-ChildItem $env:userprofile\$file -ErrorAction SilentlyContinue).LinkType -eq "HardLink"

@@ -43,6 +43,7 @@
 	ui = auto
 [core]
     autocrlf = true
+    attributesfile = ~/.gitattributes
     excludesfile = ~/.global_ignore
     filemode = false
     pager = delta
