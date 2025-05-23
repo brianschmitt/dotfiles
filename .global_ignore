@@ -165,12 +165,8 @@ cscope.in.out
 cscope.po.out
 doc/tags
 
-#SMP Ignore
-codegenConfiguration.xml
-
-
-
-.DS_Store
-
 #VSCode ignore
 .vscode/*
+
+# repomix
+repomix-output.*
