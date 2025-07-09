@@ -1124,6 +1124,12 @@
 					<key>regex</key>
 					<string>(?i)(?&lt;=(auth\_token|api[\_]?(secret|key))(\=[\"]?|\"\:\"))\w+</string>
 				</dict>
+				<dict>
+					<key>action</key>
+					<string>iTermHighlightLineTrigger</string>
+					<key>regex</key>
+					<string>\[ERROR\]</string>
+				</dict>
 			</array>
 			<key>Unlimited Scrollback</key>
 			<false/>

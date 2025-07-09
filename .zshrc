@@ -24,7 +24,7 @@ bindkey '^[[H' beginning-of-line # Home
 bindkey '^[[F' end-of-line # End
 
 # Path settings
-export PATH="$HOME/scripts:$PATH"
+export PATH="$HOME/src/scripts:$PATH"
 export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
@@ -36,6 +36,7 @@ export FPATH="$HOME/dotfiles/osx:$FPATH"
 # default commands
 export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git"'
 
+PATH_SUFFIXES+=('.sh')
 
 CDPATH=.:$HOME:$HOME/src
 
@@ -45,4 +46,5 @@ source $HOME/.functions
 source $HOME/powerlevel10k/powerlevel10k.zsh-theme
 source $HOME/.p10k.zsh
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"eval
+TWILIO_AC_ZSH_SETUP_PATH=/Users/bschmitt/.twilio-cli/autocomplete/zsh_setup && test -f $TWILIO_AC_ZSH_SETUP_PATH && source $TWILIO_AC_ZSH_SETUP_PATH; # twilio autocomplete setup
