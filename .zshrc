@@ -35,7 +35,7 @@ bindkey '^[[F' end-of-line # End
 # Path settings
 export PATH="$HOME/src/scripts:$PATH"
 export PATH="$HOME/Library/Python/3.9/bin:$PATH"
-export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
+export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 

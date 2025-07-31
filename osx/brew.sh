@@ -11,8 +11,8 @@ brew upgrade --cask
 
 # web dev
 # brew install nvm
-brew install node@18
-brew pin node@18
+brew install node@22
+brew pin node@22
 brew install pipx
 brew install --cask visual-studio-code
 #brew install --cask postman
