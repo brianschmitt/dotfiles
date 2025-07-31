@@ -1,3 +1,12 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+#zmodload zsh/zprof # for profiling
+
 export EDITOR='vim'
 export HOMEBREW_NO_AUTO_UPDATE=1
 
@@ -41,10 +50,21 @@ PATH_SUFFIXES+=('.sh')
 CDPATH=.:$HOME:$HOME/src
 
 TWILIO_AC_ZSH_SETUP_PATH=$HOME/.twilio-cli/autocomplete/zsh_setup && test -f $TWILIO_AC_ZSH_SETUP_PATH && source $TWILIO_AC_ZSH_SETUP_PATH;
+
 source $HOME/.aliases
 source $HOME/.functions
 source $HOME/powerlevel10k/powerlevel10k.zsh-theme
 source $HOME/.p10k.zsh
 
+autoload -Uz compinit
+# init once per day
+if [ "$(date +'%j')" != "$(stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)" ]; then
+    compinit
+else
+    compinit -C
+fi
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' # case-insensitive matching
+
 eval "$(/opt/homebrew/bin/brew shellenv)"eval
-TWILIO_AC_ZSH_SETUP_PATH=/Users/bschmitt/.twilio-cli/autocomplete/zsh_setup && test -f $TWILIO_AC_ZSH_SETUP_PATH && source $TWILIO_AC_ZSH_SETUP_PATH; # twilio autocomplete setup
+
+#zprof
