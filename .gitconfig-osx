@@ -1,6 +1,0 @@
-[include]
-    path = ~/dotfiles/.gitconfig
-[core]
-	autocrlf = input
-[open "https://ssh.dev.azure.com"]
-	domain = dev.azure.com.mcas.ms

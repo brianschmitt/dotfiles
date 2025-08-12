@@ -14,13 +14,13 @@ ln -sf dotfiles/.gitattributes .gitattributes
 
 ln -sf dotfiles/.vimrc .vimrc
 
+ln -sf dotfiles/.gitconfig .gitconfig
+
 if [ "$(uname)" = "Darwin" ]; then
-    ln -sf dotfiles/.gitconfig-osx .gitconfig
     ln -sf dotfiles/.zshrc .zshrc
     ln -sf dotfiles/.p10k.zsh .p10k.zsh
 
 elif [ "$(uname)" = "Linux" ]; then
-    ln -sf dotfiles/.gitconfig-lnx .gitconfig
     ln -sf dotfiles/.bashrc .bashrc
     ln -sf dotfiles/.bash_profile .bash_profile
     ln -sf dotfiles/.bash_prompt .bash_prompt

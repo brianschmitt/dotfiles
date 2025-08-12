@@ -35,6 +35,11 @@ defaults write "com.apple.dock" "autohide" -bool true
 mkdir ~/Library/KeyBindings
 cp ~/dotfiles/osx/DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
 
+# Set iTerm2 to load preferences from the dotfiles directory
+defaults write com.googlecode.iterm2 "PrefsCustomFolder" -string "~/dotfiles/osx"
+# Tell iTerm2 to use the custom preferences folder
+defaults write com.googlecode.iterm2 "LoadPrefsFromCustomFolder" -bool true
+
 killall Finder
 killall Dock
 

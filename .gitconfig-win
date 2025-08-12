@@ -1,5 +1,3 @@
-[include]
-	path = ~/dotfiles/.gitconfig
 [core]
     editor = "gvim --nofork '%*'"
-	sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
+    sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
