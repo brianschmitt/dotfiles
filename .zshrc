@@ -51,11 +51,6 @@ CDPATH=.:$HOME:$HOME/src
 
 TWILIO_AC_ZSH_SETUP_PATH=$HOME/.twilio-cli/autocomplete/zsh_setup && test -f $TWILIO_AC_ZSH_SETUP_PATH && source $TWILIO_AC_ZSH_SETUP_PATH;
 
-source $HOME/.aliases
-source $HOME/.functions
-source $HOME/powerlevel10k/powerlevel10k.zsh-theme
-source $HOME/.p10k.zsh
-
 autoload -Uz compinit
 # init once per day
 if [ "$(date +'%j')" != "$(stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)" ]; then
@@ -63,6 +58,12 @@ if [ "$(date +'%j')" != "$(stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)" ]; t
 else
     compinit -C
 fi
+
+source $HOME/.aliases
+source $HOME/.functions
+source $HOME/powerlevel10k/powerlevel10k.zsh-theme
+source $HOME/.p10k.zsh
+
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' # case-insensitive matching
 
 eval "$(/opt/homebrew/bin/brew shellenv)"eval
