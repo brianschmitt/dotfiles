@@ -46,21 +46,12 @@ brew install --cask obsidian
 brew install --cask macvim
 #brew install --cask firefox
 brew install --cask iterm2
-#brew install --cask spotify
 brew install --cask clipy
 #brew install --cask rectangle
-#brew install --cask calibre
 #brew install --cask docker
 brew install --cask syncthing
 #brew install --cask taskexplorer
-#brew install --cask microsoft-outlook
-#brew install --cask microsoft-teams
 brew install --cask logi-options+
-
-# optional
-#brew install --cask bitwarden
-#brew install --cask dotnet-sdk
-#brew install --cask lulu
 
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code-nerd-font

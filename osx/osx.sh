@@ -31,6 +31,8 @@ defaults write "com.apple.dock" "show-recents" -bool false
 defaults write "com.apple.dock" "persistent-apps" -array
 defaults write "com.apple.dock" "autohide" -bool true
 
+defaults write com.apple.universalaccess mouseDriverCursorSize -float 2 # Increase cursor size
+
 # Copy personal default keybindings
 mkdir ~/Library/KeyBindings
 cp ~/dotfiles/osx/DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict

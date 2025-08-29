@@ -35,15 +35,16 @@
 [column]
     ui = auto
 [core]
-    autocrlf = true
+    autocrlf = input
     attributesfile = ~/.gitattributes
     excludesfile = ~/.global_ignore
     filemode = false
     pager = delta
+    eol = lf
 [delta]
     hyperlinks = true
     hyperlinks-file-link-format = "vscode://file/{path}:{line}"
-	navigate = true
+    navigate = true
     side-by-side = true
 [diff]
     algorithm = histogram
