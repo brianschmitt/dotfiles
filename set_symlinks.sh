@@ -2,26 +2,28 @@
 
 cd "$HOME" || exit
 
-ln -sf dotfiles/.aliases .aliases
+common_files=(
+    .aliases
+    .functions
+    .ctags
+    .global_ignore
+    .gitattributes
+    .vimrc
+    .gitconfig
+)
+darwin_files=(.zshrc .p10k.zsh)
+linux_files=(.bashrc .bash_profile .bash_prompt)
 
-ln -sf dotfiles/.functions .functions
-
-ln -sf dotfiles/.ctags .ctags
-
-ln -sf dotfiles/.global_ignore .global_ignore
-
-ln -sf dotfiles/.gitattributes .gitattributes
-
-ln -sf dotfiles/.vimrc .vimrc
-
-ln -sf dotfiles/.gitconfig .gitconfig
+for file in "${common_files[@]}"; do
+    ln -sf "dotfiles/$file" "$file"
+done
 
 if [ "$(uname)" = "Darwin" ]; then
-    ln -sf dotfiles/.zshrc .zshrc
-    ln -sf dotfiles/.p10k.zsh .p10k.zsh
-
+    for file in "${darwin_files[@]}"; do
+        ln -sf "dotfiles/$file" "$file"
+    done
 elif [ "$(uname)" = "Linux" ]; then
-    ln -sf dotfiles/.bashrc .bashrc
-    ln -sf dotfiles/.bash_profile .bash_profile
-    ln -sf dotfiles/.bash_prompt .bash_prompt
+    for file in "${linux_files[@]}"; do
+        ln -sf "dotfiles/$file" "$file"
+    done
 fi

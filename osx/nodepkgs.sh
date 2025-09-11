@@ -11,9 +11,12 @@ npm install -g typescript
 
 twilio plugins:install @twilio-labs/plugin-serverless
 twilio plugins:install @twilio-labs/plugin-token
-twilio plugins:install @twilio-labs/plugin-watch
+#twilio plugins:install @twilio-labs/plugin-watch
+twilio plugins:install https://github.com/brianschmitt/plugin-watch
 twilio plugins:install @twilio-labs/plugin-flex
 twilio plugins:install @twilio-labs/plugin-webhook # https://github.com/twilio-labs/plugin-webhook
+#twilio plugins:install @twilio-labs/plugin-dev-phone
+#twilio plugins:install @twilio-labs/plugin-assets
 
 twilio autocomplete
 # https://www.twilio.com/docs/twilio-cli/plugins

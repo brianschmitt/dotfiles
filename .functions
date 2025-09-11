@@ -17,6 +17,12 @@ topen() {
     open "https://console.twilio.com/user/accounts?q=$TWILIO_ACCOUNT_SID"
 }
 
+tget() {
+    local url="${1}"
+    url="${url//\{AccountSid\}/$TWILIO_ACCOUNT_SID}"
+    curl -G "$url" -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN
+}
+
 # tab completion for filenames
 _envfile_complete() {
     local file
