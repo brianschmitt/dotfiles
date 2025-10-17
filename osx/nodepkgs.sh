@@ -15,7 +15,7 @@ twilio plugins:install @twilio-labs/plugin-token
 twilio plugins:install https://github.com/brianschmitt/plugin-watch
 twilio plugins:install @twilio-labs/plugin-flex
 twilio plugins:install @twilio-labs/plugin-webhook # https://github.com/twilio-labs/plugin-webhook
-#twilio plugins:install @twilio-labs/plugin-dev-phone
+twilio plugins:install https://github.com/brianschmitt/dev-phone
 #twilio plugins:install @twilio-labs/plugin-assets
 
 twilio autocomplete
@@ -23,4 +23,4 @@ twilio autocomplete
 # https://github.com/twilio-infra-as-code/plugin-twilio-infra
 # https://github.com/twilio-labs/plugin-token
 
-pipx install gita -i https://pypi.python.org/simple/
+pip3 install gita -i https://pypi.python.org/simple/

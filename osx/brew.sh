@@ -13,11 +13,12 @@ brew upgrade --cask
 # brew install nvm
 brew install node@22
 brew pin node@22
-brew install pipx
+#brew install pipx
 brew install --cask visual-studio-code
 #brew install --cask postman
-#brew install --cask ngrok
+brew install --cask ngrok
 #brew install --cask http-toolkit
+brew install python3
 
 # commandline utils
 brew install ripgrep
@@ -49,7 +50,7 @@ brew install --cask iterm2
 brew install --cask clipy
 #brew install --cask rectangle
 #brew install --cask docker
-brew install --cask syncthing
+brew install --cask syncthing-app
 #brew install --cask taskexplorer
 brew install --cask logi-options+
 
