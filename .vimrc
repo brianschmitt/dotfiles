@@ -129,6 +129,8 @@ set statusline +=%#Statement#/%L\ %*       "total lines
 
 autocmd cursorhold,bufwritepost * unlet! b:statusline_tab_warning "recalculate the tab warning flag when idle and after writing
 
+autocmd VimLeave * macaction terminate:
+
 "return '[&et]' if &expandtab is set wrong
 "return '[mixed-indenting]' if spaces and tabs are used to indent
 "return an empty string if everything is fine

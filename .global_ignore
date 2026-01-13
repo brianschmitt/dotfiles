@@ -170,3 +170,4 @@ doc/tags
 
 # repomix
 repomix-output.*
+node_modules/

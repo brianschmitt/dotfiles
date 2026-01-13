@@ -13,7 +13,7 @@ brew upgrade --cask
 # brew install nvm
 brew install node@22
 brew pin node@22
-#brew install pipx
+brew install pipx
 brew install --cask visual-studio-code
 #brew install --cask postman
 brew install --cask ngrok
@@ -32,6 +32,7 @@ brew install git-delta
 #brew install awscli
 #brew install azure-cli
 #brew install terraform
+brew install dockutil
 
 #brew tap mongodb/brew
 #brew install mongodb-community@4.4

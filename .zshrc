@@ -36,6 +36,13 @@ bindkey '^[[F' end-of-line # End
 export PATH="$HOME/src/scripts:$PATH"
 export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="/opt/homebrew/opt/python@3.12/libexec/bin:$PATH"
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Autocompletion settings
 export FPATH="$HOME/dotfiles/osx:$FPATH"

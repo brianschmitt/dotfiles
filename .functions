@@ -7,6 +7,10 @@
 # env management >>>
 ENVFILE_ROOT=~/.secrets
 
+awssso() {
+    aws sso login --profile=ps-sas-admin
+}
+
 # set environment function
 # use: "senv environmentFile"
 senv() {
