@@ -33,7 +33,7 @@ bindkey '^[[H' beginning-of-line # Home
 bindkey '^[[F' end-of-line # End
 
 # Path settings
-export PATH="$HOME/src/scripts:$PATH"
+export PATH="$HOME/src/scripts/bin:$PATH"
 export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="/opt/homebrew/opt/python@3.12/libexec/bin:$PATH"
