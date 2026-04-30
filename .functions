@@ -7,7 +7,18 @@
 # env management >>>
 ENVFILE_ROOT=~/.secrets
 
+oc() {
+    # open claude with preferred model
+    claude --model 'opus[1m]'
+}
+
+locaterepos(){
+    # find all git repos in the current directory and subdirectories
+    find . -type d -name ".git" -exec dirname {} \; 2>/dev/null
+}
+
 awssso() {
+    aws sso logout
     aws sso login --profile=ps-sas-admin
 }
 
@@ -18,7 +29,8 @@ senv() {
 }
 
 topen() {
-    open "https://console.twilio.com/user/accounts?q=$TWILIO_ACCOUNT_SID"
+    #open "https://console.twilio.com/user/accounts?q=$TWILIO_ACCOUNT_SID"
+    open "https://www.twilio.com/console/projects/summary#:~:text=$TWILIO_ACCOUNT_SID"
 }
 
 tget() {
