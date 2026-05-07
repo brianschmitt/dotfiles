@@ -16,6 +16,7 @@ twilio plugins:install https://github.com/brianschmitt/plugin-watch
 twilio plugins:install @twilio-labs/plugin-flex
 twilio plugins:install @twilio-labs/plugin-webhook # https://github.com/twilio-labs/plugin-webhook
 twilio plugins:install https://github.com/brianschmitt/dev-phone
+twilio plugins:install https://github.com/brianschmitt/plugin-audit
 #twilio plugins:install @twilio-labs/plugin-assets
 
 twilio autocomplete

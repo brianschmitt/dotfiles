@@ -26,6 +26,7 @@ brew install git
 brew install fzf
 #brew install tldr
 brew install git-delta
+brew install gh
 #brew install fd
 #brew install broot
 #brew install jq
@@ -46,11 +47,13 @@ brew install dockutil
 # general apps
 brew install --cask obsidian
 brew install --cask macvim
+# brew install --cask wireshark-app
+# brew install --cask visualdiffer
 #brew install --cask firefox
 brew install --cask iterm2
 brew install --cask clipy
 #brew install --cask rectangle
-#brew install --cask docker
+#brew install --cask docker-desktop
 brew install --cask syncthing-app
 #brew install --cask taskexplorer
 brew install --cask logi-options+
