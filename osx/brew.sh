@@ -58,7 +58,6 @@ brew install --cask syncthing-app
 #brew install --cask taskexplorer
 brew install --cask logi-options+
 
-brew tap homebrew/cask-fonts
 brew install --cask font-fira-code-nerd-font
 
 #brew install supabase/tap/supabase
