@@ -29,8 +29,8 @@ senv() {
 }
 
 topen() {
-    #open "https://console.twilio.com/user/accounts?q=$TWILIO_ACCOUNT_SID"
-    open "https://www.twilio.com/console/projects/summary#:~:text=$TWILIO_ACCOUNT_SID"
+    open "https://1console.twilio.com/user/accounts?datatable=%257B%2522pagination%2522%253A%257B%2522pageSize%2522%253A10%252C%2522pageToken%2522%253A%2522%2522%257D%252C%2522filtering%2522%253A%257B%2522filters%2522%253A%257B%2522status%2522%253A%257B%2522selections%2522%253A%257B%257D%257D%252C%2522type%2522%253A%257B%2522selections%2522%253A%257B%257D%257D%252C%2522upgraded%2522%253A%257B%2522selections%2522%253A%257B%257D%257D%252C%2522dormant%2522%253A%257B%2522selections%2522%253A%257B%257D%257D%257D%257D%252C%2522search%2522%253A%257B%2522value%2522%253A%2522$TWILIO_ACCOUNT_SID%2522%257D%257D"
+    #open "https://www.twilio.com/console/projects/summary#:~:text=$TWILIO_ACCOUNT_SID"
 }
 
 tget() {
