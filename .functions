@@ -6,10 +6,13 @@
 
 # env management >>>
 ENVFILE_ROOT=~/.secrets
+OC_MODEL='opus[1m]'
+export ANTHROPIC_MODEL="us.anthropic.claude-opus-4-8[1m]"
+export CLAUDE_CODE_ENABLE_AUTO_MODE=true
 
 oc() {
     # open claude with preferred model
-    claude --model 'opus[1m]'
+    claude --model "$OC_MODEL"
 }
 
 locaterepos(){
@@ -19,7 +22,7 @@ locaterepos(){
 
 awssso() {
     aws sso logout
-    aws sso login --profile=ps-sas-admin
+    aws sso login --profile twilio-devex-bedrock
 }
 
 # set environment function
