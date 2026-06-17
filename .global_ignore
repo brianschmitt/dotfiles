@@ -4,3 +4,4 @@ node_modules/
 .claude/
 claude.md
 .last_pull
+.DS_Store

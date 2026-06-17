@@ -44,6 +44,8 @@ export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+export TERM_PROGRAM="iTerm.app"
+
 # Autocompletion settings
 export FPATH="$HOME/dotfiles/osx:$FPATH"
 
