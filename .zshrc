@@ -10,6 +10,8 @@ fi
 export EDITOR='vim'
 export HOMEBREW_NO_AUTO_UPDATE=1
 
+export USE_BUILTIN_RIPGREP=0
+
 # History settings
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=10000

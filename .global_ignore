@@ -5,3 +5,4 @@ node_modules/
 claude.md
 .last_pull
 .DS_Store
+**/.claude/settings.local.json
